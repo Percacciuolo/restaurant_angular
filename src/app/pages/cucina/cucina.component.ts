@@ -23,26 +23,10 @@ export class CucinaComponent implements OnInit {
 
   ngOnInit(): void {
     this.orders = this.orderService.getOrders()
-    
-
   }
 
   changeStatus(orderId: number, orderStatus: string) {
-
-    const index = this.orders.findIndex(order => order.id === orderId)
-    console.log('change status:', this.orders[index]); //ritorna l'oggetto cliccato
-    console.log('status update', index);
-
-    if (index !== -1) {
-      if (orderStatus === 'Done') {
-        this.orders.splice(index, 1);
-      } else {
-        this.orders[index].status = orderStatus
-        console.log('change status:', this.orders[index]);
-      }
-    }
-
-
+    this.orders = this.orderService.changeStatus(orderId, orderStatus);
   }
 
   openDialogTimer(orderId : number){
@@ -51,28 +35,9 @@ export class CucinaComponent implements OnInit {
     });
 
     dialogRef.afterClosed().subscribe(data =>   {
-      const index = this.orders.findIndex(order => order.id === data.orderId)
-      console.log('Result:', data);                   
-
-      if (index !== -1){
-        this.orders[index].timer = data.timer
-      }
+      this.orders = this.orderService.addTimerToOrder(data);
     });
   
   }
-  
-  // statusColor(status: string) {
-  //   switch (status) {
-  //     case 'Done':
-  //       return 'green';
-  //     case 'Progress':
-  //       return 'yellow';
-  //     case 'Awaiting':
-  //       return 'red';
-  //     default:
-  //       return 'white';
-  //   }
-
-  // }
 };
 
