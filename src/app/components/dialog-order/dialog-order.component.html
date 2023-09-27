@@ -1,0 +1,26 @@
+<div mat-dialog-content>
+  <p>{{data | json}}</p>
+
+</div>
+
+<div class="custom-form-field">
+  <h4>Inserire il tempo di preparazione:</h4>
+  <mat-form-field>
+    ore
+    <input matInput type="number" [(ngModel)]="hour" >
+  </mat-form-field>
+
+  <mat-form-field>
+    minuti
+    <input matInput type="number" [(ngModel)]="minute">
+  </mat-form-field>
+
+  <mat-form-field>
+    secondi
+    <input matInput type="number" [(ngModel)]="second" >
+  </mat-form-field>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">VAI</button>
+</div>

@@ -1,0 +1,40 @@
+<div class="row">
+  <div class="col-3" *ngFor="let order of orders, let i = index">
+    <div class="card shadow">
+      <div class="card-header">
+        <div style="display: flex;">
+          <span>Ordine {{ order.id + 1}}</span>
+          <span style="margin-left: auto;">Stato: {{ order.status }}</span>
+        </div>
+      </div>
+      <div class="card-body ">
+        <p class="nTavolo">Tavolo: {{ order.table }}</p>
+        <mat-divider></mat-divider>
+        <h4 class="dettOrdine">Dettagli dell'ordine</h4>
+        <p class="card-text">Ordine:<br> {{order.order.join(', ') }}</p>
+        <p class="card-text">Ora: {{ order.hour }}</p>
+        <!-- <p class="status">Stato:{{order.status}}</p> -->
+        <button mat-button (click)="openDialogTimer(order.id)"> Start Order Timer</button>
+        
+        
+
+        <!-- <div class="radio-buttons">
+          
+          
+          
+          <label>
+            <input (click)="changeStatus(order.id, 'Progress')" type="radio" [value]="'Progress'"
+              [checked]="order.status === 'Progress'" [name]="'status' + i"> Progress
+          </label>
+
+        </div> -->
+        <!-- <input type="timerInput" type="number" [defaultValue]="00" />
+        <p id="timer">00</p>
+        <button (click)="startTime()">Start Time</button> -->
+
+        <!-- <p class="status" [ngStyle]="{'background-color': statusColor(order.status)}">Stato: {{ order.status }}</p> -->
+
+      </div>
+    </div>
+  </div>
+</div>
