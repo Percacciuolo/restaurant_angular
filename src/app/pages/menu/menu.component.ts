@@ -178,7 +178,7 @@ export class MenuComponent {
       table: "3",
       hour: formattedTime,
       status: "Awaiting",
-      timer: 0
+      
     };
 
     this.prodottiOrdinati.forEach(prodotto => {

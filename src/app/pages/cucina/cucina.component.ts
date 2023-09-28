@@ -22,7 +22,8 @@ export class CucinaComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.orders = this.orderService.getOrders()
+    this.orders = this.orderService.getOrders();
+    console.log(this.orders);
   }
 
   changeStatus(orderId: number, orderStatus: string) {

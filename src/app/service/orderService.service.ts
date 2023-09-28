@@ -8,7 +8,7 @@ import { Orders } from '../interface/orders';
 
 export class OrderService {
     private orders: Orders[]  //non visibile dai componenti esterni //order
-    private timer: any;
+    private timer : any;
 
 
     constructor() {
@@ -20,7 +20,8 @@ export class OrderService {
                 table: "3",
                 hour: "19:03:05",
                 status: "Awaiting",
-                timer: 0
+                
+
             },
             {
                 id: 1,
@@ -28,7 +29,7 @@ export class OrderService {
                 table: "5",
                 hour: "19:19:09",
                 status: "Awaiting",
-                timer: 0
+
             },
             {
                 id: 2,
@@ -36,7 +37,7 @@ export class OrderService {
                 table: "7",
                 hour: "20:15:04",
                 status: "Awaiting",
-                timer: 0
+
             },
             {
                 id: 3,
@@ -44,7 +45,7 @@ export class OrderService {
                 table: "1",
                 hour: "20:08:10",
                 status: "Awaiting",
-                timer: 0
+
             },
             {
                 id: 4,
@@ -52,7 +53,7 @@ export class OrderService {
                 table: "2",
                 hour: "20:54:05",
                 status: "Awaiting",
-                timer: 0
+
             },
             {
                 id: 5,
@@ -60,7 +61,7 @@ export class OrderService {
                 table: "9",
                 hour: "20:45:07",
                 status: "Awaiting",
-                timer: 0
+
             },
             {
                 id: 6,
@@ -68,11 +69,12 @@ export class OrderService {
                 table: "4",
                 hour: "20:42:05",
                 status: "Awaiting",
-                timer: 0
+
             }
 
 
         ] //abbiamo inizializzato i valori delle variabili
+
     }
 
 
@@ -89,36 +91,92 @@ export class OrderService {
     startTimer() {
         this.timer = setInterval(this.timerHandler, 1000)
     }
-    destroyTimer(){
+    destroyTimer() {
         clearInterval(this.timer);
     }
     timerHandler() {
         console.log('timer handler works');
-        /*  Controlla su tutti gli elementi dell'array se sono in progress. Se sono in progress
-        controlla se esiste l'oggetto timer, se esiste vai a diminuire di uno i secondi ma prima di farlo controlla che i
-        secondi siano maggiori di zero, qualora i secondi siano zero porta i secondi a 59 e vai a diminuire i minuti di uno
-        ma solo se i minuti sono maggiori di zero. Qualora i minuti siano zero vale lo stesso discorso dei secondi. 
-        Se tutti i valori (ore, minuti, secondi) sono zero l'oggetto order va eliminato dall'array 
-        poichè considerato in status "done" */
+        if (this.orders) {
+            this.orders.forEach((order) => {
+            if (order.status === 'Progress' && order.timer) {
+              
+                    if (order.timer.second > 0) {
+                        order.timer.second--;
+                    } else {
+                        if (order.timer.minute > 0) {
+                            order.timer.second = 59;
+                            order.timer.minute--;
+                        } else {
+                            if (order.timer.hour > 0) {
+                                order.timer.hour--;
+                                order.timer.minute = 59
+                            }
+                            else {
+                                const index = this.orders.findIndex((el: any) => order.id === el.id);
+                                if (index !== -1) {
+                                    this.orders.splice(index, 1);
+                                }
+                            }
+                        }
+                    }
+
+
+
+            
+
+            }
+        })
+         }
+        
+
     }
 
-    addTimerToOrder(data: any){
+    /*  Controlla su tutti gli elementi dell'array se sono in progress\. Se sono in progress
+   controlla se esiste l'oggetto timer\, se esiste vai a diminuire di uno i secondi ma prima di farlo controlla che i
+   secondi siano maggiori di zero O\,  qualora i secondi siano zero\ porta i secondi a 59 e vai a diminuire i minuti di uno
+   ma solo se i minuti sono maggiori di zero. Qualora i minuti siano zero vale lo stesso discorso dei secondi. 
+   Se tutti i valori (ore, minuti, secondi) sono zero l'oggetto order va eliminato dall'array 
+   poichè considerato in status "done" */
+    // const ordersInProgress = this.orders.filter(order => order.status === 'Progress');
+    // if(ordersInProgress){
+    //     if(ordersInProgress.timer){
+
+    //     }
+    // }
+
+
+    // ordersInProgress.forEach(order => {
+    //     if (order.timer > 0) {
+    //         order.timer--;
+    //     }
+    //     if(order.timer === 0){
+    //         if(order.timer % 60){
+    //         order.timer --
+    //       }   
+    //     }
+    // })
+
+    // }
+
+
+
+    addTimerToOrder(data: any) {
         const index = this.orders.findIndex(order => order.id === data.orderId)
-        if (index !== -1){
+        if (index !== -1) {
             this.orders[index].timer = data.timer
         }
         return this.orders
     }
 
-    changeStatus(orderId: number, orderStatus: string){
+    changeStatus(orderId: number, orderStatus: string) {
         const index = this.orders.findIndex(order => order.id === orderId);
         if (index !== -1) {
-          if (orderStatus === 'Done') {
-            this.orders.splice(index, 1);
-          } else {
-            this.orders[index].status = orderStatus
-            console.log('change status:', this.orders[index]);
-          }
+            if (orderStatus === 'Done') {
+                this.orders.splice(index, 1);
+            } else {
+                this.orders[index].status = orderStatus
+                console.log('change status:', this.orders[index]);
+            }
         }
         return this.orders
     }

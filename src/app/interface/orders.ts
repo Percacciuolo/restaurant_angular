@@ -4,5 +4,5 @@ export interface Orders {
     table: string;
     hour: string;
     status: string;
-    timer: number;
+    timer?: {hour : number, second:number, minute: number};
 }
