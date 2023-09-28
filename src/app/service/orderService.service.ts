@@ -7,12 +7,72 @@ import { Orders } from '../interface/orders';
 })
 
 export class OrderService {
-    private orders: Orders[]  //non visibile dai componenti esterni //order
+    private orders: Orders[] = [ // Dichiarazione di un array di ordini di tipo Orders
+        {
+            id: 0,
+            order: ["BURGER", "LOS POLLOS", "BIRRA PAULANER SALVATOR", "FANTA",],
+            table: "3",
+            hour: "19:03:05",
+            status: "Awaiting",
+            
+
+        },
+        {
+            id: 1,
+            order: ["BURGER", "BURGER", "BIRRA PAULANER SALVATOR", "ACQUA",],
+            table: "5",
+            hour: "19:19:09",
+            status: "Awaiting",
+
+        },
+        {
+            id: 2,
+            order: ["DJANGO", "NONNA ASSUNTA", "BIRRA PAULANER MÜNCHNER HELL", "FANTA"],
+            table: "7",
+            hour: "20:15:04",
+            status: "Awaiting",
+
+        },
+        {
+            id: 3,
+            order: ["SMASHED ONE", "DJANGO", "ACQUA", "BIRRA PAULANER MÜNCHNER HELL",],
+            table: "1",
+            hour: "20:08:10",
+            status: "Awaiting",
+
+        },
+        {
+            id: 4,
+            order: ["NONNA ASSUNTA", "SMASHED ONE EXTR3ME", "ACQUA", "COCA COLA",],
+            table: "2",
+            hour: "20:54:05",
+            status: "Awaiting",
+
+        },
+        {
+            id: 5,
+            order: ["LOS POLLOS", "DIEGO ARMANDO MASARDONA", "BIRRA PAULANER SALVATOR", "FANTA",],
+            table: "9",
+            hour: "20:45:07",
+            status: "Awaiting",
+
+        },
+        {
+            id: 6,
+            order: ["SMASHED ONE", "DJANGO", "BURGER", "SMASHED ONE EXTR3ME", "FANTA", "ACQUA", "BIRRA PAULANER MÜNCHNER HELL"],
+            table: "4",
+            hour: "20:42:05",
+            status: "Awaiting",
+
+        }
+
+
+    ] //abbiamo inizializzato i valori delle variabili //non visibile dai componenti esterni //order
     private timer : any;
 
 
     constructor() {
-        this.orders = [ // Dichiarazione di un array di ordini di tipo Orders
+        /* this.orders = [ // Dichiarazione di un array di ordini di tipo Orders
 
             {
                 id: 0,
@@ -73,7 +133,7 @@ export class OrderService {
             }
 
 
-        ] //abbiamo inizializzato i valori delle variabili
+        ] //abbiamo inizializzato i valori delle variabili */
 
     }
 
@@ -89,17 +149,18 @@ export class OrderService {
     } //aggiunge un nuovo ordine all'array
 
     startTimer() {
-        this.timer = setInterval(this.timerHandler, 1000)
+        this.timer = setInterval(() => {
+            this.timerHandler(this.orders)
+        }, 1000)
     }
     destroyTimer() {
         clearInterval(this.timer);
     }
-    timerHandler() {
-        console.log('timer handler works');
-        if (this.orders) {
-            this.orders.forEach((order) => {
-            if (order.status === 'Progress' && order.timer) {
-              
+    timerHandler(orders: Orders[]) {
+        console.log('timer handler works', orders);
+        if (orders) {
+            orders.forEach((order) => {
+                if (order.status === 'Progress' && order.timer) {
                     if (order.timer.second > 0) {
                         order.timer.second--;
                     } else {
@@ -112,23 +173,17 @@ export class OrderService {
                                 order.timer.minute = 59
                             }
                             else {
+                                console.log('timer scaduto', order.id);
                                 const index = this.orders.findIndex((el: any) => order.id === el.id);
                                 if (index !== -1) {
                                     this.orders.splice(index, 1);
                                 }
                             }
                         }
-                    }
-
-
-
-            
-
-            }
-        })
+                    }          
+                }
+            })
          }
-        
-
     }
 
     /*  Controlla su tutti gli elementi dell'array se sono in progress\. Se sono in progress
@@ -164,6 +219,7 @@ export class OrderService {
         const index = this.orders.findIndex(order => order.id === data.orderId)
         if (index !== -1) {
             this.orders[index].timer = data.timer
+            this.orders[index].status = 'Progress'
         }
         return this.orders
     }
