@@ -1,5 +1,6 @@
 
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { Orders } from 'src/app/interface/orders';
 import { OrderService } from 'src/app/service/orderService.service';
 
@@ -15,8 +16,8 @@ export class MenuComponent {
   prodottiOrdinati: any[] = [];  //inizializziamo paniniSelezionati in un array vuoto
   totaleOrdine: number = 0;
 
-  constructor(private orderService: OrderService) {
-
+  constructor(private orderService: OrderService, private router: Router) {
+    // this.router.navigate(['./order-confirmed']);
 
   }
 
@@ -178,7 +179,7 @@ export class MenuComponent {
       table: "3",
       hour: formattedTime,
       status: "Awaiting",
-      
+
     };
 
     this.prodottiOrdinati.forEach(prodotto => {
@@ -187,5 +188,12 @@ export class MenuComponent {
 
     this.orderService.addOrder(newOrder);
 
+   
+    this.router.navigate(['order-confirmed']);
+  
   }
+  
+ 
+
+
 }

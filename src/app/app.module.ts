@@ -17,15 +17,28 @@ import { FormsModule } from '@angular/forms';
 import {MatDialogModule} from '@angular/material/dialog';
 import { MatInputModule } from '@angular/material/input';
 import { MatNativeDateModule } from '@angular/material/core';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import {MatSelectModule} from '@angular/material/select';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { ReactiveFormsModule } from '@angular/forms';
+// import {FormControl} from '@angular/forms';
+
+
+
 //Pages
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MenuComponent } from './pages/menu/menu.component';
 import { CucinaComponent } from './pages/cucina/cucina.component';
+import { DialogOrderComponent } from './components/dialog-order/dialog-order.component';
+import { OrderConfirmedComponent } from './pages/order-confirmed/order-confirmed.component';
+import { ShoppingCartSummaryComponent } from './components/shopping-cart-summary/shopping-cart-summary.component';
 
 //Service
 import { OrderService } from './service/orderService.service';
-import { DialogOrderComponent } from './components/dialog-order/dialog-order.component';
+
+
 
 
 
@@ -37,6 +50,9 @@ import { DialogOrderComponent } from './components/dialog-order/dialog-order.com
     MenuComponent,
     CucinaComponent,
     DialogOrderComponent,
+    OrderConfirmedComponent,
+    ShoppingCartSummaryComponent
+    
     
     
   ],
@@ -53,8 +69,13 @@ import { DialogOrderComponent } from './components/dialog-order/dialog-order.com
     FormsModule,
     MatDialogModule,
     MatInputModule,
-    MatNativeDateModule
-    
+    MatNativeDateModule,
+    MatAutocompleteModule,
+    MatDatepickerModule,
+    MatSelectModule,
+    MatFormFieldModule,
+    ReactiveFormsModule
+    // FormControl
   ],
 
   providers: [
