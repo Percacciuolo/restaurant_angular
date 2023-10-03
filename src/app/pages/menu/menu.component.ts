@@ -187,13 +187,14 @@ export class MenuComponent {
     })
 
     this.orderService.addOrder(newOrder);
+    console.log(newOrder);
+    console.log(this.orderService)
 
-   
-    this.router.navigate(['order-confirmed']);
-  
+    this.router.navigate(['order-confirmed', newOrder.id]);
+
   }
-  
- 
+
+
 
 
 }

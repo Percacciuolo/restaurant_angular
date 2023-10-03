@@ -14,7 +14,7 @@ export class OrderService {
             table: "3",
             hour: "19:03:05",
             status: "Awaiting",
-            
+
 
         },
         {
@@ -68,7 +68,7 @@ export class OrderService {
 
 
     ] //abbiamo inizializzato i valori delle variabili //non visibile dai componenti esterni //order
-    private timer : any;
+    private timer: any;
 
 
     constructor() {
@@ -180,10 +180,10 @@ export class OrderService {
                                 }
                             }
                         }
-                    }          
+                    }
                 }
             })
-         }
+        }
     }
 
     /*  Controlla su tutti gli elementi dell'array se sono in progress\. Se sono in progress
@@ -235,5 +235,9 @@ export class OrderService {
             }
         }
         return this.orders
+    }
+
+    getOrderById(orderId: number) {
+        return this.orders.find(order => order.id === orderId)
     }
 }

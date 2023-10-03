@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators, } from '@angular/forms';
-import { Payment } from 'src/app/payment';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { OrderService } from 'src/app/service/orderService.service';
+
 
 
 @Component({
@@ -9,17 +10,21 @@ import { Payment } from 'src/app/payment';
   styleUrls: ['./order-confirmed.component.scss'],
 })
 
-export class OrderConfirmedComponent {
-topics= ['Visa', 'Mastercard', 'Maestro'];
+export class OrderConfirmedComponent implements OnInit{
+orderId: string | null= null; //varibile per memorizzare l'id dell'ordine preso dall'url
+order: any; //questa variabile utulizzata per memorizzare l'oggetto ordine corrispondente all'id recuperato
 
-paymentModel = new Payment('','Marco Rossi', 8786543765414567, '09/29', 675)
+constructor(private route: ActivatedRoute, private orderService: OrderService){}
 
-
-//   cvvControl = new FormControl('' ,[
-//     Validators.required,
-//     Validators.minLength(3),
-//     Validators.maxLength(3),
-//     // Validators.pattern('^[0-9]*$'),
-
-// ]);
+ngOnInit(): void {
+  this.orderId = this.route.snapshot.paramMap.get('orderId');
+  console.log(this.orderId)
+  // this.route.paramMap.subscribe((params)=>{
+  //   this.orderId = params.get('orderId');
+  //   if(this.orderId !== ""){
+  //     this.order = this.orderService.getOrderById(parseInt(this.orderId));
+  //   }
+    
+  // })
+}
 }
