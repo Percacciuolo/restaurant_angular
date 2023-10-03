@@ -1,91 +1,93 @@
-h1 {
-  font-size: 60px;
-  padding-top: 40px;
-  font-weight: bold;
-  color: rgb(49, 49, 98);
 
-}
-
-h3 {
-  font-size: 40px;
-  font-weight: bold;
-  padding-top: 13%;
-  margin-bottom: 5%;
-  color: rgb(49, 49, 98);
-}
-
-.descrizione {
-  font-size: medium;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  text-align: justify center;
-  color: rgb(218, 195, 167);
-  font-weight: bold;
-  font-size: 150%;
-}
-
-.prezzo {
-  font-size: 140%;
-  color: rgb(49, 49, 98);
-  font-weight: bold;
-}
-
-.sezione1 {
-  background-color: #fd7e14
-}
-
-.sezione2 {
-  background-color: #fd7e14
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  // margin: 20px 0;
-  // margin-left: 5%;
-}
-
-tr {
-  border-bottom: 1px solid #ddd;
-}
-
-/* Stile per le celle delle righe */
-td {
-  padding: 8px;
-  text-align: left;
-  margin-left: 20%;
-}
-
-
-//    Stile per l'ultima riga (se desideri rimuovere la linea inferiore) 
-tr:last-child {
-  border-bottom: none;
-}
-
-.img:hover {
-  width: 45%;
-  transform: scale(0.9);/* Ingrandisce l'immagine al 110% delle dimensioni originali */
-  cursor:context-menu;
-}
-
-.delete {
-  bottom: auto;
-  color: #fd7e14;
-
-}
-
-.conferma:hover {
-  background-color: #fd7e14;
+.menu-component-container{
+  h1 {
+    font-size: 60px;
+    padding-top: 40px;
+    font-weight: bold;
+    color: rgb(49, 49, 98);
   
- }
-.totaleOrdine{
-text-align:center;
-font-size: larger;
-font-weight: bold;
-
-
+  }
+  
+  h3 {
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 13%;
+    margin-bottom: 5%;
+    color: rgb(49, 49, 98);
+  }
+  
+  .descrizione {
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify center;
+    color: rgb(218, 195, 167);
+    font-weight: bold;
+    font-size: 150%;
+  }
+  
+  .prezzo {
+    font-size: 140%;
+    color: rgb(49, 49, 98);
+    font-weight: bold;
+  }
+  
+  .sezione1 {
+    background-color: #fd7e14
+  }
+  
+  .sezione2 {
+    background-color: #fd7e14
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    // margin: 20px 0;
+    // margin-left: 5%;
+  }
+  
+  tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Stile per le celle delle righe */
+  td {
+    padding: 8px;
+    text-align: left;
+    margin-left: 20%;
+  }
+  
+  
+  //    Stile per l'ultima riga (se desideri rimuovere la linea inferiore) 
+  tr:last-child {
+    border-bottom: none;
+  }
+  
+  .img:hover {
+    width: 45%;
+    transform: scale(0.9);/* Ingrandisce l'immagine al 110% delle dimensioni originali */
+    cursor:context-menu;
+  }
+  
+  .delete {
+    bottom: auto;
+    color: #fd7e14;
+  
+  }
+  
+  .conferma:hover {
+    background-color: #fd7e14;
+    
+   }
+  .totaleOrdine{
+  text-align:center;
+  font-size: larger;
+  font-weight: bold;
+  
+  
+  }
+  
 }
-
-
 
 // /* Stile per le celle della colonna del prezzo 
 // td:nth-child(2) {
