@@ -18,18 +18,22 @@ export class OrderService {
     }
 
 
+    setOrders(ordersArray: Orders[]){
+        this.orders = ordersArray;
+    }
+
     getMenu(){
         return this.http.get('http://localhost:4000/api/mock/getMenu')
     }
 
     //fare un get
-    getOrders() {
+    getOrders(){
         return this.http.get('http://localhost:4000/api/mock/getOrders');
     }
 
     submitOrder(newOrder: Orders): Observable<any> {
-        let body= {
-            body: newOrder
+        let body = {
+            newOrder: newOrder
         }
         return this.http.post('http://localhost:4000/api/mock/submitOrder', body);
         // this.orders.push(newOrder);
@@ -44,8 +48,8 @@ export class OrderService {
         clearInterval(this.timer);
     }
     timerHandler(orders: Orders[]) {
-        // console.log('timer handler works', orders);
-        if (orders) {
+        console.log('timer handler works',orders);
+        if (orders.length > 0) {
             orders.forEach((order) => {
                 if (order.status === 'Progress' && order.timer) {
                     if (order.timer.second > 0) {

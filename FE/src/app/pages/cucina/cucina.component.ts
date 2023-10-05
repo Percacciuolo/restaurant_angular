@@ -24,7 +24,7 @@ export class CucinaComponent implements OnInit {
   ngOnInit(): void {
     this.orderService.getOrders().subscribe((res: any) => {
       console.log('response di get order', res)
-      this.orders= res.updatedMenu;
+      this.orders= res.updatedOrders;
       
       console.log(this.orders);
     });

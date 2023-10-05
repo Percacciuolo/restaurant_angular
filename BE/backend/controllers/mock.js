@@ -83,7 +83,7 @@ exports.getOrders = (req, res, next) => {
                 let parsedOrders = JSON.parse(orders)
                 res.status(200).json({
                     message: "Orders read correctly!",
-                    updatedMenu: parsedOrders
+                    updatedOrders: parsedOrders
                 });
             })
             .catch(err => {

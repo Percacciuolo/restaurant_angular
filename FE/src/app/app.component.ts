@@ -1,5 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { OrderService } from './service/orderService.service';
+import { Orders } from './interface/orders';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,10 @@ export class AppComponent implements OnInit, OnDestroy {
 
   }
   ngOnInit(): void {
-    this.orderService.startTimer()
+    this.orderService.getOrders().subscribe((res: any) => {
+      this.orderService.setOrders(res.updatedOrders)
+      this.orderService.startTimer()
+    })
   }
 
   ngOnDestroy(): void {
