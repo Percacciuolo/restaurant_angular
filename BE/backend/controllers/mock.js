@@ -161,3 +161,124 @@ exports.submitOrder = (req, res, next) => {
         });
     }
 }
+
+exports.removeOrder = (req, res, next) => {
+    try{
+        if(fs.existsSync('./backend/json-mock/orders.json')){
+            fs.promises.readFile('./backend/json-mock/orders.json')
+            .then(orders => {
+                console.log('Correctly read ordes')
+                let ordersParsed = JSON.parse(orders);
+                let index = ordersParsed.findIndex(el => el.id === req.params.orderIdToRemove);
+                if(index != -1){
+                    ordersParsed.splice(index, 1);
+                    fs.promises.writeFile('./backend/json-mock/orders.json', ordersParsed)
+                    .then(response => {
+                        console.log('Correctly write ordes')
+                        fs.promises.readFile('./backend/json-mock/orders.json')
+                        .then(ordersUpdated => {
+                            let jsonResponse = JSON.parse(ordersUpdated)
+                            console.log('Correctly read new ordes array')
+                            res.status(200).json({
+                                message: "Menu update correctly!",
+                                ordersUpdated: jsonResponse
+                            });
+                        })
+                        .catch(err => {
+                            console.log('Error read new ordes array')
+                            res.status(500).json({
+                                message: "Server error submit order",
+                                err: err
+                            });
+                        })
+                    })
+                }else{
+                    console.log('Json not found')
+                    res.status(404).json({
+                        message: "Json not found",
+                    });
+                }
+            })
+            .catch(err => {
+                console.log('Error read ordes')
+                res.status(500).json({
+                    message: "Server error submit order",
+                    err: err
+                });
+            })
+        }else{
+            console.log('Json not found')
+            res.status(404).json({
+                message: "Json not found",
+            });
+        }
+    }catch(err){
+        console.log('Generic error', err)
+        res.status(500).json({
+            message: "Server error",
+            err: err
+        });
+    }
+}
+
+
+exports.setTimer = (req, res, next) => {
+    try{
+        if(fs.existsSync('./backend/json-mock/orders.json')){
+            fs.promises.readFile('./backend/json-mock/orders.json')
+            .then(orders => {
+                console.log('Correctly read ordes')
+                let ordersParsed = JSON.parse(orders);
+                let index = ordersParsed.findIndex(el => el.id === req.body.orderIdToRemove);
+                if(index != -1){
+                    ordersParsed[index].timer = req.body.timer;
+                    ordersParsed[index].status = 'Progress';
+                    fs.promises.writeFile('./backend/json-mock/orders.json', ordersParsed)
+                    .then(response => {
+                        console.log('Correctly write ordes')
+                        fs.promises.readFile('./backend/json-mock/orders.json')
+                        .then(ordersUpdated => {
+                            let jsonResponse = JSON.parse(ordersUpdated)
+                            console.log('Correctly read new ordes array')
+                            res.status(200).json({
+                                message: "Menu update correctly!",
+                                ordersUpdated: jsonResponse
+                            });
+                        })
+                        .catch(err => {
+                            console.log('Error read new ordes array')
+                            res.status(500).json({
+                                message: "Server error submit order",
+                                err: err
+                            });
+                        })
+                    })
+                }else{
+                    console.log('Error order not found')
+                    res.status(404).json({
+                        message: "Error order not found",
+                        err: err
+                    });
+                }
+            })
+            .catch(err => {
+                console.log('Error read ordes')
+                res.status(500).json({
+                    message: "Server error submit order",
+                    err: err
+                });
+            })
+        }else{
+            console.log('Json not found')
+            res.status(404).json({
+                message: "Json not found",
+            });
+        }
+    }catch(err){
+        console.log('Generic error', err)
+        res.status(500).json({
+            message: "Server error",
+            err: err
+        });
+    }
+}
