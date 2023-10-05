@@ -3,7 +3,7 @@
     <div class="card shadow">
       <div class="card-header">
         <div style="display: flex;">
-          <span>Ordine {{ order.id + 1}}</span>
+          <span>Ordine {{ order.id}}</span>
           <span style="margin-left: auto;">Stato: {{ order.status }}</span>
         </div>
       </div>
@@ -11,7 +11,7 @@
         <p class="nTavolo">Tavolo: {{ order.table }}</p>
         <mat-divider></mat-divider>
         <h4 class="dettOrdine">Dettagli dell'ordine</h4>
-        <p class="card-text">Ordine:<br> {{order.order.join(', ') }}</p>
+        <p class="card-text">Ordine:<br> {{order.order }}</p>
         <p class="card-text">Ora: {{ order.hour }}</p>
         <button mat-button (click)="openDialogTimer(order.id)"> Start Order Timer</button>
       </div>

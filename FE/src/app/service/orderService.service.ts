@@ -2,73 +2,14 @@
 import { Injectable } from '@angular/core';
 import { Orders } from '../interface/orders';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
     providedIn: 'root'
 })
 
 export class OrderService {
-    private orders: Orders[] = [ // Dichiarazione di un array di ordini di tipo Orders
-        {
-            id: 0,
-            order: ["BURGER", "LOS POLLOS", "BIRRA PAULANER SALVATOR", "FANTA",],
-            table: "3",
-            hour: "19:03:05",
-            status: "Awaiting",
-            
-
-        },
-        {
-            id: 1,
-            order: ["BURGER", "BURGER", "BIRRA PAULANER SALVATOR", "ACQUA",],
-            table: "5",
-            hour: "19:19:09",
-            status: "Awaiting",
-
-        },
-        {
-            id: 2,
-            order: ["DJANGO", "NONNA ASSUNTA", "BIRRA PAULANER MÜNCHNER HELL", "FANTA"],
-            table: "7",
-            hour: "20:15:04",
-            status: "Awaiting",
-
-        },
-        {
-            id: 3,
-            order: ["SMASHED ONE", "DJANGO", "ACQUA", "BIRRA PAULANER MÜNCHNER HELL",],
-            table: "1",
-            hour: "20:08:10",
-            status: "Awaiting",
-
-        },
-        {
-            id: 4,
-            order: ["NONNA ASSUNTA", "SMASHED ONE EXTR3ME", "ACQUA", "COCA COLA",],
-            table: "2",
-            hour: "20:54:05",
-            status: "Awaiting",
-
-        },
-        {
-            id: 5,
-            order: ["LOS POLLOS", "DIEGO ARMANDO MASARDONA", "BIRRA PAULANER SALVATOR", "FANTA",],
-            table: "9",
-            hour: "20:45:07",
-            status: "Awaiting",
-
-        },
-        {
-            id: 6,
-            order: ["SMASHED ONE", "DJANGO", "BURGER", "SMASHED ONE EXTR3ME", "FANTA", "ACQUA", "BIRRA PAULANER MÜNCHNER HELL"],
-            table: "4",
-            hour: "20:42:05",
-            status: "Awaiting",
-
-        }
-
-
-    ] //abbiamo inizializzato i valori delle variabili //non visibile dai componenti esterni //order
+    private orders: Orders[]= [] ; //abbiamo inizializzato i valori delle variabili //non visibile dai componenti esterni //order
     private timer : any;
 
 
@@ -81,15 +22,17 @@ export class OrderService {
         return this.http.get('http://localhost:4000/api/mock/getMenu')
     }
 
-
-
     //fare un get
     getOrders() {
-        return this.orders;
+        return this.http.get('http://localhost:4000/api/mock/getOrders');
     }
 
-    addOrder(newOrder: Orders) {
-        this.orders.push(newOrder);
+    submitOrder(newOrder: Orders): Observable<any> {
+        let body= {
+            body: newOrder
+        }
+        return this.http.post('http://localhost:4000/api/mock/submitOrder', body);
+        // this.orders.push(newOrder);
     } //aggiunge un nuovo ordine all'array
 
     startTimer() {
@@ -101,7 +44,7 @@ export class OrderService {
         clearInterval(this.timer);
     }
     timerHandler(orders: Orders[]) {
-        console.log('timer handler works', orders);
+        // console.log('timer handler works', orders);
         if (orders) {
             orders.forEach((order) => {
                 if (order.status === 'Progress' && order.timer) {
@@ -136,29 +79,7 @@ export class OrderService {
    ma solo se i minuti sono maggiori di zero. Qualora i minuti siano zero vale lo stesso discorso dei secondi. 
    Se tutti i valori (ore, minuti, secondi) sono zero l'oggetto order va eliminato dall'array 
    poichè considerato in status "done" */
-    // const ordersInProgress = this.orders.filter(order => order.status === 'Progress');
-    // if(ordersInProgress){
-    //     if(ordersInProgress.timer){
-
-    //     }
-    // }
-
-
-    // ordersInProgress.forEach(order => {
-    //     if (order.timer > 0) {
-    //         order.timer--;
-    //     }
-    //     if(order.timer === 0){
-    //         if(order.timer % 60){
-    //         order.timer --
-    //       }   
-    //     }
-    // })
-
-    // }
-
-
-
+   
     addTimerToOrder(data: any) {
         const index = this.orders.findIndex(order => order.id === data.orderId)
         if (index !== -1) {

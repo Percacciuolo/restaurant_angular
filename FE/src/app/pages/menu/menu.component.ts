@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
@@ -11,13 +12,14 @@ import { OrderService } from 'src/app/service/orderService.service';
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss']
 })
-export class MenuComponent implements OnInit{
+export class MenuComponent implements OnInit {
 
   prodottiOrdinati: any[] = [];  //inizializziamo paniniSelezionati in un array vuoto
   totaleOrdine: number = 0;
   menu: any;
 
-  constructor(private orderService: OrderService, private router: Router) {
+
+  constructor(private orderService: OrderService, private router: Router, private http: HttpClient) {
     // this.router.navigate(['./order-confirmed']);
 
   }
@@ -27,7 +29,9 @@ export class MenuComponent implements OnInit{
     this.orderService.getMenu().subscribe((res: any) => {
       console.log('response di get menu', res)
       this.menu = res.updatedMenu
-    })
+    });
+    
+
   }
 
 
@@ -62,18 +66,21 @@ export class MenuComponent implements OnInit{
 
     };
 
-    this.prodottiOrdinati.forEach(prodotto => {
-      newOrder.order.push(prodotto.nome)
-    })
+    this.orderService.submitOrder(newOrder).subscribe((res: any) => {
+      // const updatedOrder = { ...newOrder };
+      // this.prodottiOrdinati.forEach(prodotto => {
+      //   updatedOrder.order.push(prodotto);
+      // });
+      // res.ordersUpdated.push(updatedOrder);
+      console.log('response di submit order', res.ordersUpdated);
+    });
 
-    this.orderService.addOrder(newOrder);
 
-   
-    this.router.navigate(['order-confirmed']);
-  
+    // this.router.navigate(['order-confirmed']);
+
   }
-  
- 
+
+
 
 
 }

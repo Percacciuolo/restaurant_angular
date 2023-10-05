@@ -15,14 +15,20 @@ import {MatDialog, MAT_DIALOG_DATA, MatDialogRef, MatDialogModule} from '@angula
 })
 export class CucinaComponent implements OnInit {
 
-  orders: Orders[];
+  orders: any;
 
   constructor(private orderService: OrderService, public dialog: MatDialog) { //nelle parentesi tonde si dichiarano i servizi
-    this.orders = [];
+    
   }
 
   ngOnInit(): void {
-    this.orders = this.orderService.getOrders();
+    this.orderService.getOrders().subscribe((res: any) => {
+      console.log('response di get order', res)
+      this.orders= res.updatedMenu;
+      
+      console.log(this.orders);
+    });
+     
     console.log(this.orders);
   }
 
@@ -35,7 +41,7 @@ export class CucinaComponent implements OnInit {
       data: {orderId : orderId},
     });
 
-    dialogRef.afterClosed().subscribe(data =>   {
+    dialogRef.afterClosed().subscribe(data => {
       this.orders = this.orderService.addTimerToOrder(data);
     });
   
