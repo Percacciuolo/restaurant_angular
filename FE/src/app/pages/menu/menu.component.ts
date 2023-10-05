@@ -30,7 +30,7 @@ export class MenuComponent implements OnInit {
       console.log('response di get menu', res)
       this.menu = res.updatedMenu
     });
-    
+
 
   }
 
@@ -65,13 +65,11 @@ export class MenuComponent implements OnInit {
       status: "Awaiting",
 
     };
+    this.prodottiOrdinati.forEach(prodotto => {
+      newOrder.order.push(prodotto.nome);
+    });
 
     this.orderService.submitOrder(newOrder).subscribe((res: any) => {
-      // const updatedOrder = { ...newOrder };
-      // this.prodottiOrdinati.forEach(prodotto => {
-      //   updatedOrder.order.push(prodotto);
-      // });
-      // res.ordersUpdated.push(updatedOrder);
       console.log('response di submit order', res.ordersUpdated);
     });
 
