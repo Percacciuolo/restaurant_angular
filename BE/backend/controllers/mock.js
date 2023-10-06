@@ -169,10 +169,11 @@ exports.removeOrder = (req, res, next) => {
             .then(orders => {
                 console.log('Correctly read ordes')
                 let ordersParsed = JSON.parse(orders);
-                let index = ordersParsed.findIndex(el => el.id === req.params.orderIdToRemove);
+                let index = ordersParsed.findIndex(el => el.id === parseInt(req.params.orderIdToRemove));
                 if(index != -1){
                     ordersParsed.splice(index, 1);
-                    fs.promises.writeFile('./backend/json-mock/orders.json', ordersParsed)
+                    let newOrderJson = JSON.stringify(ordersParsed, null, 4)
+                    fs.promises.writeFile('./backend/json-mock/orders.json', newOrderJson)
                     .then(response => {
                         console.log('Correctly write ordes')
                         fs.promises.readFile('./backend/json-mock/orders.json')
@@ -193,9 +194,9 @@ exports.removeOrder = (req, res, next) => {
                         })
                     })
                 }else{
-                    console.log('Json not found')
+                    console.log('Order not found')
                     res.status(404).json({
-                        message: "Json not found",
+                        message: "Order not found",
                     });
                 }
             })
@@ -233,7 +234,8 @@ exports.setTimer = (req, res, next) => {
                 if(index != -1){
                     ordersParsed[index].timer = req.body.timer;
                     ordersParsed[index].status = 'Progress';
-                    fs.promises.writeFile('./backend/json-mock/orders.json', ordersParsed)
+                    let newOrderJson = JSON.stringify(ordersParsed, null, 4)
+                    fs.promises.writeFile('./backend/json-mock/orders.json', newOrderJson)
                     .then(response => {
                         console.log('Correctly write ordes')
                         fs.promises.readFile('./backend/json-mock/orders.json')
