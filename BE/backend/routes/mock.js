@@ -14,5 +14,7 @@ router.post('/submitOrder', mockController.submitOrder);
 
 router.get('/deleteOrder/:orderIdToRemove', mockController.removeOrder);
 
+router.post('/setTimer', mockController.setTimer);
+
 
 module.exports = router;

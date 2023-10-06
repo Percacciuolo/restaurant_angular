@@ -42,10 +42,17 @@ export class MenuComponent implements OnInit {
 
   }
 
-  eliminaPanino(prodotto: any) {
-    const index = this.prodottiOrdinati.indexOf(prodotto);
-    this.prodottiOrdinati.splice(index, 1);
-    this.calcolaTotale();
+  removeOrder(prodotto: any) {
+
+    // const index = this.prodottiOrdinati.indexOf(prodotto);
+    // if (index !== -1) {
+    //   this.prodottiOrdinati.splice(index, 1);
+    //   this.calcolaTotale();
+    // }
+    this.orderService.removeOrder(prodotto.id).subscribe((res: any) => {
+      console.log('response di remove order', res)
+    });
+
   }
 
   calcolaTotale() {

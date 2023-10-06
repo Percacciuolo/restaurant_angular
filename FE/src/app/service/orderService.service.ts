@@ -9,25 +9,24 @@ import { Observable } from 'rxjs';
 })
 
 export class OrderService {
-    private orders: Orders[]= [] ; //abbiamo inizializzato i valori delle variabili //non visibile dai componenti esterni //order
-    private timer : any;
+    private orders: Orders[] = []; //abbiamo inizializzato i valori delle variabili //non visibile dai componenti esterni //order
+    private timer: any;
+    
 
 
     constructor(private http: HttpClient) {
-
     }
 
-
-    setOrders(ordersArray: Orders[]){
+    setOrders(ordersArray: Orders[]) {
         this.orders = ordersArray;
     }
 
-    getMenu(){
+    getMenu() {
         return this.http.get('http://localhost:4000/api/mock/getMenu')
     }
 
     //fare un get
-    getOrders(){
+    getOrders() {
         return this.http.get('http://localhost:4000/api/mock/getOrders');
     }
 
@@ -39,16 +38,23 @@ export class OrderService {
         // this.orders.push(newOrder);
     } //aggiunge un nuovo ordine all'array
 
+    removeOrder(id: number): Observable<any> {
+    //    const orderIdToRemove = prodotto
+        
+        return this.http.get(`http://localhost:4000/api/mock/deleteOrder/${id}`);
+    }
+
     startTimer() {
         this.timer = setInterval(() => {
             this.timerHandler(this.orders)
         }, 1000)
     }
+
     destroyTimer() {
         clearInterval(this.timer);
     }
     timerHandler(orders: Orders[]) {
-        console.log('timer handler works',orders);
+        // console.log('timer handler works', orders);
         if (orders.length > 0) {
             orders.forEach((order) => {
                 if (order.status === 'Progress' && order.timer) {
@@ -71,10 +77,10 @@ export class OrderService {
                                 }
                             }
                         }
-                    }          
+                    }
                 }
             })
-         }
+        }
     }
 
     /*  Controlla su tutti gli elementi dell'array se sono in progress\. Se sono in progress
@@ -83,7 +89,7 @@ export class OrderService {
    ma solo se i minuti sono maggiori di zero. Qualora i minuti siano zero vale lo stesso discorso dei secondi. 
    Se tutti i valori (ore, minuti, secondi) sono zero l'oggetto order va eliminato dall'array 
    poichè considerato in status "done" */
-   
+
     addTimerToOrder(data: any) {
         const index = this.orders.findIndex(order => order.id === data.orderId)
         if (index !== -1) {
