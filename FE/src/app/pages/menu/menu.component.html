@@ -1,84 +1,88 @@
 <div class="menu-component-container" *ngIf="menu">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h1>PANINI</h1>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>PANINI</h1>
       </div>
-      <div class="row">
-        <div class="col-4" *ngFor="let panino of menu.panini">
-          <div class="card">
-            <div class="card-body text-center">
-              <h3 class="card-title">{{ panino.nome }}</h3>
-              <img class="card-img-top" (click)="selezionaPanino(panino)" [src]="panino.img">
-              <p class="card-text" [innerHTML]="panino.descrizione"></p>
-              <p class="card-text">{{ panino.prezzo }}€</p>
-            </div>
+    </div>
+    <div class="row">
+      <div class="col-4" *ngFor="let panino of menu.panini">
+        <div class="card">
+          <div class="card-body text-center">
+            <h3 class="card-title">{{ panino.nome }}</h3>
+            <img class="card-img-top" (click)="selezionaPanino(panino)" [src]="panino.img">
+            <p class="card-text flexible" [innerHTML]="panino.descrizione"></p>
+          </div>
+          <div class="card-footer">
+            <p>{{ panino.prezzo }}€</p>
           </div>
         </div>
       </div>
     </div>
-  
-    <mat-divider></mat-divider>
-  
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h1>BIBITE</h1>
-        </div>
+  </div>
+
+  <mat-divider></mat-divider>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1>BIBITE</h1>
       </div>
-      <div class="row">
-        <div class="col-4" *ngFor="let bibita of menu.bibite">
-          <div class="card">
-            <div class="card-body text-center">
-              <h3 class="card-title">{{ bibita.nome }}</h3>
-              <img class="card-img-top" (click)="selezionaPanino(bibita)" [src]="bibita.img">
-              <p class="card-text" [innerHTML]="bibita.descrizione"></p>
-              <p class="card-text">{{ bibita.prezzo }}€</p>
-            </div>
+    </div>
+    <div class="row">
+      <div class="col-4" *ngFor="let bibita of menu.bibite">
+        <div class="card">
+          <div class="card-body text-center">
+            <h3 class="card-title">{{ bibita.nome }}</h3>
+            <img class="card-img-top" (click)="selezionaPanino(bibita)" [src]="bibita.img">
+            <p class="card-text flexible" [innerHTML]="bibita.descrizione"></p>
+          </div>
+          <div class="card-footer">
+            <p>{{ bibita.prezzo }}€</p>
           </div>
         </div>
       </div>
     </div>
-  
-    <mat-divider></mat-divider>
-  
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-12">
-          <h2>IL TUO ORDINE</h2>
-          <h4> Hai {{prodottiOrdinati.length}} prodotti nel tuo carrello</h4>
-        </div>
+  </div>
+
+  <mat-divider></mat-divider>
+
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-12">
+        <h2>IL TUO ORDINE</h2>
+        <h4> Hai {{prodottiOrdinati.length}} prodotti nel tuo carrello</h4>
       </div>
-      <div class="row">
-        <div class="col-12">
-          <table class="table">
-            <tbody>
-              <tr *ngFor="let prodottoOrdinato of prodottiOrdinati">
-                <td>{{prodottoOrdinato.nome}}</td>
-                <td>
-                  <button mat-icon-button class="delete" (click)="removeOrder(prodottoOrdinato)">
-                    <mat-icon>delete</mat-icon>
-                  </button>
-                </td>
-                <td>{{prodottoOrdinato.prezzo}}€</td>
-              </tr>
-              <tr>
-                <td>
-                  <h2>TOTALE ORDINE</h2>
-                </td>
-                <td class="totaleOrdine">
-                  <p>{{totaleOrdine}} €</p>
-                  <button mat-raised-button (click)="sendOrder()" class="conferma">CONFERMA ORDINE</button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <table class="table">
+          <tbody>
+            <tr *ngFor="let prodottoOrdinato of prodottiOrdinati">
+              <td>{{prodottoOrdinato.nome}}</td>
+              <td>
+                <button mat-icon-button class="delete" (click)="removeOrder(prodottoOrdinato)">
+                  <mat-icon>delete</mat-icon>
+                </button>
+              </td>
+              <td>{{prodottoOrdinato.prezzo}}€</td>
+            </tr>
+            <tr>
+              <td>
+                <h2>TOTALE ORDINE</h2>
+              </td>
+              <td class="totaleOrdine">
+                <p>{{totaleOrdine}} €</p>
+                <button mat-raised-button (click)="sendOrder()" class="conferma">CONFERMA ORDINE</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
-  
-  <div *ngIf="!menu" class="my-custom-style">
-    <h1>Errore nel Caricamento del menu</h1>
-  </div>
+</div>
+
+<div *ngIf="!menu" class="my-custom-style">
+  <h1>Errore nel Caricamento del menu</h1>
+</div>
