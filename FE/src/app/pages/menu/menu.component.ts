@@ -28,7 +28,11 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void {
     this.orderService.getMenu().subscribe((res: any) => {
       console.log('response di get menu', res)
-      this.menu = res.updatedMenu
+      this.menu = res.updatedMenu;
+
+      this.menu.panini.forEach((panino: any) => {
+        panino.mostraDescrizione = false;
+      });
     });
 
 
@@ -80,12 +84,12 @@ export class MenuComponent implements OnInit {
       console.log('response di submit order', res.ordersUpdated);
     });
 
-
     // this.router.navigate(['order-confirmed']);
-
   }
 
+  toggleDescrizione(panino: any) {
+    panino.mostraDescrizione = !panino.mostraDescrizione;
+  }
 
-
-
+ 
 }

@@ -3,63 +3,63 @@
        {
           "id":0,
           "nome":"BURGER",
-          "descrizione":"HAMBURGER DELLA CASA -200gr <br> INSALATA ICEBERG <br> POMODORI <br> KETCHUP <br> MAIONESE",
+          "descrizione":"HAMBURGER DELLA CASA -200gr,<br> INSALATA ICEBERG, <br> POMODORI, <br> KETCHUP, <br> MAIONESE",
           "prezzo":12,
           "img":"assets/img/panini/burge.png"
        },
        {
           "id":1,
           "nome":"NONNA ASSUNTA",
-          "descrizione":"HAMBURGER DELLA CASA - 200 gr <br> PATATE AL FORNO CON CIPOLLA <br> PROVOLA AFFUMICATA <br> MAIONESE AL PEPE",
+          "descrizione":"HAMBURGER DELLA CASA - 200 gr, <br> PATATE AL FORNO CON CIPOLLA, <br> PROVOLA AFFUMICATA, <br> MAIONESE AL PEPE",
           "prezzo":14,
           "img":"assets/img//panini/nonna_assunta.png"
        },
        {
           "id":2,
           "nome":"HADOKEN",
-          "descrizione":"HAMBURGER DELLA CASA - 200 gr<br>FORMAGGIO EMMENTAL FUSO<br>BACON CROCCANTE<br>CIPOLLA CARAMELLATA OLD SCHOOL<br>BURRO DI ARACHIDI<br>ARACHIDI SALATI",
+          "descrizione":"HAMBURGER DELLA CASA - 200 gr,<br> FORMAGGIO EMMENTAL FUSO,<br> BACON CROCCANTE,<br> CIPOLLA CARAMELLATA OLD SCHOOL,<br> BURRO DI ARACHIDI,<br> ARACHIDI SALATI",
           "prezzo":15,
           "img":"assets/img/panini/hadoken.png"
        },
        {
           "id":3,
           "nome":"DJANGO",
-          "descrizione":"HAMBURGER DELLA CASA - 200 gr <br>PROVOLA AFFUMICATA<br>BACON CROCCANTE<br>CIPOLLA ROSSA IN AGRODOLCE<br>ANELLONE DI CIPOLLA<br> MAIONESE<br>SALSA BARBECUE",
+          "descrizione":"HAMBURGER DELLA CASA - 200 gr, <br> PROVOLA AFFUMICATA, <br> BACON CROCCANTE, <br> CIPOLLA ROSSA IN AGRODOLCE, <br> ANELLONE DI CIPOLLA, <br> MAIONESE, <br>, SALSA BARBECUE",
           "prezzo":15,
           "img":"assets/img/panini/django.png"
        },
        {
           "id":4,
           "nome":"LOS POLLOS",
-          "descrizione":"POLLO FRITTO CROCCANTE<br>INSALATA ICEBERG<br>MAIONESE AL LIME E PEPE ROSA",
+          "descrizione":"POLLO FRITTO CROCCANTE, <br> INSALATA ICEBERG, <br> MAIONESE AL LIME E PEPE ROSA",
           "prezzo":13,
           "img":"assets/img/panini/los_pollos.png"
        },
        {
           "id":5,
           "nome":"SMASHED ONE",
-          "descrizione":"DOPPIO HAMBURGER DELLA CASA da 100 gr. l\\'uno<br>FORMAGGIO EMMENTAL FUSO<br>BACON CROCCANTE<br>SALSA SEGRETISSIMA",
+          "descrizione":"DOPPIO HAMBURGER DELLA CASA da 100 gr. l\\'uno, <br> FORMAGGIO EMMENTAL FUSO, <br> BACON CROCCANTE, <br> SALSA SEGRETISSIMA",
           "prezzo":13,
           "img":"assets/img/panini/smashed_one.png"
        },
        {
           "id":6,
           "nome":"SMASHED ONE DOPPIO BACON",
-          "descrizione":"DOPPIO HAMBURGER DELLA CASA da 100 gr. l\\'uno<br>FORMAGGIO EMMENTAL FUSO<br>DOPPIO BACON CROCCANTE<br>SALSA SEGRETISSIMA",
+          "descrizione":"DOPPIO HAMBURGER DELLA CASA da 100 gr. l\\'uno, <br> FORMAGGIO EMMENTAL FUSO, <br> DOPPIO BACON CROCCANTE, <br> SALSA SEGRETISSIMA",
           "prezzo":14,
           "img":"assets/img/panini/smashed_one_doppio_bacon.png"
        },
        {
           "id":7,
           "nome":"SMASHED ONE EXTR3ME",
-          "descrizione":"TRIPLO HAMBURGER DELLA CASA da 100 gr. l\\'uno<br>FORMAGGIO EMMENTAL FUSO<br>BACON CROCCANTE<br>SALSA SEGRETISSIMA",
+          "descrizione":"TRIPLO HAMBURGER DELLA CASA da 100 gr. l\\'uno, <br> FORMAGGIO EMMENTAL FUSO, <br> BACON CROCCANTE, <br> SALSA SEGRETISSIMA",
           "prezzo":15,
           "img":"assets/img/panini/smashed_one_extr3me.png"
        },
        {
           "id":8,
           "nome":"DIEGO ARMANDO MASARDONA",
-          "descrizione":"CICOLI NAPOLETANI PIASTRATI (con sale e pepe)<br>PROVOLA IMPANATA E FRITTA<br>CREMA DI POMODORINI ARROSTO<br>RICOTTA SALE E PEPE<br>BASILICO",
+          "descrizione":"CICOLI NAPOLETANI PIASTRATI (con sale e pepe), <br> PROVOLA IMPANATA E FRITTA, <br> CREMA DI POMODORINI ARROSTO, <br> RICOTTA SALE E PEPE, <br> BASILICO",
           "prezzo":14,
           "img":"assets/img/panini/diego_armando_masardona.png"
        }

@@ -11,7 +11,12 @@
       text-align: center;
       font-size: xx-large;
       font-weight: bold;
+      font-family: serif;
 
+    }
+
+    .container-card {
+      padding-top: 18px;
     }
 
     .card {
@@ -25,12 +30,21 @@
 
       .card-title {
         font-size: 1.7rem;
+        font-family: serif;
+        
 
+      }
+
+      .btn {
+        background-color: #fd7e14;
+        position: relative;
+        display: flow-root
       }
 
       .card-text {
         font-size: 1rem;
-        flex-grow: 1;
+        font-family: system-ui;
+
 
         .flexible {
           flex-grow: 1;
@@ -38,19 +52,41 @@
       }
 
       .card-footer {
-        justify-content: space-between;      
+        justify-content: space-between;
         border-top: 1px solid #dedede;
       }
 
       .card-footer p {
         text-align: center;
       }
-
-      .card-img-top {
-        cursor: pointer;
-        display: block;
-      }
     }
+
+    .card-img-top {
+      display: block;
+    }
+
+    .hover-message {
+      display: none;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.4);
+      color: #fff;
+      padding: 5px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.1s;
+    }
+
+    .card:hover .hover-message {
+      display: flex;
+      opacity: 1;
+      cursor: pointer;
+    }
+
 
     .text-center {
       text-align: center;
