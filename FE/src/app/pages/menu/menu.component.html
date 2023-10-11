@@ -1,31 +1,36 @@
 <div class="menu-component-container" *ngIf="menu">
+  <div class="currentDate">
+    Data corrente {{currentDate | date: 'dd/MM/yyyy'}}
+  </div>
   <div class="container">
     <div class="row">
       <div class="col-12">
         <h1>PANINI</h1>
       </div>
     </div>
-    <div class="row">
-      <div class="col-4 container-card" *ngFor="let panino of menu.panini">
-        <div class="card">
-          <div class="card-body text-center">
-            <h3 class="card-title">{{ panino.nome }}</h3>
-            <div class="hover-message" (click)="selezionaPanino(panino)">Clicca qui per aggiungere al carrello <br> (Scorri in basso per visualizzarlo)</div>
-            <img class="card-img-top" [src]="panino.img">            
-            <a class="btn btn-primary mb-3 mt-" (click)="toggleDescrizione(panino)">
-              {{ panino.mostraDescrizione ? 'NASCONDI DESCRIZIONE' : 'SCOPRI LA DESCRIZIONE' }}
-            </a>
-            <p class="card-text flexible" *ngIf="panino.mostraDescrizione" [innerHTML]="panino.descrizione"></p> 
-          </div>
-          <div class="card-footer">
-            <p>{{ panino.prezzo }}€</p>
+    
+      <div class="row">
+        <div class="container-card col-sm-6 col-md-4 " *ngFor="let panino of menu.panini">
+          <div class="card">
+            <div class="card-body text-center">
+              <h3 class="card-title">{{ panino.nome }}</h3>
+              <div class="hover-message" (click)="selezionaPanino(panino)">Clicca qui per aggiungere al carrello <br>
+                (Scorri in basso per visualizzarlo)</div>
+              <img class="card-img-top" [src]="panino.img">
+              <a class="btn btn-primary mb-3 mt-" (click)="toggleDescrizione(panino)">
+                {{ panino.mostraDescrizione ? 'NASCONDI DESCRIZIONE' : 'SCOPRI LA DESCRIZIONE' }}
+              </a>
+              <p class="card-text flexible" *ngIf="panino.mostraDescrizione" [innerHTML]="panino.descrizione"></p>
+            </div>
+            <div class="card-footer">
+              <p>{{ panino.prezzo }}€</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
   </div>
 
-  <mat-divider></mat-divider>
+  <!-- <mat-divider></mat-divider> -->
 
   <div class="container">
     <div class="row">
@@ -34,12 +39,12 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-4 container-card"  *ngFor="let bibita of menu.bibite">
+      <div class="container-card col-sm-6 col-md-4" *ngFor="let bibita of menu.bibite">
         <div class="card">
           <div class="card-body text-center">
             <h3 class="card-title">{{ bibita.nome }}</h3>
             <div class="hover-message" (click)="selezionaPanino(bibita)">Clicca qui per aggiungere al carrello</div>
-            <img class="card-img-top"  [src]="bibita.img">
+            <img class="card-img-top" [src]="bibita.img">
             <p class="card-text flexible" [innerHTML]="bibita.descrizione"></p>
           </div>
           <div class="card-footer">
@@ -50,7 +55,7 @@
     </div>
   </div>
 
-  <mat-divider></mat-divider>
+  <!-- <mat-divider></mat-divider> -->
 
   <div class="container">
     <div class="row text-center">

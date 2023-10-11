@@ -1,11 +1,16 @@
+
 .menu-component-container {
   // background-color: #fd7e14;
 
+  .currentDate {
+    background-color: #fd7e14;
+    font-size: revert;
+    font-family: monospace;
+    padding-left: 11px;
+  }
 
   .container {
     margin-top: 20px;
-
-
 
     h1 {
       text-align: center;
@@ -21,18 +26,18 @@
 
     .card {
       display: flex;
-      margin: 5px;
-      border: 1px solid;
-      flex-direction: column;
-      width: 100%;
+      margin: 5px;     
+      width: auto;
       height: 100%;
 
 
       .card-title {
         font-size: 1.7rem;
-        font-family: serif;
-        
+        font-family: math;
 
+        @media (max-width:991px) {
+          font-size: 1.2rem;
+        }
       }
 
       .btn {
@@ -86,7 +91,6 @@
       opacity: 1;
       cursor: pointer;
     }
-
 
     .text-center {
       text-align: center;

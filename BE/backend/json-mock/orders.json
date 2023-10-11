@@ -95,5 +95,14 @@
         "table": "3",
         "hour": "16:35:37",
         "status": "Awaiting"
+    },
+    {
+        "id": 24816,
+        "order": [
+            "BIRRA PAULANER SALVATOR"
+        ],
+        "table": "3",
+        "hour": "15:10:35",
+        "status": "Awaiting"
     }
 ]
