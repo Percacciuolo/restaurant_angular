@@ -46,16 +46,16 @@ export class MenuComponent implements OnInit {
 
   }
 
-  removeOrder(prodotto: any) {
+  removeProduct(prodotto: any) {
 
     const index = this.prodottiOrdinati.indexOf(prodotto);
     if (index !== -1) {
       this.prodottiOrdinati.splice(index, 1);
       this.calcolaTotale();
     }
-    this.orderService.removeOrder(prodotto.id).subscribe((res: any) => {
+   /*  this.orderService.removeOrder(prodotto.id).subscribe((res: any) => {
       console.log('response di remove order', res)
-    });
+    }); */
 
   }
 
@@ -82,9 +82,8 @@ export class MenuComponent implements OnInit {
 
     this.orderService.submitOrder(newOrder).subscribe((res: any) => {
       console.log('response di submit order', res.ordersUpdated);
+      this.router.navigate(['order-confirmed']);
     });
-
-    // this.router.navigate(['order-confirmed']);
   }
 
   toggleDescrizione(panino: any) {

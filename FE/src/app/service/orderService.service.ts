@@ -35,12 +35,9 @@ export class OrderService {
             newOrder: newOrder
         }
         return this.http.post('http://localhost:4000/api/mock/submitOrder', body);
-        // this.orders.push(newOrder);
-    } //aggiunge un nuovo ordine all'array
+    }
 
     removeOrder(id: number): Observable<any> {
-    //    const orderIdToRemove = prodotto
-        
         return this.http.get(`http://localhost:4000/api/mock/deleteOrder/${id}`);
     }
 
@@ -75,6 +72,7 @@ export class OrderService {
                                 if (index !== -1) {
                                     this.orders.splice(index, 1);
                                 }
+                                // Fare chiamata api a removeOrder (GET)
                             }
                         }
                     }
@@ -90,6 +88,7 @@ export class OrderService {
    Se tutti i valori (ore, minuti, secondi) sono zero l'oggetto order va eliminato dall'array 
    poichè considerato in status "done" */
 
+   // Il timer dovrà essere aggiornato a BE, quindi integrare chiamata setTimer (POST) che prende come body { orderId , timer }
     addTimerToOrder(data: any) {
         const index = this.orders.findIndex(order => order.id === data.orderId)
         if (index !== -1) {

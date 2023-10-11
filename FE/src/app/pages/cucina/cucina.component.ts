@@ -41,6 +41,7 @@ export class CucinaComponent implements OnInit {
       data: {orderId : orderId},
     });
 
+    // Dopo la chiusura della modale chiamiamo un metodo che fa una chiamata api al be che aggiunge il timer all'ordinazione
     dialogRef.afterClosed().subscribe(data => {
       this.orders = this.orderService.addTimerToOrder(data);
     });

@@ -230,7 +230,7 @@ exports.setTimer = (req, res, next) => {
             .then(orders => {
                 console.log('Correctly read ordes')
                 let ordersParsed = JSON.parse(orders);
-                let index = ordersParsed.findIndex(el => el.id === req.body.orderIdToRemove);
+                let index = ordersParsed.findIndex(el => el.id === req.body.orderId);
                 if(index != -1){
                     ordersParsed[index].timer = req.body.timer;
                     ordersParsed[index].status = 'Progress';

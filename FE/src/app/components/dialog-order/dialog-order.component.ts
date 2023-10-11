@@ -26,8 +26,5 @@ export class DialogOrderComponent {
     }
     this.dialogRef.close(this.data);
   }
-  countdown() {
-
-
-  }
+ 
 }
