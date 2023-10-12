@@ -34,6 +34,7 @@ import { OrderConfirmedComponent } from './pages/order-confirmed/order-confirmed
 
 //Service
 import { OrderService } from './service/orderService.service';
+import { ExArticleComponent } from './pages/ex-article/ex-article.component';
 
 
 
@@ -48,6 +49,7 @@ import { OrderService } from './service/orderService.service';
     CucinaComponent,
     DialogOrderComponent,
     OrderConfirmedComponent,
+    ExArticleComponent,
   ],
   imports: [
     BrowserModule,

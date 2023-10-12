@@ -284,3 +284,31 @@ exports.setTimer = (req, res, next) => {
         });
     }
 }
+
+exports.getArticles = (req, res, next) => {
+    try{
+        if(fs.existsSync('./backend/json-mock/articles.json')){
+            fs.promises.readFile('./backend/json-mock/articles.json')
+            .then(articles => {
+                let parsedArticles = JSON.parse(articles)
+                res.status(200).json({
+                    message: "Articles read correctly!",
+                    updatedOrders: parsedArticles
+                });
+            })
+            .catch(err => {
+                console.log('Error read Articles')
+                res.status(500).json({
+                    message: "Server error reading Articles",
+                    err: err
+                });
+            })
+        }
+    }catch(err){
+        console.log('Generic error', err)
+        res.status(500).json({
+            message: "Server error",
+            err: err
+        });
+    }
+}
