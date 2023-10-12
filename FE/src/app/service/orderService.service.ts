@@ -114,4 +114,11 @@ export class OrderService {
         }
         return this.orders
     }
+    findOrderById(orderId: number) { //cercare all'interno dell'array degli ordini un'ordinazione tramite il suo id e fare il return dell'ordinazione
+       const index = this.orders.findIndex(order => order.id === orderId ); //andiamo a trovare l'ordinazione con l'id
+       if(index !== -1){
+        return this.orders[index]
+       }
+       return null;
+    }
 }

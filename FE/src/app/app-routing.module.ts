@@ -11,7 +11,7 @@ const routes: Routes = [
   {path: '', component: HomeComponent },
   {path: 'menu', component: MenuComponent },
   {path: 'manager-sala', component: CucinaComponent},
-  {path: 'order-confirmed', component: OrderConfirmedComponent}
+  {path: 'order-confirmed/:newOrderId', component: OrderConfirmedComponent}
   
 ];
 

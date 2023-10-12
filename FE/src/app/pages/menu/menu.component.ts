@@ -81,8 +81,11 @@ export class MenuComponent implements OnInit {
     });
 
     this.orderService.submitOrder(newOrder).subscribe((res: any) => {
-      console.log('response di submit order', res.ordersUpdated);
-      this.router.navigate(['order-confirmed']);
+      console.log('response di submit order', res.ordersUpdated); //nuovo array
+      this.orderService.setOrders(res.ordersUpdated)
+
+      
+      this.router.navigate(['order-confirmed', newOrder.id]);
     });
   }
 

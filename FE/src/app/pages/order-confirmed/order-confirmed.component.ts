@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators, } from '@angular/forms';
+import { Component, OnInit, NgModule } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Orders } from 'src/app/interface/orders';
+import { OrderService } from 'src/app/service/orderService.service';
 
 
 @Component({
@@ -8,8 +10,21 @@ import { FormBuilder, FormControl, FormGroup, Validators, } from '@angular/forms
   styleUrls: ['./order-confirmed.component.scss'],
 })
 
-export class OrderConfirmedComponent {
-topics= ['Visa', 'Mastercard', 'Maestro'];
+export class OrderConfirmedComponent implements OnInit {
+
+ 
+  order! :  Orders | null;
+  constructor(private activatedRoute: ActivatedRoute, private orderService: OrderService) {
+
+  }
+
+  ngOnInit(): void {
+
+    const orderId =  this.activatedRoute.snapshot.paramMap.get('newOrderId');
+    this.order = this.orderService.findOrderById(parseInt(orderId!))
+    console.log(this.order)
+  }
+
 
 
 }
