@@ -11,7 +11,7 @@ import { Observable } from 'rxjs';
 export class OrderService {
     private orders: Orders[] = []; //abbiamo inizializzato i valori delle variabili //non visibile dai componenti esterni //order
     private timer: any;
-    
+
 
 
     constructor(private http: HttpClient) {
@@ -67,12 +67,17 @@ export class OrderService {
                                 order.timer.minute = 59
                             }
                             else {
-                                console.log('timer scaduto', order.id);
-                                const index = this.orders.findIndex((el: any) => order.id === el.id);
-                                if (index !== -1) {
-                                    this.orders.splice(index, 1);
-                                }
-                                // Fare chiamata api a removeOrder (GET)
+                                this.http.get(`http://localhost:4000/api/mock/deleteOrder/${order.id}`).subscribe(
+                                    () => {
+                                        console.log('timer scaduto', order.id);
+                                        const index = this.orders.findIndex((el: any) => order.id === el.id);
+                                        if (index !== -1) {
+                                            this.orders.splice(index, 1);
+                                        }
+
+                                    }
+                                );// Fare chiamata api a removeOrder (GET)
+
                             }
                         }
                     }
@@ -88,14 +93,13 @@ export class OrderService {
    Se tutti i valori (ore, minuti, secondi) sono zero l'oggetto order va eliminato dall'array 
    poichè considerato in status "done" */
 
-   // Il timer dovrà essere aggiornato a BE, quindi integrare chiamata setTimer (POST) che prende come body { orderId , timer }
+    // Il timer dovrà essere aggiornato a BE, quindi integrare chiamata setTimer (POST) che prende come body { orderId , timer }
     addTimerToOrder(data: any) {
-        const index = this.orders.findIndex(order => order.id === data.orderId)
-        if (index !== -1) {
-            this.orders[index].timer = data.timer
-            this.orders[index].status = 'Progress'
+        let body = {
+            orderId: data.orderId,
+            timer: data.timer
         }
-        return this.orders
+        return this.http.post('http://localhost:4000/api/mock/setTimer', body);
     }
 
     changeStatus(orderId: number, orderStatus: string) {
