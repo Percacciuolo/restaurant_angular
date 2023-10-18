@@ -93,6 +93,6 @@ export class MenuComponent implements OnInit {
     panino.mostraDescrizione = !panino.mostraDescrizione;
   }
 
-  currentDate: Date = new Date();
+  currentDate: Date = new Date(); 
  
 }

@@ -23,6 +23,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
 
 //Pages
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -71,7 +72,8 @@ import { ExArticleComponent } from './pages/ex-article/ex-article.component';
     MatFormFieldModule,
     ReactiveFormsModule,
     HttpClientModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatButtonToggleModule
   ],
 
   providers: [
