@@ -9,10 +9,8 @@ import { Observable } from 'rxjs';
 })
 
 export class OrderService {
-    private orders: Orders[] = []; //abbiamo inizializzato i valori delle variabili //non visibile dai componenti esterni //order
+    private orders: Orders[] = [];
     private timer: any;
-
-
 
     constructor(private http: HttpClient) {
     }

@@ -18,24 +18,52 @@
     <div>
         <img src="../../../assets/article-ex-desktop.jpg" alt="ex desktop">
         <img src="../../../assets/article-ex-mobile.jpg" alt="ex mobile">
-    </div>
+    </div> 
+
+<table>
+    <thead>
+        <tr>
+            <th >COLOR</th>
+            <th >NAME</th>
+            <th >DESCRIPTION</th>
+            <th >QUANTITY</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let article of articles">
+            <td [style.background-color]="article.color"></td>
+            <td >{{article.name}}</td>
+            <td >{{article.description}}</td>
+            <td >{{article.quantity}}</td>          
+        </tr> 
+    </tbody>
+</table>
 
 </div>
-<div class="container">
+
+
+
+
+
+<!-- <div class="container">
     <div class="card card-container col-12 mb-2" *ngFor="let article of articles">
         <div class="card-body bodyClass">
             <div class="row rowClass">
                 <div class="card-title titleClass col-12 col-md-2" [style.background-color]="article.color">
                     <h5>
-                        {{article.title}}
+                        {{article.name}}
                     </h5>
                 </div>
                 <p class="card-text textClass col-12 col-md-10">
-                    {{article.text}}
+                    {{article.description}}
                 </p>
                 <mat-button-toggle class="likeButton" [ngClass]="{'liked':article.like}"
                     (click)="toggleLike(article)">LIKE</mat-button-toggle>
+                <h5>
+                    Quantità: {{article.quantity}}
+                </h5>
             </div>
         </div>
     </div>
-</div>
+</div> -->
