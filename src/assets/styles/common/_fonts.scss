@@ -1,0 +1,28 @@
+/*
+ Font mixin usage
+
+  @include font-face(OpenSans, "../fonts/OpenSans-Light", 300, normal, ttf);
+  @include font-face(OpenSans, "../fonts/OpenSans-Regular", normal, normal, ttf);
+  @include font-face(OpenSans, "../fonts/OpenSans-Medium", 500, normal, ttf);
+  @include font-face(OpenSans, "../fonts/OpenSans-Bold", bold, normal, ttf);
+
+ */
+
+@font-face {
+	font-family: 'Barlow Condensed';
+	src: url('../_fonts/BarlowCondensed-Regular.eot');
+	src: url('../_fonts/BarlowCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../_fonts/BarlowCondensed-Regular.woff2') format('woff2'),
+	url('../_fonts/BarlowCondensed-Regular.woff') format('woff'),
+	url('../_fonts/BarlowCondensed-Regular.ttf') format('truetype'),
+	url('../_fonts/BarlowCondensed-Regular.svg#BarlowCondensed-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Roboto';
+	
+	src:url('../_fonts/Roboto-Regular.ttf') format('truetype');
+	
+}

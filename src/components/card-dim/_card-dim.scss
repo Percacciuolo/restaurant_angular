@@ -1,0 +1,109 @@
+.card-dim{
+    background-color: white;
+    min-height: 472px;
+    height: 100%;
+    display: inline-block;
+    &.card-border{
+        border-radius: 0 0 0 0;
+        border-color: black;
+        border: solid;
+        border-width: thin;  
+    }
+    &.card-light{
+        .button-card-wrap{    
+            width: 20%;
+        }
+    }
+      
+    .wrapper-card-content{
+        height: 100%;
+       /*  &.large{
+            min-height: 520px;
+        }
+        &.mid{
+            min-height: 485px;
+        } */
+    }
+    .card-title{
+        min-height: 30px;
+        margin-top: 7px;
+    }
+    
+    .card-img-top{
+        border-radius: 0 0 0 0;
+        height: 100%;
+        width: 100%;
+        max-height: 210px;
+    }
+    .card-body{
+        padding: 5%;  
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .bottom-content{
+            margin-top: 20px;
+        }
+
+        .description-wrap{           
+            max-height: 75px;
+            overflow-y: auto;
+            margin-top: 8px;
+        }
+        .caratteristiche-card{
+            width: 100%;
+            flex-wrap: wrap;
+
+            .charact-wrap{
+                white-space: nowrap;       
+                color: white;
+                margin-right: 5px;
+                padding: 0 5px;
+                margin-bottom: 5px;
+                line-height: 14px;  
+
+                    &.red{
+                        background-color: red;
+                    }
+                    &.black{
+                        background-color: black;
+                    }
+                    &.blue{
+                        background-color: blue;
+                    }
+                .charact-label{
+                    font-size: 11px;
+                }
+            }
+        }
+            
+        .euro-month{
+            margin-left: 10px;
+        }
+        
+        .price{
+            height: 100%;
+        }
+    
+        .time{
+            margin-top: -6px;
+            font-size: 12px;
+        }
+    
+        .button-card-wrap{
+            text-align: center;
+            color: blue;
+            border: solid;
+            border-width: 2px;
+            padding: 2%;
+            font-size: 100%;
+        }
+
+        .button-card{
+            color: blue;
+            text-decoration: none;
+        }
+
+    }      
+}
+

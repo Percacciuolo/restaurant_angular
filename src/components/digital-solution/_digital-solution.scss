@@ -1,0 +1,86 @@
+@media (max-width: 768px) {
+   /*  .content-info{
+        max-width: 100%;
+        margin: 0 15px;
+    } */
+    .top-solution {flex-flow: column-reverse;}
+    .btn-solution-wrap{margin-bottom: 25px; margin-top:30px!important; inline-size: auto!important;}  
+    .content-info-txt{margin-top: 30px; width: 100%!important;}
+    .content-partner{flex-direction: column; display: initial!important;}
+    .btn-partner-wrap{align-self: center!important; margin-top: 15px;width: 100%!important;}
+    .partner-text{text-align: center; }
+    .becomes-partner{padding: 23px 27px 30px 14px!important;}
+}
+
+.solution-dig{
+    background-color: #001136;
+
+        .info-panel{
+            color: white;
+            align-self: center;
+
+            .content-info{
+                max-width: 320px;
+                margin: auto;
+                @media (max-width: 768px) {
+                    max-width: 100%;
+                    margin: 0 15px;
+                }
+            }
+
+            .btn-solution-wrap{
+                border: solid;      
+                border-color: #0033a2;
+                background-color: white;
+                padding: 10px;
+                margin-top: 70px;
+                inline-size: fit-content;
+
+                .solution-btn {
+                    color: #0164f2;
+                    align-items: center;
+                    text-decoration: none;
+                }
+
+                .info-request-arrow{
+                    margin-left: 15px;
+                }
+            }
+        }
+        
+        .becomes-partner{
+            background-color: #0164f2;
+            padding: 59px 103px 48px 140px;
+            color: white;
+            justify-content: center;
+            .content-partner{
+                max-width: 100%;
+                .partner-text{
+                    text-align: initial;
+                    .tim-open-text{
+                    max-width: 330px;
+                    margin-top: 25px;
+                }
+                }
+                
+                .btn-partner-wrap{
+                border: solid;      
+                border-color: #0164f2;
+                background-color: white;
+                padding: 10px;
+                width: fit-content; 
+                height: fit-content;
+                align-self: flex-end;
+                
+                .partner-btn {
+                    color: #0164f2;
+                    align-items: center;
+                    text-decoration: none;
+                    .partner-request-arrow{
+                        margin-left: 15px;
+                    }
+                }
+            }
+            }                        
+        }
+}

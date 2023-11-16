@@ -1,0 +1,47 @@
+@import "common/variables";
+
+@import "../fonts/icon";
+@import "../fonts/icon-var";
+
+/**
+ * Import npm dependencies
+ *
+ * Prefix your imports with `~` to grab from node_modules/
+ * @see https://github.com/webpack-contrib/sass-loader#imports
+ */
+@import "~bootstrap/scss/bootstrap";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+
+// Common
+@import "common/global";
+@import "common/mixins";
+@import "common/fonts";
+
+
+// Layouts
+@import "layouts/header";
+@import "layouts/footer";
+
+// Pages
+@import "pages/home";
+
+// Components
+@import "./../../components/accordion/accordion";
+@import "./../../components/dropdown/dropdown";
+@import "./../../components/carousel/carousel";
+@import "./../../components/banner-promozioni/banner-promozioni";
+@import "./../../components/navbarTim/navbarTim";
+@import "./../../components/slickJs-example/slickJs-example";
+@import "./../../components/servizi/servizi";
+@import "./../../components/servizi-2/servizi-2";
+@import "./../../components/services-news/services-news";
+@import "./../../components/digital-solution/digital-solution";
+@import "./../../components/footer/footer";
+@import "./../../components/card-dim/card-dim";
+@import "./../../components/content-carousel-banner/content-carousel-banner";
+@import "./../../components/promozioni-slick/promozioni-slick";
+@import "./../../components/prodotti-servizi/prodotti-servizi";
+

@@ -1,27 +1,51 @@
-# Restaurant
+<a href="https://raw.githubusercontent.com/statickidz/webpack-handlebars-bootstrap/master/LICENSE">
+  <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="License" />
+</a>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
+# Webpack 4 + Bootstrap 4 + Handlebars
 
-## Development server
+Static site generator built with Webpack, Bootstrap and Handlebars.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+![Webpack 4 + Bootstrap 4 + Handlebars](src/assets/images/screenshot.png?raw=true)
 
-## Code scaffolding
+### Demo
+[https://webpack-handlebars-bootstrap.netlify.com/](https://webpack-handlebars-bootstrap.netlify.com/)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Installation
 
-## Build
+```
+git clone https://github.com/statickidz/webpack-handlebars-bootstrap.git your-app-name
+cd your-app-name
+yarn install
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Run development
 
-## Running unit tests
+```
+yarn start
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Build Static site for production
 
-## Running end-to-end tests
+```
+yarn build
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Netlify Deploy Build settings
 
-## Further help
+* Add your repository normally
+* Build command: webpack --config webpack-prod.config.js --colors --optimize-minimize
+* Publish directory: dist
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Features:
+
+* Static-site
+* SEO friendly
+* Webpack 4
+* Bootstrap 4
+* FontAwesome 5
+* BrowserSync with localtunnel, xip.io, ...
+* Hot Module Replacement
+* ES6 Support via [babel-loader](https://github.com/babel/babel-loader)
+* SASS Support via [sass-loader](https://github.com/jtangelder/sass-loader)
+* Linting via [eslint-loader](https://github.com/MoOx/eslint-loader)

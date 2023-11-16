@@ -1,0 +1,89 @@
+.container-promo{
+    background-color: #001136;
+    .title-promo{
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 1.31;
+        color: white;
+        text-align: start;
+        padding: 10px 0;
+    }
+    .title-promo-2{
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 1.31;
+        color: white;
+    }
+    .subtitle-promo{
+        color: white;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+    .promotions-link{
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: start;
+        width: 100%;
+        margin: 0;
+        height: unset;
+        background-color: transparent;
+        text-indent: 0px;
+        padding: 10px 0;
+        border: none;
+        position: relative;
+        @include media-breakpoint-down(lg){
+            text-align: center;
+         }
+        &:hover{
+            &:after{
+                width: 35%;
+                bottom: 0;
+                left: 0;
+                position: absolute;
+                background: aquamarine;
+                padding: 2px;
+                @include media-breakpoint-down(lg){
+                    left: 5%;
+                    right: 5%;
+                    width: unset;
+                 }
+            }
+        }
+    }
+    .promotions-link:after{
+        content:"";
+    }
+   
+        .img-promo{
+            width: 100%;
+            @include media-breakpoint-down(lg){
+                margin-bottom: 150px;
+                height: 350px;
+                object-fit: cover;
+             }
+        }
+    .button-offer{
+        padding: 10px 20px;
+        background-color: #fff;
+    }
+    .slick-menu{
+        margin-left: unset;
+        margin-bottom: unset;
+        margin-right: unset;
+        top: 350px;
+        @include media-breakpoint-up(lg){
+            position: unset;
+            padding: 50px;
+        } 
+    }
+    .slick-img{
+        position: relative;
+        overflow: hidden;
+        width: 66.6%;
+        @include media-breakpoint-down(lg){
+           width: 100%;
+        } 
+    }
+}

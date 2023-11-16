@@ -1,0 +1,31 @@
+.banner-promozioni {
+
+    .carousel-control-prev{
+        justify-content: left;
+        width: 0%;
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+
+    .carousel-control-next{
+        justify-content: left;
+        width: 0%;
+        bottom: 6%;
+        right: auto;
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+
+    .carousel-indicators {
+        right: 20%;
+        @include media-breakpoint-down(md) {
+            margin-bottom: 0;
+        }
+    }
+
+    .icon-button {
+        border: 1px solid white;
+    }
+}

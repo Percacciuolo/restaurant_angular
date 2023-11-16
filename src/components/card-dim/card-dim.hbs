@@ -1,0 +1,58 @@
+<div class="card-dim {{layout}}">
+    <div class="d-flex flex-column justify-content-between wrapper-card-content {{size-card}}">
+        <img class="card-img-top" src={{images}} alt="Card image cap">
+        <div class="card-body">
+            <div class="top-content">
+                <div class="caratteristiche-card d-flex">
+                    {{#if caratt}}
+                    {{#if 1-charact}}
+                    <div class="charact-wrap {{color-1}}">
+                        <label class="charact-label ">{{1-charact}}</label>
+                    </div>
+                    {{/if}}
+
+                    {{#if 2-charact}}
+                    <div class="charact-wrap {{color-2}}">
+                        <label class="charact-label ">{{2-charact}}</label>
+                    </div>
+                    {{/if}}
+
+                    {{#if 3-charact}}
+                    <div class="charact-wrap {{color-3}}">
+                        <label class="charact-label">
+                            {{3-charact}}
+                        </label>
+                    </div>
+                    {{/if}}
+                    {{/if}}
+                </div>
+                <h5 class="card-title"><b>{{title-card}}</b></h5>
+                <div class="description-wrap">
+                    <span class="description">
+                        {{description}}
+                    </span>
+                </div>
+            </div>
+
+            <div class="bottom-content">
+                {{#if offer}}
+                <p class="DA">{{da}}</p>
+                <div class="price-wrap d flex">
+                    <div class="d-flex">
+                        <h2 class="price"><b>{{price}}</b></h2>
+                        <div class="euro-month">
+                            <p>€</p>
+                            <p class="time">{{time}}</p>
+                        </div>
+                    </div>
+                </div>
+                {{/if}}
+
+                <div class="button-card-wrap">
+                    <a class="button-card" href="javascript:void(0)">{{button-content}}</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
