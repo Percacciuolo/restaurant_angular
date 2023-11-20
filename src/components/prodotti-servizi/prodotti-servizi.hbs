@@ -2,7 +2,8 @@
         <div class="container">
                 <div class="row">
                         <div class="col-sm-6 pt-2">
-                                <div class="card edit-card">
+
+                                {{!-- <div class="card edit-card">
                                         <div class="card-body">
                                                 <h3 class="card-title title">Car pooling aziendale</h3>
                                                 <p class="card-text text">E' un progetto di condivisione dell'auto
@@ -15,32 +16,19 @@
                                                         <p class="btn-text">PREVIDENZA</p>
                                                 </button>
                                         </div>
-                                </div>
+                                </div> --}}
+                                {{>card-product/card-product
+                                title="pippo" 
+                                second-btn="ciao"
+                                description="paperino"}}
                         </div>
 
                         <div class="col-sm-6 pt-2">
-                                <div class="card edit-card">
-                                        <div class="card-body">
-                                                <div class="container-text">
-                                                        <h3 class="card-title title">Convenzione FAI</h3>
-                                                        <p class="card-text text">Abbonamento al FAI, il Fondo Ambiente
-                                                                Italiano
-                                                                a condizioni agevolate</p>
-                                                </div>
-
-                                        </div>
-                                        <div class="card-footer edit-footer edit-border">
-                                                <button class="btn btn-yellow">
-                                                        <p class="btn-text">SALVATEMPO</p>
-                                                </button>
-                                                <button class="btn btn-sky">
-                                                        <p class="btn-text">PREVIDENZA</p>
-                                                </button>
-                                                <button class="btn btn-purple">
-                                                        <p class="btn-text">ALTRE AGEVOLAZIONI E SCONTI</p>
-                                                </button>
-                                        </div>
-                                </div>
+                                {{>card-product/card-product
+                                title="pippo" 
+                                first-btn="ciao"
+                                second-btn="ehi"
+                                description="paperino"}}
                         </div>
                         <div class="col-sm-6 pt-2">
                                 <div class="card edit-card">

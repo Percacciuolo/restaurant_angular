@@ -1,0 +1,20 @@
+<div class="card-products-container">
+    <div class="card edit-card">
+            <div class="card-body">
+                    <h3 class="card-title title">{{title}}</h3>
+                    <p class="card-text text">{{description}}</p>
+            </div>
+            <div class="card-footer edit-footer edit-border">
+                    {{#if first-btn}}
+                    <button class="btn btn-yellow">
+                            <p class="btn-text">{{first-btn}}</p>
+                    </button>
+                    {{/if}}
+                    {{#if second-btn}}
+                    <button class="btn btn-sky">
+                            <p class="btn-text">{{second-btn}}</p>
+                    </button>
+                    {{/if}}
+            </div>
+    </div>
+</div>
