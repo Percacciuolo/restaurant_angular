@@ -1,0 +1,50 @@
+.admin-services-container {
+
+    .container-table {
+        box-sizing: border-box;
+        border: 1px solid #F8F8F8;
+        border-radius: 4px;
+        background-color: #FFFFFF;
+        box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.08);
+
+    }
+
+    .table-header {
+
+        th {
+            color: #258900;
+            font-family: Arial;
+            line-height: 22px;
+            padding: 23px 20px;
+
+        }
+
+        h3 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+    }
+
+    .table-body {
+
+        .vl {
+            border-left: 4px solid #79BF69; 
+            margin-bottom: 4px; 
+        }
+
+        td {
+            color: #5C5C5C;
+            font-family: Arial;
+            font-size: 12px;
+            letter-spacing: 0;
+            line-height: 16px;
+            padding: 8px 19px;
+        }
+
+        .icon-arrow {
+            font-size: 22px;
+            color: #258900;
+        }
+    }
+}
