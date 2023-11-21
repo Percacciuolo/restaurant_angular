@@ -1,34 +1,20 @@
 <div class="admin-services-container" id="admin-services">
-    <div class="container">
-        <table class="table container-table table-bordless table-hover">
-            <thead>
-                <tr class="table-header">
-                    <th>
-                        <h3>Servizi amministrativi</h3>
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="table-body ">
-                    <td class="vl"></td>
-                    <td>Variazione residenza, domicilio, domicilio fiscale</td>
-                    <td>Categoria Lorep ipsum dolor</td>
-                    <td><i>Lorem ipsum dolor</i></td>
-                    <td>HRC000029583</td>
-                    <td>31 Dicembre 2019</td>
-                    <td class="icon-arrow"><i class="fa-regular fa-arrow-right"></i></td>
-                </tr>
-                <tr class="table-body">
-                    <td class="vl"></td>
-                    <td> Variazione stato civile</td>
-                    <td>Categoria Lorep ipsum dolor</td>
-                    <td> <i>Lorem ipsum dolor</i></td>
-                    <td>HRC000029583</td>
-                    <td>31 Dicembre 2019</td>
-                    <td class="icon-arrow"><i class="fa-regular fa-arrow-right"></i></td>
-                </tr>
 
-            </tbody>
-        </table>
+    <div class="title-admin-services">
+        <i class="icon-folder icon-ISP_Icon_Folder-01"></i>
+        <h3>Servizi amministrativi</h3>
+
     </div>
+
+    {{>table-admin/table-admin
+    Sezione1="Variazione residenza, domicilio, domicilio fiscale"
+    Sezione2="Categoria Lorep ipsum dolor"
+    Sezione3="Lorem ipsum dolor"
+    Sezione4="HRC000029583"
+    Sezione5="31 Dicembre 2019"
+    Sezione6="Variazione stato civile"
+    }}
+
+
+
 </div>

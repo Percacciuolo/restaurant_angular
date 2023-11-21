@@ -1,4 +1,6 @@
-.card-products-container{
+.card-products-container {
+    height: 100%;
+
     .edit-card {
         box-sizing: border-box;
         border: 1px solid #F8F8F8;
@@ -34,14 +36,15 @@
         .btn {
             margin-right: 10px;
             border-radius: 12px;
+
             &.btn-sky {
                 background-color: #66CAE7;
             }
-    
+
             &.btn-yellow {
                 background-color: #FFCB6C;
             }
-    
+
             &.btn-purple {
                 background-color: #BE77C7;
             }
@@ -54,7 +57,7 @@
         &.edit-border {
             border-top: 1px solid #E8E8E8;
             padding-bottom: 14px;
-            
+
 
         }
 
@@ -67,7 +70,20 @@
             line-height: 15px;
         }
 
-       
+        @media(max-width: 1236px) {
+            .btn {
+                width: 100%;
+                margin-bottom: 10px;
+               
+            }
+            .edit-card{
+                height: 100%;
+            }
+
+            
+        }
+
+
     }
 
 }

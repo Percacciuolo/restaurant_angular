@@ -21,6 +21,9 @@ import '../src/components/card-dim/card-dim';
 import '../src/components/content-carousel-banner/content-carousel-banner';
 import '../src/components/promozioni-slick/promozioni-slick';
 import '../src/components/prodotti-servizi/prodotti-servizi';
+import '../src/components/admin-services/admin-services';
+
+
 
 
 $(document).ready(() => {
