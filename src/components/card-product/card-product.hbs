@@ -1,25 +1,38 @@
 <div class="card-products-container">
-    <div class="card edit-card">
-            <div class="card-body">
-                    <h3 class="card-title title">{{title}}</h3>
-                    <p class="card-text text">{{description}}</p>
-            </div>
-            <div class="card-footer edit-footer edit-border">
-                    {{#if first-btn}}
-                    <button class="btn btn-yellow ">
-                            <p class="btn-text">{{first-btn}}</p>
-                    </button>
-                    {{/if}}
-                    {{#if second-btn}}
-                    <button class="btn btn-sky ">
-                            <p class="btn-text">{{second-btn}}</p>
-                    </button>
-                    {{/if}}
-                    {{#if third-btn}}
-                    <button class="btn btn-purple ">
-                            <p class="btn-text">{{third-btn}}</p>
-                    </button>
-                    {{/if}}
-            </div>
-    </div>
+
+        <div class="card edit-card">
+                <div class="col-12 col-icon-heart">
+                        <i class="i-heart {{icon-heart}}"></i>
+                </div>
+
+                <div class="card-body edit-body">
+                        <h3 class="card-title title">{{title}} </h3>
+                        <div class="edit-display-icon">
+                                <i class="i-star-full {{icon-star-full}}"></i>
+                                <i class="i-star-full {{icon-star-full}}"></i>
+                                <i class="i-star-full {{icon-star-full}}"></i>
+                                <i class="i-star-full {{icon-star-full}}"></i>
+                                <i class="i-rating {{icon-Star_Off}}"></i>
+                        </div>
+
+                        <p class="card-text text">{{description}}</p>
+                </div>
+                <div class="card-footer edit-footer edit-border">
+                        {{#if first-btn}}
+                        <button class="btn {{first-btn-color}} ">
+                                <p class="btn-text">{{first-btn}}</p>
+                        </button>
+                        {{/if}}
+                        {{#if second-btn}}
+                        <button class="btn {{second-btn-color}}">
+                                <p class="btn-text">{{second-btn}}</p>
+                        </button>
+                        {{/if}}
+                        {{#if third-btn}}
+                        <button class="btn {{third-btn-color}} ">
+                                <p class="btn-text">{{third-btn}}</p>
+                        </button>
+                        {{/if}}
+                </div>
+        </div>
 </div>

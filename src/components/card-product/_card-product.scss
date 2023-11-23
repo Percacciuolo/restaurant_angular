@@ -11,11 +11,26 @@
         margin-left: 11px;
     }
 
+    .col-icon-heart {
+        text-align: right;
+        padding-right: 15px;
+        padding-top: 15px
+       
+    }
+
+
     .card-body {
+
+        &.edit-body{
+            padding-top: 0px;
+        }
+
+        // .edit-display-icon{
+        //     display: none;
+        // }
 
         .title {
             color: #323232;
-            font-family: Arial;
             font-size: 16px;
             letter-spacing: 0;
             line-height: 20px;
@@ -24,7 +39,7 @@
 
         .text {
             color: #5C5C5C;
-            font-family: Arial;
+            
             font-size: 14px;
             letter-spacing: 0;
             line-height: 18px;
@@ -74,13 +89,14 @@
             .btn {
                 width: 100%;
                 margin-bottom: 10px;
-               
+
             }
-            .edit-card{
+
+            .edit-card {
                 height: 100%;
             }
 
-            
+
         }
 
 

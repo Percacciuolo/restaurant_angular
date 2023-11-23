@@ -13,11 +13,11 @@
 /*Local Host font path*/
 @font-face {
   font-family: 'isp-icon-restyle';
-  src:  url('../fonts/isp-icon-restyle.eot?lw02ap');
-  src:  url('../fonts/isp-icon-restyle.eot?lw02ap#iefix') format('embedded-opentype'),
-  url('../fonts/isp-icon-restyle.ttf?lw02ap') format('truetype'),
-  url('../fonts/isp-icon-restyle.woff?lw02ap') format('woff'),
-  url('../fonts/isp-icon-restyle.svg?lw02ap#isp-icon-restyle') format('svg');
+  src: url('../fonts/isp-icon-restyle.eot?lw02ap');
+  src: url('../fonts/isp-icon-restyle.eot?lw02ap#iefix') format('embedded-opentype'),
+    url('../fonts/isp-icon-restyle.ttf?lw02ap') format('truetype'),
+    url('../fonts/isp-icon-restyle.woff?lw02ap') format('woff'),
+    url('../fonts/isp-icon-restyle.svg?lw02ap#isp-icon-restyle') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -33,3173 +33,3696 @@ i {
   line-height: 1;
   display: inline-flex;
 
-  .path1, .path2{
+  .path1,
+  .path2 {
     display: block;
   }
 
 
--webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 
 @function unicode($str) {
-  @return unquote("\"") + $str + unquote("\"");
+  @return unquote("\"")+$str +unquote("\"");
 }
 
 
 .icon-ISP_star-activity-to-do .path1 {
   &:before {
-    content: $icon-ISP_star-activity-to-do-path1;  
+    content: $icon-ISP_star-activity-to-do-path1;
     color: rgb(245, 166, 35);
   }
 }
+
 .icon-ISP_star-activity-to-do .path2 {
   &:before {
-    content: $icon-ISP_star-activity-to-do-path2;  
-    margin-left: -1em;  
+    content: $icon-ISP_star-activity-to-do-path2;
+    margin-left: -1em;
     color: rgb(255, 230, 184);
   }
 }
+
 .icon-ISP_star-activity-to-do .path3 {
   &:before {
-    content: $icon-ISP_star-activity-to-do-path3;  
-    margin-left: -1em;  
+    content: $icon-ISP_star-activity-to-do-path3;
+    margin-left: -1em;
     color: rgb(245, 166, 35);
   }
 }
+
 .icon-ISP_star_done {
   &:before {
-    content: $icon-ISP_star_done;     
+    content: $icon-ISP_star_done;
     color: #39ab2a;
   }
 }
+
 .icon-ISP_star-to-do .path1 {
   &:before {
-    content: $icon-ISP_star-to-do-path1;  
-    color: rgb(255, 255, 255);
-  }
-}
-.icon-ISP_star-to-do .path2 {
-  &:before {
-    content: $icon-ISP_star-to-do-path2;  
-    margin-left: -1em;  
-    color: rgb(206, 206, 206);
-  }
-}
-.icon-ISP_star-to-do .path3 {
-  &:before {
-    content: $icon-ISP_star-to-do-path3;  
-    margin-left: -1em;  
-    color: rgb(206, 206, 206);
-  }
-}
-.icon-ISP-caregiving {
-  &:before {
-    content: $icon-ISP-caregiving;     
-    color: #fff;
-  }
-}
-.icon-ISP-alimentazione {
-  &:before {
-    content: $icon-ISP-alimentazione;     
-    color: #fff;
-  }
-}
-.icon-ISP-equilibrio {
-  &:before {
-    content: $icon-ISP-equilibrio;     
-    color: #fff;
-  }
-}
-.icon-ISP-movimento {
-  &:before {
-    content: $icon-ISP-movimento;     
-    color: #fff;
-  }
-}
-.icon-ISP-waves {
-  &:before {
-    content: $icon-ISP-waves;     
-    color: #fff;
-  }
-}
-.icon-ISP_alimentazione_carelab {
-  &:before {
-    content: $icon-ISP_alimentazione_carelab; 
-  }
-}
-.icon-ISP_heart_carelab {
-  &:before {
-    content: $icon-ISP_heart_carelab; 
-  }
-}
-.icon-ISP_equilibrio_carelab {
-  &:before {
-    content: $icon-ISP_equilibrio_carelab; 
-  }
-}
-.icon-ISP_movimento_carelab {
-  &:before {
-    content: $icon-ISP_movimento_carelab; 
-  }
-}
-.icon-ISP_icon-eye {
-  &:before {
-    content: $icon-ISP_icon-eye;     
-    color: #5c5c5c;
-  }
-}
-.icon-ISP-cresciamo {
-  &:before {
-    content: $icon-ISP-cresciamo; 
-  }
-}
-.icon-ISP-benvenuto {
-  &:before {
-    content: $icon-ISP-benvenuto; 
-  }
-}
-.icon-Icon_Appartenente-alla-comunita-Talent_02 {
-  &:before {
-    content: $icon-Icon_Appartenente-alla-comunita-Talent_02;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Assegnazione-auto-aziendale_02 {
-  &:before {
-    content: $icon-Icon_Assegnazione-auto-aziendale_02;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Assegnazione-in-distacco_02 {
-  &:before {
-    content: $icon-Icon_Assegnazione-in-distacco_02;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Assegnazione-temporanea_02 {
-  &:before {
-    content: $icon-Icon_Assegnazione-temporanea_02;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Avente-diritto-a-Legge-104_02 {
-  &:before {
-    content: $icon-Icon_Avente-diritto-a-Legge-104_02;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Beneficiario-foresteria_02 {
-  &:before {
-    content: $icon-Icon_Beneficiario-foresteria_02;     
-    color: #5c5c5c;
-  }
-}
-.icon-ISP_spazi-area-community {
-  &:before {
-    content: $icon-ISP_spazi-area-community;     
-    color: #5c5c5c;
-  }
-}
-.icon-ISP_spazi-hub {
-  &:before {
-    content: $icon-ISP_spazi-hub;     
-    color: #5c5c5c;
-  }
-}
-.icon-ISP_spazi-sala {
-  &:before {
-    content: $icon-ISP_spazi-sala;     
-    color: #5c5c5c;
-  }
-}
-.icon-ISP_spazi-parcheggio {
-  &:before {
-    content: $icon-ISP_spazi-parcheggio;     
-    color: #5c5c5c;
-  }
-}
-.icon-ISP_spazi-postazione {
-  &:before {
-    content: $icon-ISP_spazi-postazione;     
-    color: #5c5c5c;
-  }
-}
-.icon-ISP_spazi-ufficio {
-  &:before {
-    content: $icon-ISP_spazi-ufficio;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Carica-pubblica_02 {
-  &:before {
-    content: $icon-Icon_Carica-pubblica_02;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Carica-sindacale_02 {
-  &:before {
-    content: $icon-Icon_Carica-sindacale_02;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Consulente-finanziario-abilitato-allofferta-fuori-sede-Consob_02 {
-  &:before {
-    content: $icon-Icon_Consulente-finanziario-abilitato-allofferta-fuori-sede-Consob_02;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Consulente-finanziario-abilitato-allofferta-fuori-sede-IVASS_02 {
-  &:before {
-    content: $icon-Icon_Consulente-finanziario-abilitato-allofferta-fuori-sede-IVASS_02;     
-    color: #5c5c5c;
-  }
-}
-.icon-ISP_adesione_accordi {
-  &:before {
-    content: $icon-ISP_adesione_accordi;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_contratto_02 {
-  &:before {
-    content: $icon-Icon_contratto_02;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Dipendente-con-invalidita-accertata-da-apposita-commissione-INPS-INAIL_02 {
-  &:before {
-    content: $icon-Icon_Dipendente-con-invalidita-accertata-da-apposita-commissione-INPS-INAIL_02;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Evidenza-non-disciplinare-negli-ultimi-2-anni_02 {
-  &:before {
-    content: $icon-Icon_Evidenza-non-disciplinare-negli-ultimi-2-anni_02;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Formazione-obbligatoria_02 {
-  &:before {
-    content: $icon-Icon_Formazione-obbligatoria_02;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Grave-patologia_02 {
-  &:before {
-    content: $icon-Icon_Grave-patologia_02;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_In-percorso-di-reskilling-NEXT_02 {
-  &:before {
-    content: $icon-Icon_In-percorso-di-reskilling-NEXT_02;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Lavoratore-assente-lungo-periodo_02 {
-  &:before {
-    content: $icon-Icon_Lavoratore-assente-lungo-periodo_02;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Lavoratore-part-time_02 {
-  &:before {
-    content: $icon-Icon_Lavoratore-part-time_02;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Lavoratore-pendolare_02 {
-  &:before {
-    content: $icon-Icon_Lavoratore-pendolare_02;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Lavoro-flessibile-attivo_02 {
-  &:before {
-    content: $icon-Icon_Lavoro-flessibile-attivo_02;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Numero-figli-minorenni_02 {
-  &:before {
-    content: $icon-Icon_Numero-figli-minorenni_02;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Provvedimenti-disciplinari-negli-ultimi-due-anni_02 {
-  &:before {
-    content: $icon-Icon_Provvedimenti-disciplinari-negli-ultimi-due-anni_02;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Richiesta-trasferimento-attivo_02 {
-  &:before {
-    content: $icon-Icon_Richiesta-trasferimento-attivo_02;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Sostituto-del-direttore_02 {
-  &:before {
-    content: $icon-Icon_Sostituto-del-direttore_02;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Tempo-determinato---Art-46_02 {
-  &:before {
-    content: $icon-Icon_Tempo-determinato---Art-46_02;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Ulteriore-Multi-incarico-attivo_02 {
-  &:before {
-    content: $icon-Icon_Ulteriore-Multi-incarico-attivo_02;     
-    color: #5c5c5c;
-  }
-}
-.icon-figli {
-  &:before {
-    content: $icon-figli;     
-    color: #5c5c5c;
-  }
-}
-.icon-carica-sindacale {
-  &:before {
-    content: $icon-carica-sindacale;     
-    color: #5c5c5c;
-  }
-}
-.icon-lavoratore-assente {
-  &:before {
-    content: $icon-lavoratore-assente;     
-    color: #5c5c5c;
-  }
-}
-.icon-ISP_Icon-menu-verticale-sx .path1 {
-  &:before {
-    content: $icon-ISP_Icon-menu-verticale-sx-path1;  
-    color: rgb(249, 249, 249);
-  }
-}
-.icon-ISP_Icon-menu-verticale-sx .path2 {
-  &:before {
-    content: $icon-ISP_Icon-menu-verticale-sx-path2;  
-    margin-left: -1.1337890625em;  
-    color: rgb(255, 255, 255);
-  }
-}
-.icon-ISP_Icon-menu-verticale-sx .path3 {
-  &:before {
-    content: $icon-ISP_Icon-menu-verticale-sx-path3;  
-    margin-left: -1.1337890625em;  
-    color: rgb(206, 206, 206);
-  }
-}
-.icon-ISP_Icon-salva-condividi .path1 {
-  &:before {
-    content: $icon-ISP_Icon-salva-condividi-path1;  
-    color: rgb(249, 249, 249);
-  }
-}
-.icon-ISP_Icon-salva-condividi .path2 {
-  &:before {
-    content: $icon-ISP_Icon-salva-condividi-path2;  
-    margin-left: -1.1044921875em;  
-    color: rgb(255, 255, 255);
-  }
-}
-.icon-ISP_Icon-salva-condividi .path3 {
-  &:before {
-    content: $icon-ISP_Icon-salva-condividi-path3;  
-    margin-left: -1.1044921875em;  
-    color: rgb(206, 206, 206);
-  }
-}
-.icon-ISP_Icon-avvia-richieste .path1 {
-  &:before {
-    content: $icon-ISP_Icon-avvia-richieste-path1;  
-    color: rgb(249, 249, 249);
-  }
-}
-.icon-ISP_Icon-avvia-richieste .path2 {
-  &:before {
-    content: $icon-ISP_Icon-avvia-richieste-path2;  
-    margin-left: -1.1240234375em;  
-    color: rgb(255, 255, 255);
-  }
-}
-.icon-ISP_Icon-avvia-richieste .path3 {
-  &:before {
-    content: $icon-ISP_Icon-avvia-richieste-path3;  
-    margin-left: -1.1240234375em;  
-    color: rgb(206, 206, 206);
-  }
-}
-.icon-ISP_Icon_articoli .path1 {
-  &:before {
-    content: $icon-ISP_Icon_articoli-path1;  
-    color: rgb(249, 249, 249);
-  }
-}
-.icon-ISP_Icon_articoli .path2 {
-  &:before {
-    content: $icon-ISP_Icon_articoli-path2;  
-    margin-left: -1.1142578125em;  
-    color: rgb(255, 255, 255);
-  }
-}
-.icon-ISP_Icon_articoli .path3 {
-  &:before {
-    content: $icon-ISP_Icon_articoli-path3;  
-    margin-left: -1.1142578125em;  
-    color: rgb(206, 206, 206);
-  }
-}
-.icon-bus_off {
-  &:before {
-    content: $icon-bus_off;     
-    color: #e8e8e8;
-  }
-}
-.icon-metro_off {
-  &:before {
-    content: $icon-metro_off;     
-    color: #e8e8e8;
-  }
-}
-.icon-traghetto_off {
-  &:before {
-    content: $icon-traghetto_off;     
-    color: #e8e8e8;
-  }
-}
-.icon-treno_off {
-  &:before {
-    content: $icon-treno_off;     
-    color: #e8e8e8;
-  }
-}
-.icon-target {
-  &:before {
-    content: $icon-target; 
-  }
-}
-.icon-Isp_icon_badge_video .path1 {
-  &:before {
-    content: $icon-Isp_icon_badge_video-path1;  
-    color: rgb(121, 191, 105);
-  }
-}
-.icon-Isp_icon_badge_video .path2 {
-  &:before {
-    content: $icon-Isp_icon_badge_video-path2;  
-    margin-left: -1em;  
-    color: rgb(255, 255, 255);
-  }
-}
-.icon-isp-icon-timer {
-  &:before {
-    content: $icon-isp-icon-timer;     
-    color: #5c5c5c;
-  }
-}
-.icon-A3 {
-  &:before {
-    content: $icon-A3;     
-    color: #cfcece;
-  }
-}
-.icon-A2 {
-  &:before {
-    content: $icon-A2;     
-    color: #cfcece;
-  }
-}
-.icon-A1 {
-  &:before {
-    content: $icon-A1;     
-    color: #cfcece;
-  }
-}
-.icon-Contrast_icon {
-  &:before {
-    content: $icon-Contrast_icon;     
-    color: #cfcece;
-  }
-}
-.icon-Normal_icon {
-  &:before {
-    content: $icon-Normal_icon;     
-    color: #cfcece;
-  }
-}
-.icon-ISP_consiglio_carelab {
-  &:before {
-    content: $icon-ISP_consiglio_carelab;     
-    color: #fe9241;
-  }
-}
-.icon-ISP_videocall-ordinary {
-  &:before {
-    content: $icon-ISP_videocall-ordinary; 
-  }
-}
-.icon-ISP-skill-ordinary {
-  &:before {
-    content: $icon-ISP-skill-ordinary; 
-  }
-}
-.icon-ISP-calendar-ordinary {
-  &:before {
-    content: $icon-ISP-calendar-ordinary; 
-  }
-}
-.icon-ISP_biglietto-da-visita-ordinary {
-  &:before {
-    content: $icon-ISP_biglietto-da-visita-ordinary; 
-  }
-}
-.icon-ISP_feedback-ordinary {
-  &:before {
-    content: $icon-ISP_feedback-ordinary; 
-  }
-}
-.icon-ISP-hr-ordinary {
-  &:before {
-    content: $icon-ISP-hr-ordinary; 
-  }
-}
-.icon-ISP-colloquio-ordinary {
-  &:before {
-    content: $icon-ISP-colloquio-ordinary; 
-  }
-}
-.icon-ISP_colleghi-ordinary {
-  &:before {
-    content: $icon-ISP_colleghi-ordinary; 
-  }
-}
-.icon-ISP_Icon_Auto-aziendale {
-  &:before {
-    content: $icon-ISP_Icon_Auto-aziendale;     
-    color: #5c5c5c;
-  }
-}
-.icon-ISP_Icon_Foresteria {
-  &:before {
-    content: $icon-ISP_Icon_Foresteria;     
-    color: #5c5c5c;
-  }
-}
-.icon-ISP_Icon_Pendolare {
-  &:before {
-    content: $icon-ISP_Icon_Pendolare;     
-    color: #5c5c5c;
-  }
-}
-.icon-Isp_Icon_Rotate_Device {
-  &:before {
-    content: $icon-Isp_Icon_Rotate_Device; 
-  }
-}
-.icon-ISP_Icon_razzo {
-  &:before {
-    content: $icon-ISP_Icon_razzo; 
-  }
-}
-.icon-ISP_Icon_bandiera {
-  &:before {
-    content: $icon-ISP_Icon_bandiera; 
-  }
-}
-.icon-ISP_Icon_mano-pollice {
-  &:before {
-    content: $icon-ISP_Icon_mano-pollice; 
-  }
-}
-.icon-ISP_Icon_user_check {
-  &:before {
-    content: $icon-ISP_Icon_user_check; 
-  }
-}
-.icon-ISP_Icon_follow_job_people {
-  &:before {
-    content: $icon-ISP_Icon_follow_job_people; 
-  }
-}
-.icon-ISP_action_calcola {
-  &:before {
-    content: $icon-ISP_action_calcola; 
-  }
-}
-.icon-ISP_Icon_arrow_next {
-  &:before {
-    content: $icon-ISP_Icon_arrow_next; 
-  }
-}
-.icon-ISP_Icon_Dividendi {
-  &:before {
-    content: $icon-ISP_Icon_Dividendi;     
-    color: #505050;
-  }
-}
-.icon-ISP_Icon_united_hands {
-  &:before {
-    content: $icon-ISP_Icon_united_hands; 
-  }
-}
-.icon-ISP_Icon_cloud_messages {
-  &:before {
-    content: $icon-ISP_Icon_cloud_messages; 
-  }
-}
-.icon-ISP_Icon_-touch_graduation {
-  &:before {
-    content: $icon-ISP_Icon_-touch_graduation; 
-  }
-}
-.icon-ISP_Icon_job_bags {
-  &:before {
-    content: $icon-ISP_Icon_job_bags; 
-  }
-}
-.icon-ISP_Icon_guess_survey {
-  &:before {
-    content: $icon-ISP_Icon_guess_survey; 
-  }
-}
-.icon-ISP_actions-configura {
-  &:before {
-    content: $icon-ISP_actions-configura;     
-    color: #258900;
-  }
-}
-.icon-ISP_actions-subtract {
-  &:before {
-    content: $icon-ISP_actions-subtract;     
-    color: #258900;
-  }
-}
-.icon-ISP_actions-verifica {
-  &:before {
-    content: $icon-ISP_actions-verifica;     
-    color: #258900;
-  }
-}
-.icon-ISP_actions-visualliza-planimetria {
-  &:before {
-    content: $icon-ISP_actions-visualliza-planimetria;     
-    color: #258900;
-  }
-}
-.icon-ISP_check-in {
-  &:before {
-    content: $icon-ISP_check-in;     
-    color: #258900;
-  }
-}
-.icon-ISP_check-out {
-  &:before {
-    content: $icon-ISP_check-out;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Aggiungi {
-  &:before {
-    content: $icon-ISP_Icon_Aggiungi;     
-    color: #258900;
-  }
-}
-.icon-ISP_pin_off {
-  &:before {
-    content: $icon-ISP_pin_off;     
-    color: #268900;
-  }
-}
-.icon-ISP_pin_on {
-  &:before {
-    content: $icon-ISP_pin_on;     
-    color: #268900;
-  }
-}
-.icon-icon_actions_onboarding {
-  &:before {
-    content: $icon-icon_actions_onboarding;     
-    color: #258900;
-  }
-}
-.icon-Action_Arrow_Top {
-  &:before {
-    content: $icon-Action_Arrow_Top;     
-    color: #258900;
-  }
-}
-.icon-Action_Arrow_Down {
-  &:before {
-    content: $icon-Action_Arrow_Down;     
-    color: #258900;
-  }
-}
-.icon-Action_Arrow_Left {
-  &:before {
-    content: $icon-Action_Arrow_Left;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Arrow_forward {
-  &:before {
-    content: $icon-ISP_Icon_Arrow_forward;     
-    color: #258900;
-  }
-}
-.icon-filters {
-  &:before {
-    content: $icon-filters;     
-    color: #258900;
-  }
-}
-.icon-meno {
-  &:before {
-    content: $icon-meno;     
-    color: #258900;
-  }
-}
-.icon-plus {
-  &:before {
-    content: $icon-plus;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_attach {
-  &:before {
-    content: $icon-ISP_Icon_attach;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Date_icon {
-  &:before {
-    content: $icon-ISP_Icon_Date_icon;     
-    color: #258900;
-  }
-}
-.icon-ISP_actions-monitoraggio {
-  &:before {
-    content: $icon-ISP_actions-monitoraggio;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Arrow_Accordion {
-  &:before {
-    content: $icon-ISP_Icon_Arrow_Accordion;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Left {
-  &:before {
-    content: $icon-ISP_Icon_Left;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Right {
-  &:before {
-    content: $icon-ISP_Icon_Right;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Arrow_Accordion_Close {
-  &:before {
-    content: $icon-ISP_Icon_Arrow_Accordion_Close;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Close-lightbox {
-  &:before {
-    content: $icon-ISP_Icon_Close-lightbox;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Deleghe {
-  &:before {
-    content: $icon-ISP_Icon_Deleghe;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_trash {
-  &:before {
-    content: $icon-ISP_Icon_trash;     
-    color: #258900;
-  }
-}
-.icon-Icon_PDF {
-  &:before {
-    content: $icon-Icon_PDF;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Scarica {
-  &:before {
-    content: $icon-ISP_Icon_Scarica;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Modifica_icon {
-  &:before {
-    content: $icon-ISP_Icon_Modifica_icon;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Espandi {
-  &:before {
-    content: $icon-ISP_Icon_Espandi;     
-    color: #258900;
-  }
-}
-.icon-icon_export {
-  &:before {
-    content: $icon-icon_export;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Hide {
-  &:before {
-    content: $icon-ISP_Icon_Hide;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Show {
-  &:before {
-    content: $icon-ISP_Icon_Show;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Folder-01 {
-  &:before {
-    content: $icon-ISP_Icon_Folder-01;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Deleghe1 {
-  &:before {
-    content: $icon-ISP_Icon_Deleghe1;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Info {
-  &:before {
-    content: $icon-ISP_Icon_Info;     
-    color: #258900;
-  }
-}
-.icon-Icon_Link {
-  &:before {
-    content: $icon-Icon_Link;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Link-Linkedin {
-  &:before {
-    content: $icon-ISP_Icon_Link-Linkedin;     
-    color: #258900;
-  }
-}
-.icon-ISP_actions-sincronizza-con-outlook {
-  &:before {
-    content: $icon-ISP_actions-sincronizza-con-outlook;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Condividi_icon {
-  &:before {
-    content: $icon-ISP_Icon_Condividi_icon;     
-    color: #258900;
-  }
-}
-.icon-action_menu_list {
-  &:before {
-    content: $icon-action_menu_list; 
-  }
-}
-.icon-Action_Menu_Burger {
-  &:before {
-    content: $icon-Action_Menu_Burger; 
-  }
-}
-.icon-Action_Menu_Kebab {
-  &:before {
-    content: $icon-Action_Menu_Kebab;     
-    color: #258900;
-  }
-}
-.icon-Action_Menu_Meatballs {
-  &:before {
-    content: $icon-Action_Menu_Meatballs;     
-    color: #258900;
-  }
-}
-.icon-midyearreview {
-  &:before {
-    content: $icon-midyearreview;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Gerarchia {
-  &:before {
-    content: $icon-ISP_Icon_Gerarchia;     
-    color: #258900;
-  }
-}
-.icon-Action_Play {
-  &:before {
-    content: $icon-Action_Play;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Inserisci_OFF {
-  &:before {
-    content: $icon-ISP_Icon_Inserisci_OFF;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Inserisci_On {
-  &:before {
-    content: $icon-ISP_Icon_Inserisci_On;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon-Actions-preferiti-off {
-  &:before {
-    content: $icon-ISP_Icon-Actions-preferiti-off;     
-    color: #258900;
-  }
-}
-.icon-Action_Preferiti_On {
-  &:before {
-    content: $icon-Action_Preferiti_On;     
-    color: #258900;
-  }
-}
-.icon-ISP-tips {
-  &:before {
-    content: $icon-ISP-tips;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Stampa {
-  &:before {
-    content: $icon-ISP_Icon_Stampa;     
-    color: #258900;
-  }
-}
-.icon-Action_Restartfield {
-  &:before {
-    content: $icon-Action_Restartfield;     
-    color: #268900;
-  }
-}
-.icon-ISP_Icon_rotate-neg {
-  &:before {
-    content: $icon-ISP_Icon_rotate-neg;     
-    color: #258900;
-  }
-}
-.icon-ISP_icon_save {
-  &:before {
-    content: $icon-ISP_icon_save;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Search_icon {
-  &:before {
-    content: $icon-ISP_Icon_Search_icon;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Scheda {
-  &:before {
-    content: $icon-ISP_Icon_Scheda;     
-    color: #268900;
-  }
-}
-.icon-ISP_Icon_action_sort_discendente {
-  &:before {
-    content: $icon-ISP_Icon_action_sort_discendente;     
-    color: #268900;
-  }
-}
-.icon-Arrow_down_on-01 {
-  &:before {
-    content: $icon-Arrow_down_on-01;     
-    color: #258900;
-  }
-}
-.icon-Action_Send {
-  &:before {
-    content: $icon-Action_Send;     
-    color: #f1f1f1;
-  }
-}
-.icon-ISP_Icon_Condividi {
-  &:before {
-    content: $icon-ISP_Icon_Condividi;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Torni_su {
-  &:before {
-    content: $icon-ISP_Icon_Torni_su;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Segnala {
-  &:before {
-    content: $icon-ISP_Icon_Segnala;     
-    color: #258900;
-  }
-}
-.icon-icon-magic {
-  &:before {
-    content: $icon-icon-magic;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Vedipiu {
-  &:before {
-    content: $icon-ISP_Icon_Vedipiu;     
-    color: #258900;
-  }
-}
-.icon-Action_Zoom_Out {
-  &:before {
-    content: $icon-Action_Zoom_Out;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Segnalazioni {
-  &:before {
-    content: $icon-ISP_Icon_Segnalazioni;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_action_sort_ascendente {
-  &:before {
-    content: $icon-ISP_Icon_action_sort_ascendente;     
-    color: #268900;
-  }
-}
-.icon-Arrow_up_on-01 {
-  &:before {
-    content: $icon-Arrow_up_on-01;     
-    color: #258900;
-  }
-}
-.icon-Checkbox_Off {
-  &:before {
-    content: $icon-Checkbox_Off;     
-    color: #5c5c5c;
-  }
-}
-.icon-Checkbox_On {
-  &:before {
-    content: $icon-Checkbox_On;     
-    color: #258900;
-  }
-}
-.icon-Mi_racconto {
-  &:before {
-    content: $icon-Mi_racconto;     
-    color: #757575;
-  }
-}
-.icon-ISP_Icon_Icona_Come_3 {
-  &:before {
-    content: $icon-ISP_Icon_Icona_Come_3;     
-    color: #757575;
-  }
-}
-.icon-icon-chart-man {
-  &:before {
-    content: $icon-icon-chart-man;     
-    color: #757575;
-  }
-}
-.icon-icon-travel-bag {
-  &:before {
-    content: $icon-icon-travel-bag;     
-    color: #757575;
-  }
-}
-.icon-lingueconosciute {
-  &:before {
-    content: $icon-lingueconosciute;     
-    color: #757575;
-  }
-}
-.icon-icon-hands {
-  &:before {
-    content: $icon-icon-hands;     
-    color: #757575;
-  }
-}
-.icon-ISP_Icon_passioni_gray {
-  &:before {
-    content: $icon-ISP_Icon_passioni_gray;     
-    color: #757575;
-  }
-}
-.icon-icon-laurea {
-  &:before {
-    content: $icon-icon-laurea;     
-    color: #757575;
-  }
-}
-.icon-icon-awards {
-  &:before {
-    content: $icon-icon-awards;     
-    color: #757575;
-  }
-}
-.icon-icon_formazioni-e-sviluppo .path1 {
-  &:before {
-    content: $icon-icon_formazioni-e-sviluppo-path1;  
-    color: rgb(209, 231, 172);
-  }
-}
-.icon-icon_formazioni-e-sviluppo .path2 {
-  &:before {
-    content: $icon-icon_formazioni-e-sviluppo-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-icon_richieste-amministrative .path1 {
-  &:before {
-    content: $icon-icon_richieste-amministrative-path1;  
-    color: rgb(209, 231, 172);
-  }
-}
-.icon-icon_richieste-amministrative .path2 {
-  &:before {
-    content: $icon-icon_richieste-amministrative-path2;  
-    margin-left: -1em;  
-    color: rgb(37, 137, 0);
-  }
-}
-.icon-icon-dati-anagrafici .path1 {
-  &:before {
-    content: $icon-icon-dati-anagrafici-path1;  
-    color: rgb(190, 221, 137);  
-    opacity: 0.7;
-  }
-}
-.icon-icon-dati-anagrafici .path2 {
-  &:before {
-    content: $icon-icon-dati-anagrafici-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-ISP_icon_profilo_in_breve .path1 {
-  &:before {
-    content: $icon-ISP_icon_profilo_in_breve-path1;  
-    color: rgb(209, 231, 172);
-  }
-}
-.icon-ISP_icon_profilo_in_breve .path2 {
-  &:before {
-    content: $icon-ISP_icon_profilo_in_breve-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-icon-presenze .path1 {
-  &:before {
-    content: $icon-icon-presenze-path1;  
-    color: rgb(190, 221, 137);  
-    opacity: 0.7;
-  }
-}
-.icon-icon-presenze .path2 {
-  &:before {
-    content: $icon-icon-presenze-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-icon-group-28 .path1 {
-  &:before {
-    content: $icon-icon-group-28-path1;  
-    color: rgb(190, 221, 137);  
-    opacity: 0.7;
-  }
-}
-.icon-icon-group-28 .path2 {
-  &:before {
-    content: $icon-icon-group-28-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-icon-retribuzioni .path1 {
-  &:before {
-    content: $icon-icon-retribuzioni-path1;  
-    color: rgb(190, 221, 137);  
-    opacity: 0.7;
-  }
-}
-.icon-icon-retribuzioni .path2 {
-  &:before {
-    content: $icon-icon-retribuzioni-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-Isp_Icon_Controls_Obiettivi_Numeri {
-  &:before {
-    content: $icon-Isp_Icon_Controls_Obiettivi_Numeri;     
-    color: #298b36;
-  }
-}
-.icon-Isp_Icon_Controls_Obiettivi_Testo {
-  &:before {
-    content: $icon-Isp_Icon_Controls_Obiettivi_Testo;     
-    color: #298b36;
-  }
-}
-.icon-Isp_Icon_Controls_Obiettivi_Checkbox {
-  &:before {
-    content: $icon-Isp_Icon_Controls_Obiettivi_Checkbox;     
-    color: #288a36;
-  }
-}
-.icon-Isp_Icon_Controls_Tabelle_Off {
-  &:before {
-    content: $icon-Isp_Icon_Controls_Tabelle_Off;     
-    color: #268900;
-  }
-}
-.icon-Isp_Icon_Controls_Tabelle_On {
-  &:before {
-    content: $icon-Isp_Icon_Controls_Tabelle_On;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_VistaGrafico_off {
-  &:before {
-    content: $icon-ISP_Icon_VistaGrafico_off;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_VistaGrafico_ofn {
-  &:before {
-    content: $icon-ISP_Icon_VistaGrafico_ofn;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Calendar2 {
-  &:before {
-    content: $icon-ISP_Icon_Calendar2;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Calendar_neg {
-  &:before {
-    content: $icon-ISP_Icon_Calendar_neg;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Filtri_Off {
-  &:before {
-    content: $icon-ISP_Icon_Filtri_Off;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Filtri_On {
-  &:before {
-    content: $icon-ISP_Icon_Filtri_On;     
-    color: #258900;
-  }
-}
-.icon-Vsita_Lista_Off {
-  &:before {
-    content: $icon-Vsita_Lista_Off;     
-    color: #258900;
-  }
-}
-.icon-Vista_Lista_On {
-  &:before {
-    content: $icon-Vista_Lista_On;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Strutture_Off {
-  &:before {
-    content: $icon-ISP_Icon_Strutture_Off;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Strutture_On .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Strutture_On-path1;  
-    color: rgb(37, 137, 0);
-  }
-}
-.icon-ISP_Icon_Strutture_On .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Strutture_On-path2;  
-    margin-left: -1em;  
-    color: rgb(255, 255, 255);
-  }
-}
-.icon-ISP_Icon_Riporti_Off {
-  &:before {
-    content: $icon-ISP_Icon_Riporti_Off;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Riporti_On {
-  &:before {
-    content: $icon-ISP_Icon_Riporti_On;     
-    color: #258900;
-  }
-}
-.icon-Vista_Card_Off {
-  &:before {
-    content: $icon-Vista_Card_Off;     
-    color: #258900;
-  }
-}
-.icon-Vista_Card_On {
-  &:before {
-    content: $icon-Vista_Card_On;     
-    color: #258900;
-  }
-}
-.icon-ISP_icon_zoomIn_Off {
-  &:before {
-    content: $icon-ISP_icon_zoomIn_Off;     
-    color: #258900;
-  }
-}
-.icon-ISP_icon_zoomIn_On {
-  &:before {
-    content: $icon-ISP_icon_zoomIn_On;     
-    color: #258900;
-  }
-}
-.icon-ISP_icon_zoomOut_Off {
-  &:before {
-    content: $icon-ISP_icon_zoomOut_Off;     
-    color: #258900;
-  }
-}
-.icon-ISP_icon_zoomOut_On {
-  &:before {
-    content: $icon-ISP_icon_zoomOut_On;     
-    color: #258900;
-  }
-}
-.icon-ISP_formazione_resp {
-  &:before {
-    content: $icon-ISP_formazione_resp;     
-    color: #258900;
-  }
-}
-.icon-ISP_formazione_hr {
-  &:before {
-    content: $icon-ISP_formazione_hr;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Dashboard_Trolley {
-  &:before {
-    content: $icon-ISP_Icon_Dashboard_Trolley;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Dashboard_Gender_Equality {
-  &:before {
-    content: $icon-ISP_Icon_Dashboard_Gender_Equality;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Dashboard_Lavoro_Flessibile {
-  &:before {
-    content: $icon-ISP_Icon_Dashboard_Lavoro_Flessibile;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Dashboard_Assenze {
-  &:before {
-    content: $icon-ISP_Icon_Dashboard_Assenze;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Dashboard_Genere_dettaglio {
-  &:before {
-    content: $icon-ISP_Icon_Dashboard_Genere_dettaglio;     
-    color: #258900;
-  }
-}
-.icon-icon_dashboard_new {
-  &:before {
-    content: $icon-icon_dashboard_new;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Dashboard_Genere {
-  &:before {
-    content: $icon-ISP_Icon_Dashboard_Genere;     
-    color: #258900;
-  }
-}
-.icon-DashBoardIcon {
-  &:before {
-    content: $icon-DashBoardIcon;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Dashboard_Organico {
-  &:before {
-    content: $icon-ISP_Icon_Dashboard_Organico;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Dashboard_Recruiting {
-  &:before {
-    content: $icon-ISP_Icon_Dashboard_Recruiting;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Dashboard_trasferte {
-  &:before {
-    content: $icon-ISP_Icon_Dashboard_trasferte;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Dashboard_trasferte_TopSpender .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Dashboard_trasferte_TopSpender-path1;  
-    color: rgb(37, 137, 0);
-  }
-}
-.icon-ISP_Icon_Dashboard_trasferte_TopSpender .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Dashboard_trasferte_TopSpender-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-ISP_Icon_Dashboard_Ferie {
-  &:before {
-    content: $icon-ISP_Icon_Dashboard_Ferie;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_DOC {
-  &:before {
-    content: $icon-ISP_Icon_DOC;     
-    color: #5c5c5c;
-  }
-}
-.icon-ISP_Icon_JPG {
-  &:before {
-    content: $icon-ISP_Icon_JPG;     
-    color: #5c5c5c;
-  }
-}
-.icon-ISP_Icon_MP3 {
-  &:before {
-    content: $icon-ISP_Icon_MP3;     
-    color: #5c5c5c;
-  }
-}
-.icon-ISP_Icon_PDF {
-  &:before {
-    content: $icon-ISP_Icon_PDF;     
-    color: #5c5c5c;
-  }
-}
-.icon-ISP_Icon_Youtube {
-  &:before {
-    content: $icon-ISP_Icon_Youtube;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Facebook {
-  &:before {
-    content: $icon-ISP_Icon_Facebook;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Linkedin {
-  &:before {
-    content: $icon-ISP_Icon_Linkedin;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Twitter {
-  &:before {
-    content: $icon-ISP_Icon_Twitter;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Open {
-  &:before {
-    content: $icon-ISP_Icon_Open;     
-    color: #d9f1b7;
-  }
-}
-.icon-close {
-  &:before {
-    content: $icon-close;     
-    color: #d9f1b7;
-  }
-}
-.icon-icon-generale-autorilevato {
-  &:before {
-    content: $icon-icon-generale-autorilevato;     
-    color: #5c5c5c;
-  }
-}
-.icon-icon-generale-valutato {
-  &:before {
-    content: $icon-icon-generale-valutato;     
-    color: #5c5c5c;
-  }
-}
-.icon-ISP_Icon_Location_icon {
-  &:before {
-    content: $icon-ISP_Icon_Location_icon;     
-    color: #5c5c5c;
-  }
-}
-.icon-Generic_Coccarda {
-  &:before {
-    content: $icon-Generic_Coccarda;     
-    color: #5c5c5c;
-  }
-}
-.icon-Generic_Email_Address {
-  &:before {
-    content: $icon-Generic_Email_Address;     
-    color: #5c5c5c;
-  }
-}
-.icon-ISP_Icon_professionale {
-  &:before {
-    content: $icon-ISP_Icon_professionale;     
-    color: #5c5c5c;
-  }
-}
-.icon-People_Logo {
-  &:before {
-    content: $icon-People_Logo; 
-  }
-}
-.icon-ISP_Icon_Telefono_icon {
-  &:before {
-    content: $icon-ISP_Icon_Telefono_icon;     
-    color: #5c5c5c;
-  }
-}
-.icon-ISP_Icon_Fisso_icon {
-  &:before {
-    content: $icon-ISP_Icon_Fisso_icon;     
-    color: #5c5c5c;
-  }
-}
-.icon-ISP_Icon_formativa {
-  &:before {
-    content: $icon-ISP_Icon_formativa;     
-    color: #5c5c5c;
-  }
-}
-.icon-ISP_Icon_Orologio_icon {
-  &:before {
-    content: $icon-ISP_Icon_Orologio_icon;     
-    color: #5c5c5c;
-  }
-}
-.icon-Header_Cassetto {
-  &:before {
-    content: $icon-Header_Cassetto; 
-  }
-}
-.icon-ISP_Icon_Notifiche_icon {
-  &:before {
-    content: $icon-ISP_Icon_Notifiche_icon; 
-  }
-}
-.icon-ISP_Personale-in-aspettativa {
-  &:before {
-    content: $icon-ISP_Personale-in-aspettativa;     
-    color: #5c5c5c;
-  }
-}
-.icon-ISP_Personale-a-disposizione {
-  &:before {
-    content: $icon-ISP_Personale-a-disposizione;     
-    color: #5c5c5c;
-  }
-}
-.icon-ISP_adesione_accordi_circle {
-  &:before {
-    content: $icon-ISP_adesione_accordi_circle;     
-    color: #5c5c5c;
-  }
-}
-.icon-ISP_calendar_2020 {
-  &:before {
-    content: $icon-ISP_calendar_2020; 
-  }
-}
-.icon-Icon_Inbreve_Pendolare {
-  &:before {
-    content: $icon-Icon_Inbreve_Pendolare;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Inbreve_Formazione {
-  &:before {
-    content: $icon-Icon_Inbreve_Formazione;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_InBreve_Foresteria {
-  &:before {
-    content: $icon-Icon_InBreve_Foresteria;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Inbreve_Assegnazione-auto-aziendale {
-  &:before {
-    content: $icon-Icon_Inbreve_Assegnazione-auto-aziendale;     
-    color: #5c5c5c;
-  }
-}
-.icon-ISP_Icon_Appartenente_Comunita_Talent {
-  &:before {
-    content: $icon-ISP_Icon_Appartenente_Comunita_Talent;     
-    color: #5c5c5c;
-  }
-}
-.icon-ISP_Icon_Percorso_Reskilling {
-  &:before {
-    content: $icon-ISP_Icon_Percorso_Reskilling;     
-    color: #5c5c5c;
-  }
-}
-.icon-ISP_Icon_Numero_Figli_Minorenni {
-  &:before {
-    content: $icon-ISP_Icon_Numero_Figli_Minorenni;     
-    color: #5c5c5c;
-  }
-}
-.icon-ISP_Icon_contratto {
-  &:before {
-    content: $icon-ISP_Icon_contratto;     
-    color: #5c5c5c;
-  }
-}
-.icon-ISP_Icon_avente-diritto-a-legge-104 {
-  &:before {
-    content: $icon-ISP_Icon_avente-diritto-a-legge-104;     
-    color: #5c5c5c;
-  }
-}
-.icon-ISP_Icon_grave-patologia {
-  &:before {
-    content: $icon-ISP_Icon_grave-patologia;     
-    color: #5c5c5c;
-  }
-}
-.icon-ISP_Icon_lavoratore-potenziale-assente-lungo-periodo {
-  &:before {
-    content: $icon-ISP_Icon_lavoratore-potenziale-assente-lungo-periodo;     
-    color: #5c5c5c;
-  }
-}
-.icon-ISP_Icon_provvedimenti-disciplinari-negli-ultimi-due-anni {
-  &:before {
-    content: $icon-ISP_Icon_provvedimenti-disciplinari-negli-ultimi-due-anni;     
-    color: #5c5c5c;
-  }
-}
-.icon-ISP_Icon_richiesta-trasferimento-attivo {
-  &:before {
-    content: $icon-ISP_Icon_richiesta-trasferimento-attivo;     
-    color: #5c5c5c;
-  }
-}
-.icon-ISP_Icon_tempo-determinato-art-46 {
-  &:before {
-    content: $icon-ISP_Icon_tempo-determinato-art-46;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Inbreve_Sindacale {
-  &:before {
-    content: $icon-Icon_Inbreve_Sindacale;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Inbreve_Cariche-Pubbliche {
-  &:before {
-    content: $icon-Icon_Inbreve_Cariche-Pubbliche;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Inbreve_CONSOB1 {
-  &:before {
-    content: $icon-Icon_Inbreve_CONSOB1;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Inbreve_IVASS {
-  &:before {
-    content: $icon-Icon_Inbreve_IVASS;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Inbreve_Richiami-Disciplinari {
-  &:before {
-    content: $icon-Icon_Inbreve_Richiami-Disciplinari;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Inbreve_Figlio {
-  &:before {
-    content: $icon-Icon_Inbreve_Figlio;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Inbreve_Grave-patologia {
-  &:before {
-    content: $icon-Icon_Inbreve_Grave-patologia;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Inbreve_Invalidita {
-  &:before {
-    content: $icon-Icon_Inbreve_Invalidita;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Inbreve_Assente {
-  &:before {
-    content: $icon-Icon_Inbreve_Assente;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Inbreve_Part-Time {
-  &:before {
-    content: $icon-Icon_Inbreve_Part-Time;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Inbreve_Legge104 {
-  &:before {
-    content: $icon-Icon_Inbreve_Legge104;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Inbreve_Multi-incarico {
-  &:before {
-    content: $icon-Icon_Inbreve_Multi-incarico;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Inbreve_Provvediemnti-Disciplinari {
-  &:before {
-    content: $icon-Icon_Inbreve_Provvediemnti-Disciplinari;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Inbreve_Smartworking {
-  &:before {
-    content: $icon-Icon_Inbreve_Smartworking;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Inbreve_Sostituto-Direttore {
-  &:before {
-    content: $icon-Icon_Inbreve_Sostituto-Direttore;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Inbreve_In-distacco {
-  &:before {
-    content: $icon-Icon_Inbreve_In-distacco;     
-    color: #5c5c5c;
-  }
-}
-.icon-Icon_Inbreve_In-missione {
-  &:before {
-    content: $icon-Icon_Inbreve_In-missione;     
-    color: #5c5c5c;
-  }
-}
-.icon-ISP_Icon_Down {
-  &:before {
-    content: $icon-ISP_Icon_Down;     
-    color: #e55d33;
-  }
-}
-.icon-ISP_Icon_AndamentoNeutro {
-  &:before {
-    content: $icon-ISP_Icon_AndamentoNeutro;     
-    color: #e8e8e8;
-  }
-}
-.icon-ISP_Icon_Up {
-  &:before {
-    content: $icon-ISP_Icon_Up;     
-    color: #79bf69;
-  }
-}
-.icon-ISP_Icon_Lecoip_2014_2017 {
-  &:before {
-    content: $icon-ISP_Icon_Lecoip_2014_2017; 
-  }
-}
-.icon-ISP_Icon_PianoPop {
-  &:before {
-    content: $icon-ISP_Icon_PianoPop; 
-  }
-}
-.icon-Radio_Off {
-  &:before {
-    content: $icon-Radio_Off;     
-    color: #5c5c5c;
-  }
-}
-.icon-ISP_Icon_Selected {
-  &:before {
-    content: $icon-ISP_Icon_Selected;     
-    color: #258900;
-  }
-}
-.icon-ISP_Icon_Warning-Bloccante {
-  &:before {
-    content: $icon-ISP_Icon_Warning-Bloccante;     
-    color: #e55d33;
-  }
-}
-.icon-ISP_Icon_Info-Esito {
-  &:before {
-    content: $icon-ISP_Icon_Info-Esito;     
-    color: #79bf69;
-  }
-}
-.icon-ISP_Icon_Warning {
-  &:before {
-    content: $icon-ISP_Icon_Warning;     
-    color: #f5a623;
-  }
-}
-.icon-ISP_videocall .path1 {
-  &:before {
-    content: $icon-ISP_videocall-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_videocall .path2 {
-  &:before {
-    content: $icon-ISP_videocall-path2;  
-    margin-left: -1em;  
-    color: rgb(37, 137, 0);
-  }
-}
-.icon-ISP-skill .path1 {
-  &:before {
-    content: $icon-ISP-skill-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP-skill .path2 {
-  &:before {
-    content: $icon-ISP-skill-path2;  
-    margin-left: -1em;  
-    color: rgb(37, 137, 0);
-  }
-}
-.icon-ISP_Icon_start-bandiera .path1 {
-  &:before {
-    content: $icon-ISP_Icon_start-bandiera-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_start-bandiera .path2 {
-  &:before {
-    content: $icon-ISP_Icon_start-bandiera-path2;  
-    margin-left: -1.037109375em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-ISP_Icon_mi-presento .path1 {
-  &:before {
-    content: $icon-ISP_Icon_mi-presento-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_mi-presento .path2 {
-  &:before {
-    content: $icon-ISP_Icon_mi-presento-path2;  
-    margin-left: -1.037109375em;  
-    color: rgb(37, 137, 0);
-  }
-}
-.icon-ISP_sezioni-rocket .path1 {
-  &:before {
-    content: $icon-ISP_sezioni-rocket-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_sezioni-rocket .path2 {
-  &:before {
-    content: $icon-ISP_sezioni-rocket-path2;  
-    margin-left: -1em;  
-    color: rgb(37, 137, 0);
-  }
-}
-.icon-ISP_Icon_pollice-in-su .path1 {
-  &:before {
-    content: $icon-ISP_Icon_pollice-in-su-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_pollice-in-su .path2 {
-  &:before {
-    content: $icon-ISP_Icon_pollice-in-su-path2;  
-    margin-left: -1.037109375em;  
-    color: rgb(37, 137, 0);
-  }
-}
-.icon-icon-ISP_Icon_Colloquio .path1 {
-  &:before {
-    content: $icon-icon-ISP_Icon_Colloquio-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-icon-ISP_Icon_Colloquio .path2 {
-  &:before {
-    content: $icon-icon-ISP_Icon_Colloquio-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-ISP_colloquio .path1 {
-  &:before {
-    content: $icon-ISP_colloquio-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_colloquio .path2 {
-  &:before {
-    content: $icon-ISP_colloquio-path2;  
-    margin-left: -1em;  
-    color: rgb(37, 137, 0);
-  }
-}
-.icon-ISP_sezioni-connessioni .path1 {
-  &:before {
-    content: $icon-ISP_sezioni-connessioni-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_sezioni-connessioni .path2 {
-  &:before {
-    content: $icon-ISP_sezioni-connessioni-path2;  
-    margin-left: -1em;  
-    color: rgb(37, 137, 0);
-  }
-}
-.icon-icon-ISP_Icon_Inserimento .path1 {
-  &:before {
-    content: $icon-icon-ISP_Icon_Inserimento-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-icon-ISP_Icon_Inserimento .path2 {
-  &:before {
-    content: $icon-icon-ISP_Icon_Inserimento-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-ISP-hr .path1 {
-  &:before {
-    content: $icon-ISP-hr-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP-hr .path2 {
-  &:before {
-    content: $icon-ISP-hr-path2;  
-    margin-left: -1em;  
-    color: rgb(37, 137, 0);
-  }
-}
-.icon-icon-ISP_Icon_Survey .path1 {
-  &:before {
-    content: $icon-icon-ISP_Icon_Survey-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-icon-ISP_Icon_Survey .path2 {
-  &:before {
-    content: $icon-icon-ISP_Icon_Survey-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-ISP_Sezioni_Ambizioni_Aspirazioni .path1 {
-  &:before {
-    content: $icon-ISP_Sezioni_Ambizioni_Aspirazioni-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Sezioni_Ambizioni_Aspirazioni .path2 {
-  &:before {
-    content: $icon-ISP_Sezioni_Ambizioni_Aspirazioni-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-ISP_Icon_sezioni_pillole .path1 {
-  &:before {
-    content: $icon-ISP_Icon_sezioni_pillole-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_sezioni_pillole .path2 {
-  &:before {
-    content: $icon-ISP_Icon_sezioni_pillole-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-ISP_Icon_Ambizionispirazioni .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Ambizionispirazioni-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_Ambizionispirazioni .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Ambizionispirazioni-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-ISP_Icon_Appuntamenti .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Appuntamenti-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_Appuntamenti .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Appuntamenti-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-ISP_Icon_Perche .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Perche-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_Perche .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Perche-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-ISP_Icon_Collaboratori .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Collaboratori-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_Collaboratori .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Collaboratori-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-Sezioni_Colleghi .path1 {
-  &:before {
-    content: $icon-Sezioni_Colleghi-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-Sezioni_Colleghi .path2 {
-  &:before {
-    content: $icon-Sezioni_Colleghi-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-Sezioni_Comments .path1 {
-  &:before {
-    content: $icon-Sezioni_Comments-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-Sezioni_Comments .path2 {
-  &:before {
-    content: $icon-Sezioni_Comments-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-ISP_Icon_corsi .path1 {
-  &:before {
-    content: $icon-ISP_Icon_corsi-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_corsi .path2 {
-  &:before {
-    content: $icon-ISP_Icon_corsi-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-ISP_Icon_Dashboard .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Dashboard-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_Dashboard .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Dashboard-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-Sezioni_Datipersonali .path1 {
-  &:before {
-    content: $icon-Sezioni_Datipersonali-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-Sezioni_Datipersonali .path2 {
-  &:before {
-    content: $icon-Sezioni_Datipersonali-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-ISP_Icon_Valori1 .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Valori1-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_Valori1 .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Valori1-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-ISP_Icon_percorso .path1 {
-  &:before {
-    content: $icon-ISP_Icon_percorso-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_percorso .path2 {
-  &:before {
-    content: $icon-ISP_Icon_percorso-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-ISP_Icon_Job_Center .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Job_Center-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_Job_Center .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Job_Center-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-Sezioni_Feedback .path1 {
-  &:before {
-    content: $icon-Sezioni_Feedback-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-Sezioni_Feedback .path2 {
-  &:before {
-    content: $icon-Sezioni_Feedback-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-Sezioni_Firma .path1 {
-  &:before {
-    content: $icon-Sezioni_Firma-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-Sezioni_Firma .path2 {
-  &:before {
-    content: $icon-Sezioni_Firma-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-ISP_Icon_Seniority .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Seniority-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_Seniority .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Seniority-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-Sezioni_History .path1 {
-  &:before {
-    content: $icon-Sezioni_History-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-Sezioni_History .path2 {
-  &:before {
-    content: $icon-Sezioni_History-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-ISP_Icon_Numeri .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Numeri-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_Numeri .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Numeri-path2;  
-    margin-left: -1em;  
-    color: rgb(0, 138, 0);
-  }
-}
-.icon-Sezioni_Identity .path1 {
-  &:before {
-    content: $icon-Sezioni_Identity-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-Sezioni_Identity .path2 {
-  &:before {
-    content: $icon-Sezioni_Identity-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-ISP_Icon_Percorso .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Percorso-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_Percorso .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Percorso-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-ISP_Icon_Perche1 .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Perche1-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_Perche1 .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Perche1-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-ISP_Icon_Portafoglio .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Portafoglio-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_Portafoglio .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Portafoglio-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-ISP_Icon_Suggerimenti .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Suggerimenti-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_Suggerimenti .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Suggerimenti-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-ISP_Icon_Lingue .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Lingue-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_Lingue .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Lingue-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-Sezioni_Lockedinfo .path1 {
-  &:before {
-    content: $icon-Sezioni_Lockedinfo-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-Sezioni_Lockedinfo .path2 {
-  &:before {
-    content: $icon-Sezioni_Lockedinfo-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-ISP_Icon_Follow_Up_People .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Follow_Up_People-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_Follow_Up_People .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Follow_Up_People-path2;  
-    margin-left: -1em;  
-    color: rgb(37, 137, 0);
-  }
-}
-.icon-ISP_Icon_Mi_presento .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Mi_presento-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_Mi_presento .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Mi_presento-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-ISP_Icon_Obiettivi .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Obiettivi-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_Obiettivi .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Obiettivi-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-ISP_Icon_News .path1 {
-  &:before {
-    content: $icon-ISP_Icon_News-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_News .path2 {
-  &:before {
-    content: $icon-ISP_Icon_News-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-ISP_Icon_NotificheSezione .path1 {
-  &:before {
-    content: $icon-ISP_Icon_NotificheSezione-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_NotificheSezione .path2 {
-  &:before {
-    content: $icon-ISP_Icon_NotificheSezione-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-ISP_Icon_GoalSet .path1 {
-  &:before {
-    content: $icon-ISP_Icon_GoalSet-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_GoalSet .path2 {
-  &:before {
-    content: $icon-ISP_Icon_GoalSet-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-pacchetti .path1 {
-  &:before {
-    content: $icon-pacchetti-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-pacchetti .path2 {
-  &:before {
-    content: $icon-pacchetti-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-ISP_Icon_Passioni .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Passioni-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_Passioni .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Passioni-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-ISP_Icon_Videos .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Videos-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_Videos .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Videos-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-ISP_Icon_PerformanceRetrib .path1 {
-  &:before {
-    content: $icon-ISP_Icon_PerformanceRetrib-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_PerformanceRetrib .path2 {
-  &:before {
-    content: $icon-ISP_Icon_PerformanceRetrib-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-ISP_Icon_Persone .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Persone-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_Persone .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Persone-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-ISP_Icon_Competenze .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Competenze-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_Competenze .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Competenze-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-Sezioni_Question .path1 {
-  &:before {
-    content: $icon-Sezioni_Question-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-Sezioni_Question .path2 {
-  &:before {
-    content: $icon-Sezioni_Question-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-ISP_Icon_Richieste_title .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Richieste_title-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_Richieste_title .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Richieste_title-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-ISP_Icon_Riconoscimenti-2 .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Riconoscimenti-2-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_Riconoscimenti-2 .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Riconoscimenti-2-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-ISP_Icon_Servizi-Pers .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Servizi-Pers-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_Servizi-Pers .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Servizi-Pers-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-Sezioni_Skill_Tecniche .path1 {
-  &:before {
-    content: $icon-Sezioni_Skill_Tecniche-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-Sezioni_Skill_Tecniche .path2 {
-  &:before {
-    content: $icon-Sezioni_Skill_Tecniche-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-Sezioni_Suggerimenti .path1 {
-  &:before {
-    content: $icon-Sezioni_Suggerimenti-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-Sezioni_Suggerimenti .path2 {
-  &:before {
-    content: $icon-Sezioni_Suggerimenti-path2;  
-    margin-left: -1em;  
-    color: rgb(38, 137, 0);
-  }
-}
-.icon-ISP_alert-error {
-  &:before {
-    content: $icon-ISP_alert-error;     
-    color: #e55d33;
-  }
-}
-.icon-ISP_alert-warning {
-  &:before {
-    content: $icon-ISP_alert-warning;     
-    color: #f5a623;
-  }
-}
-.icon-ISP_actions-verifica1 .path1 {
-  &:before {
-    content: $icon-ISP_actions-verifica1-path1;  
-    color: rgb(102, 202, 231);
-  }
-}
-.icon-ISP_actions-verifica1 .path2 {
-  &:before {
-    content: $icon-ISP_actions-verifica1-path2;  
-    margin-left: -1em;  
-    color: rgb(102, 202, 231);  
-    opacity: 0.3;
-  }
-}
-.icon-ISP_Icon_Stato_away {
-  &:before {
-    content: $icon-ISP_Icon_Stato_away;     
-    color: #f5a623;
-  }
-}
-.icon-ISP_Icon_Stato_Busy {
-  &:before {
-    content: $icon-ISP_Icon_Stato_Busy;     
-    color: #e55d33;
-  }
-}
-.icon-ISP_Icon_Stato_donotdisturb {
-  &:before {
-    content: $icon-ISP_Icon_Stato_donotdisturb;     
-    color: #e55d33;
-  }
-}
-.icon-ISP_pianificazione-lavoro-flessibile .path1 {
-  &:before {
-    content: $icon-ISP_pianificazione-lavoro-flessibile-path1;  
-    color: rgb(255, 255, 255);
-  }
-}
-.icon-ISP_pianificazione-lavoro-flessibile .path2 {
-  &:before {
-    content: $icon-ISP_pianificazione-lavoro-flessibile-path2;  
-    margin-left: -1em;  
-    color: rgb(1, 146, 223);
-  }
-}
-.icon-ISP_pianificazione-lavoro-flessibile-rifiutato .path1 {
-  &:before {
-    content: $icon-ISP_pianificazione-lavoro-flessibile-rifiutato-path1;  
-    color: rgb(255, 255, 255);
-  }
-}
-.icon-ISP_pianificazione-lavoro-flessibile-rifiutato .path2 {
-  &:before {
-    content: $icon-ISP_pianificazione-lavoro-flessibile-rifiutato-path2;  
-    margin-left: -1em;  
-    color: rgb(229, 93, 51);
-  }
-}
-.icon-ISP_Icon_Stato_online {
-  &:before {
-    content: $icon-ISP_Icon_Stato_online;     
-    color: #79bf69;
-  }
-}
-.icon-ISP_pianificazione-2-eventi .path1 {
-  &:before {
-    content: $icon-ISP_pianificazione-2-eventi-path1;  
-    color: rgb(255, 255, 255);
-  }
-}
-.icon-ISP_pianificazione-2-eventi .path2 {
-  &:before {
-    content: $icon-ISP_pianificazione-2-eventi-path2;  
-    margin-left: -1em;  
-    color: rgb(203, 180, 253);
-  }
-}
-.icon-ISP_pianificazione-2-eventi .path3 {
-  &:before {
-    content: $icon-ISP_pianificazione-2-eventi-path3;  
-    margin-left: -1em;  
-    color: rgb(111, 0, 135);
-  }
-}
-.icon-ISP_pianificazione-assenza .path1 {
-  &:before {
-    content: $icon-ISP_pianificazione-assenza-path1;  
-    color: rgb(255, 255, 255);
-  }
-}
-.icon-ISP_pianificazione-assenza .path2 {
-  &:before {
-    content: $icon-ISP_pianificazione-assenza-path2;  
-    margin-left: -1em;  
-    color: rgb(232, 232, 232);
-  }
-}
-.icon-ISP_pianificazione-ferie .path1 {
-  &:before {
-    content: $icon-ISP_pianificazione-ferie-path1;  
-    color: rgb(255, 255, 255);
-  }
-}
-.icon-ISP_pianificazione-ferie .path2 {
-  &:before {
-    content: $icon-ISP_pianificazione-ferie-path2;  
-    margin-left: -1em;  
-    color: rgb(255, 240, 186);
-  }
-}
-.icon-ISP_Icon_Skype_icon {
-  &:before {
-    content: $icon-ISP_Icon_Skype_icon;     
-    color: #5c5c5c;
-  }
-}
-.icon-ISP_Icon_Stato_offline {
-  &:before {
-    content: $icon-ISP_Icon_Stato_offline;     
-    color: #707070;
-  }
-}
-.icon-Star_Off {
-  &:before {
-    content: $icon-Star_Off;     
-    color: #f5a623;
-  }
-}
-.icon-Star_On .path1 {
-  &:before {
-    content: $icon-Star_On-path1;  
-    color: rgb(255, 203, 108);
-  }
-}
-.icon-Star_On .path2 {
-  &:before {
-    content: $icon-Star_On-path2;  
-    margin-left: -1em;  
-    color: rgb(245, 166, 35);
-  }
-}
-.icon-ISP_subsections-esplora .path1 {
-  &:before {
-    content: $icon-ISP_subsections-esplora-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_subsections-esplora .path2 {
-  &:before {
-    content: $icon-ISP_subsections-esplora-path2;  
-    margin-left: -1em;  
-    color: rgb(92, 92, 92);
-  }
-}
-.icon-ISP-nuovo-ruolo .path1 {
-  &:before {
-    content: $icon-ISP-nuovo-ruolo-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP-nuovo-ruolo .path2 {
-  &:before {
-    content: $icon-ISP-nuovo-ruolo-path2;  
-    margin-left: -1em;  
-    color: rgb(92, 92, 92);
-  }
-}
-.icon-ISP-nuovo-ruolo .path3 {
-  &:before {
-    content: $icon-ISP-nuovo-ruolo-path3;  
-    margin-left: -1em;  
-    color: rgb(92, 92, 92);
-  }
-}
-.icon-subsections_domanda .path1 {
-  &:before {
-    content: $icon-subsections_domanda-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-subsections_domanda .path2 {
-  &:before {
-    content: $icon-subsections_domanda-path2;  
-    margin-left: -1em;  
-    color: rgb(92, 92, 92);
-  }
-}
-.icon-ISP_Subsections_Valutare .path1 {
-  &:before {
-    content: $icon-ISP_Subsections_Valutare-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Subsections_Valutare .path2 {
-  &:before {
-    content: $icon-ISP_Subsections_Valutare-path2;  
-    margin-left: -1em;  
-    color: rgb(92, 92, 92);
-  }
-}
-.icon-ISP_Subsections_Formazione .path1 {
-  &:before {
-    content: $icon-ISP_Subsections_Formazione-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Subsections_Formazione .path2 {
-  &:before {
-    content: $icon-ISP_Subsections_Formazione-path2;  
-    margin-left: -1em;  
-    color: rgb(92, 92, 92);
-  }
-}
-.icon-ISP_Icon_Valore .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Valore-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_Valore .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Valore-path2;  
-    margin-left: -1em;  
-    color: rgb(92, 92, 92);
-  }
-}
-.icon-ISP_Icon_Aspirazioni .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Aspirazioni-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_Aspirazioni .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Aspirazioni-path2;  
-    margin-left: -1em;  
-    color: rgb(92, 92, 92);
-  }
-}
-.icon-ISP_Icon_Brevetti .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Brevetti-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_Brevetti .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Brevetti-path2;  
-    margin-left: -1em;  
-    color: rgb(92, 92, 92);
-  }
-}
-.icon-isp-icon-linkedin-commenti .path1 {
-  &:before {
-    content: $icon-isp-icon-linkedin-commenti-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-isp-icon-linkedin-commenti .path2 {
-  &:before {
-    content: $icon-isp-icon-linkedin-commenti-path2;  
-    margin-left: -1em;  
-    color: rgb(92, 92, 92);
-  }
-}
-.icon-isp-icon-linkedin-conessioni .path1 {
-  &:before {
-    content: $icon-isp-icon-linkedin-conessioni-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-isp-icon-linkedin-conessioni .path2 {
-  &:before {
-    content: $icon-isp-icon-linkedin-conessioni-path2;  
-    margin-left: -1em;  
-    color: rgb(92, 92, 92);
-  }
-}
-.icon-Subsections_Curriculum .path1 {
-  &:before {
-    content: $icon-Subsections_Curriculum-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-Subsections_Curriculum .path2 {
-  &:before {
-    content: $icon-Subsections_Curriculum-path2;  
-    margin-left: -1em;  
-    color: rgb(92, 92, 92);
-  }
-}
-.icon-ISP_Icon_ExtraLavorativa .path1 {
-  &:before {
-    content: $icon-ISP_Icon_ExtraLavorativa-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_ExtraLavorativa .path2 {
-  &:before {
-    content: $icon-ISP_Icon_ExtraLavorativa-path2;  
-    margin-left: -1em;  
-    color: rgb(92, 92, 92);
-  }
-}
-.icon-ISP_Icon_Icona_Come_4 .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Icona_Come_4-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_Icona_Come_4 .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Icona_Come_4-path2;  
-    margin-left: -1em;  
-    color: rgb(92, 92, 92);
-  }
-}
-.icon-ISP_Icon_Icona_Come_5 .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Icona_Come_5-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_Icona_Come_5 .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Icona_Come_5-path2;  
-    margin-left: -1em;  
-    color: rgb(92, 92, 92);
-  }
-}
-.icon-ISP_Icon_Mobilita .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Mobilita-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_Mobilita .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Mobilita-path2;  
-    margin-left: -1em;  
-    color: rgb(92, 92, 92);
-  }
-}
-.icon-ISP_Icon_Icona_Come_1 .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Icona_Come_1-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_Icona_Come_1 .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Icona_Come_1-path2;  
-    margin-left: -1em;  
-    color: rgb(92, 92, 92);
-  }
-}
-.icon-pachetti .path1 {
-  &:before {
-    content: $icon-pachetti-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-pachetti .path2 {
-  &:before {
-    content: $icon-pachetti-path2;  
-    margin-left: -1em;  
-    color: rgb(92, 92, 92);
-  }
-}
-.icon-ISP_Icon_Passioni1 .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Passioni1-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_Passioni1 .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Passioni1-path2;  
-    margin-left: -1em;  
-    color: rgb(92, 92, 92);
-  }
-}
-.icon-isp-icon-linkedin-posts .path1 {
-  &:before {
-    content: $icon-isp-icon-linkedin-posts-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-isp-icon-linkedin-posts .path2 {
-  &:before {
-    content: $icon-isp-icon-linkedin-posts-path2;  
-    margin-left: -1em;  
-    color: rgb(92, 92, 92);
-  }
-}
-.icon-ISP_Icon_Premi .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Premi-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_Premi .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Premi-path2;  
-    margin-left: -1em;  
-    color: rgb(92, 92, 92);
-  }
-}
-.icon-ISP_Icon_Futuro .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Futuro-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_Futuro .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Futuro-path2;  
-    margin-left: -1em;  
-    color: rgb(92, 92, 92);
-  }
-}
-.icon-ISP_Icon_Conoscenza .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Conoscenza-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_Conoscenza .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Conoscenza-path2;  
-    margin-left: -1em;  
-    color: rgb(92, 92, 92);
-  }
-}
-.icon-Subsections_User .path1 {
-  &:before {
-    content: $icon-Subsections_User-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-Subsections_User .path2 {
-  &:before {
-    content: $icon-Subsections_User-path2;  
-    margin-left: -1em;  
-    color: rgb(92, 92, 92);
-  }
-}
-.icon-ISP_Icon_Feedback .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Feedback-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_Feedback .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Feedback-path2;  
-    margin-left: -1em;  
-    color: rgb(92, 92, 92);
-  }
-}
-.icon-ISP_Icon_Processing .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Processing-path1;  
-    color: rgb(255, 232, 145);
-  }
-}
-.icon-ISP_Icon_Processing .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Processing-path2;  
-    margin-left: -1.0439453125em;  
-    color: rgb(92, 92, 92);
-  }
-}
-.icon-Timeline_Activity_Overdue .path1 {
-  &:before {
-    content: $icon-Timeline_Activity_Overdue-path1;  
-    color: rgb(229, 93, 51);
-  }
-}
-.icon-Timeline_Activity_Overdue .path2 {
-  &:before {
-    content: $icon-Timeline_Activity_Overdue-path2;  
-    margin-left: -1em;  
-    color: rgb(248, 203, 188);
-  }
-}
-.icon-Timeline_Activity_Overdue .path3 {
-  &:before {
-    content: $icon-Timeline_Activity_Overdue-path3;  
-    margin-left: -1em;  
-    color: rgb(229, 93, 51);
-  }
-}
-.icon-Timeline_Activity_To_Do .path1 {
-  &:before {
-    content: $icon-Timeline_Activity_To_Do-path1;  
-    color: rgb(245, 166, 35);
-  }
-}
-.icon-Timeline_Activity_To_Do .path2 {
-  &:before {
-    content: $icon-Timeline_Activity_To_Do-path2;  
-    margin-left: -1em;  
-    color: rgb(255, 230, 184);
-  }
-}
-.icon-Timeline_Done {
-  &:before {
-    content: $icon-Timeline_Done;     
-    color: #cecece;
-  }
-}
-.icon-ISP_Icon_noncompletato {
-  &:before {
-    content: $icon-ISP_Icon_noncompletato;     
-    color: #258900;
-  }
-}
-.icon-Timeline_To_Do {
-  &:before {
-    content: $icon-Timeline_To_Do;     
-    color: #cecece;
-  }
-}
-.icon-Toggle_Off .path1 {
-  &:before {
-    content: $icon-Toggle_Off-path1;  
-    color: rgb(232, 232, 232);
-  }
-}
-.icon-Toggle_Off .path2 {
-  &:before {
-    content: $icon-Toggle_Off-path2;  
-    margin-left: -1em;  
-    color: rgb(0, 0, 0);
-  }
-}
-.icon-Toggle_Off .path3 {
-  &:before {
-    content: $icon-Toggle_Off-path3;  
-    margin-left: -1em;  
-    color: rgb(255, 255, 255);
-  }
-}
-.icon-ISP_Icon_Toggle .path1 {
-  &:before {
-    content: $icon-ISP_Icon_Toggle-path1;  
-    color: rgb(121, 191, 105);
-  }
-}
-.icon-ISP_Icon_Toggle .path2 {
-  &:before {
-    content: $icon-ISP_Icon_Toggle-path2;  
-    margin-left: -1em;  
-    color: rgb(0, 0, 0);
-  }
-}
-.icon-ISP_Icon_Toggle .path3 {
-  &:before {
-    content: $icon-ISP_Icon_Toggle-path3;  
-    margin-left: -1em;  
+    content: $icon-ISP_star-to-do-path1;
     color: rgb(255, 255, 255);
   }
 }
 
+.icon-ISP_star-to-do .path2 {
+  &:before {
+    content: $icon-ISP_star-to-do-path2;
+    margin-left: -1em;
+    color: rgb(206, 206, 206);
+  }
+}
+
+.icon-ISP_star-to-do .path3 {
+  &:before {
+    content: $icon-ISP_star-to-do-path3;
+    margin-left: -1em;
+    color: rgb(206, 206, 206);
+  }
+}
+
+.icon-ISP-caregiving {
+  &:before {
+    content: $icon-ISP-caregiving;
+    color: #fff;
+  }
+}
+
+.icon-ISP-alimentazione {
+  &:before {
+    content: $icon-ISP-alimentazione;
+    color: #fff;
+  }
+}
+
+.icon-ISP-equilibrio {
+  &:before {
+    content: $icon-ISP-equilibrio;
+    color: #fff;
+  }
+}
+
+.icon-ISP-movimento {
+  &:before {
+    content: $icon-ISP-movimento;
+    color: #fff;
+  }
+}
+
+.icon-ISP-waves {
+  &:before {
+    content: $icon-ISP-waves;
+    color: #fff;
+  }
+}
+
+.icon-ISP_alimentazione_carelab {
+  &:before {
+    content: $icon-ISP_alimentazione_carelab;
+  }
+}
+
+.icon-ISP_heart_carelab {
+  &:before {
+    content: $icon-ISP_heart_carelab;
+  }
+}
+
+.icon-ISP_equilibrio_carelab {
+  &:before {
+    content: $icon-ISP_equilibrio_carelab;
+  }
+}
+
+.icon-ISP_movimento_carelab {
+  &:before {
+    content: $icon-ISP_movimento_carelab;
+  }
+}
+
+.icon-ISP_icon-eye {
+  &:before {
+    content: $icon-ISP_icon-eye;
+    color: #5c5c5c;
+  }
+}
+
+.icon-ISP-cresciamo {
+  &:before {
+    content: $icon-ISP-cresciamo;
+  }
+}
+
+.icon-ISP-benvenuto {
+  &:before {
+    content: $icon-ISP-benvenuto;
+  }
+}
+
+.icon-Icon_Appartenente-alla-comunita-Talent_02 {
+  &:before {
+    content: $icon-Icon_Appartenente-alla-comunita-Talent_02;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Assegnazione-auto-aziendale_02 {
+  &:before {
+    content: $icon-Icon_Assegnazione-auto-aziendale_02;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Assegnazione-in-distacco_02 {
+  &:before {
+    content: $icon-Icon_Assegnazione-in-distacco_02;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Assegnazione-temporanea_02 {
+  &:before {
+    content: $icon-Icon_Assegnazione-temporanea_02;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Avente-diritto-a-Legge-104_02 {
+  &:before {
+    content: $icon-Icon_Avente-diritto-a-Legge-104_02;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Beneficiario-foresteria_02 {
+  &:before {
+    content: $icon-Icon_Beneficiario-foresteria_02;
+    color: #5c5c5c;
+  }
+}
+
+.icon-ISP_spazi-area-community {
+  &:before {
+    content: $icon-ISP_spazi-area-community;
+    color: #5c5c5c;
+  }
+}
+
+.icon-ISP_spazi-hub {
+  &:before {
+    content: $icon-ISP_spazi-hub;
+    color: #5c5c5c;
+  }
+}
+
+.icon-ISP_spazi-sala {
+  &:before {
+    content: $icon-ISP_spazi-sala;
+    color: #5c5c5c;
+  }
+}
+
+.icon-ISP_spazi-parcheggio {
+  &:before {
+    content: $icon-ISP_spazi-parcheggio;
+    color: #5c5c5c;
+  }
+}
+
+.icon-ISP_spazi-postazione {
+  &:before {
+    content: $icon-ISP_spazi-postazione;
+    color: #5c5c5c;
+  }
+}
+
+.icon-ISP_spazi-ufficio {
+  &:before {
+    content: $icon-ISP_spazi-ufficio;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Carica-pubblica_02 {
+  &:before {
+    content: $icon-Icon_Carica-pubblica_02;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Carica-sindacale_02 {
+  &:before {
+    content: $icon-Icon_Carica-sindacale_02;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Consulente-finanziario-abilitato-allofferta-fuori-sede-Consob_02 {
+  &:before {
+    content: $icon-Icon_Consulente-finanziario-abilitato-allofferta-fuori-sede-Consob_02;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Consulente-finanziario-abilitato-allofferta-fuori-sede-IVASS_02 {
+  &:before {
+    content: $icon-Icon_Consulente-finanziario-abilitato-allofferta-fuori-sede-IVASS_02;
+    color: #5c5c5c;
+  }
+}
+
+.icon-ISP_adesione_accordi {
+  &:before {
+    content: $icon-ISP_adesione_accordi;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_contratto_02 {
+  &:before {
+    content: $icon-Icon_contratto_02;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Dipendente-con-invalidita-accertata-da-apposita-commissione-INPS-INAIL_02 {
+  &:before {
+    content: $icon-Icon_Dipendente-con-invalidita-accertata-da-apposita-commissione-INPS-INAIL_02;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Evidenza-non-disciplinare-negli-ultimi-2-anni_02 {
+  &:before {
+    content: $icon-Icon_Evidenza-non-disciplinare-negli-ultimi-2-anni_02;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Formazione-obbligatoria_02 {
+  &:before {
+    content: $icon-Icon_Formazione-obbligatoria_02;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Grave-patologia_02 {
+  &:before {
+    content: $icon-Icon_Grave-patologia_02;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_In-percorso-di-reskilling-NEXT_02 {
+  &:before {
+    content: $icon-Icon_In-percorso-di-reskilling-NEXT_02;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Lavoratore-assente-lungo-periodo_02 {
+  &:before {
+    content: $icon-Icon_Lavoratore-assente-lungo-periodo_02;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Lavoratore-part-time_02 {
+  &:before {
+    content: $icon-Icon_Lavoratore-part-time_02;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Lavoratore-pendolare_02 {
+  &:before {
+    content: $icon-Icon_Lavoratore-pendolare_02;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Lavoro-flessibile-attivo_02 {
+  &:before {
+    content: $icon-Icon_Lavoro-flessibile-attivo_02;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Numero-figli-minorenni_02 {
+  &:before {
+    content: $icon-Icon_Numero-figli-minorenni_02;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Provvedimenti-disciplinari-negli-ultimi-due-anni_02 {
+  &:before {
+    content: $icon-Icon_Provvedimenti-disciplinari-negli-ultimi-due-anni_02;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Richiesta-trasferimento-attivo_02 {
+  &:before {
+    content: $icon-Icon_Richiesta-trasferimento-attivo_02;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Sostituto-del-direttore_02 {
+  &:before {
+    content: $icon-Icon_Sostituto-del-direttore_02;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Tempo-determinato---Art-46_02 {
+  &:before {
+    content: $icon-Icon_Tempo-determinato---Art-46_02;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Ulteriore-Multi-incarico-attivo_02 {
+  &:before {
+    content: $icon-Icon_Ulteriore-Multi-incarico-attivo_02;
+    color: #5c5c5c;
+  }
+}
+
+.icon-figli {
+  &:before {
+    content: $icon-figli;
+    color: #5c5c5c;
+  }
+}
+
+.icon-carica-sindacale {
+  &:before {
+    content: $icon-carica-sindacale;
+    color: #5c5c5c;
+  }
+}
+
+.icon-lavoratore-assente {
+  &:before {
+    content: $icon-lavoratore-assente;
+    color: #5c5c5c;
+  }
+}
+
+.icon-ISP_Icon-menu-verticale-sx .path1 {
+  &:before {
+    content: $icon-ISP_Icon-menu-verticale-sx-path1;
+    color: rgb(249, 249, 249);
+  }
+}
+
+.icon-ISP_Icon-menu-verticale-sx .path2 {
+  &:before {
+    content: $icon-ISP_Icon-menu-verticale-sx-path2;
+    margin-left: -1.1337890625em;
+    color: rgb(255, 255, 255);
+  }
+}
+
+.icon-ISP_Icon-menu-verticale-sx .path3 {
+  &:before {
+    content: $icon-ISP_Icon-menu-verticale-sx-path3;
+    margin-left: -1.1337890625em;
+    color: rgb(206, 206, 206);
+  }
+}
+
+.icon-ISP_Icon-salva-condividi .path1 {
+  &:before {
+    content: $icon-ISP_Icon-salva-condividi-path1;
+    color: rgb(249, 249, 249);
+  }
+}
+
+.icon-ISP_Icon-salva-condividi .path2 {
+  &:before {
+    content: $icon-ISP_Icon-salva-condividi-path2;
+    margin-left: -1.1044921875em;
+    color: rgb(255, 255, 255);
+  }
+}
+
+.icon-ISP_Icon-salva-condividi .path3 {
+  &:before {
+    content: $icon-ISP_Icon-salva-condividi-path3;
+    margin-left: -1.1044921875em;
+    color: rgb(206, 206, 206);
+  }
+}
+
+.icon-ISP_Icon-avvia-richieste .path1 {
+  &:before {
+    content: $icon-ISP_Icon-avvia-richieste-path1;
+    color: rgb(249, 249, 249);
+  }
+}
+
+.icon-ISP_Icon-avvia-richieste .path2 {
+  &:before {
+    content: $icon-ISP_Icon-avvia-richieste-path2;
+    margin-left: -1.1240234375em;
+    color: rgb(255, 255, 255);
+  }
+}
+
+.icon-ISP_Icon-avvia-richieste .path3 {
+  &:before {
+    content: $icon-ISP_Icon-avvia-richieste-path3;
+    margin-left: -1.1240234375em;
+    color: rgb(206, 206, 206);
+  }
+}
+
+.icon-ISP_Icon_articoli .path1 {
+  &:before {
+    content: $icon-ISP_Icon_articoli-path1;
+    color: rgb(249, 249, 249);
+  }
+}
+
+.icon-ISP_Icon_articoli .path2 {
+  &:before {
+    content: $icon-ISP_Icon_articoli-path2;
+    margin-left: -1.1142578125em;
+    color: rgb(255, 255, 255);
+  }
+}
+
+.icon-ISP_Icon_articoli .path3 {
+  &:before {
+    content: $icon-ISP_Icon_articoli-path3;
+    margin-left: -1.1142578125em;
+    color: rgb(206, 206, 206);
+  }
+}
+
+.icon-bus_off {
+  &:before {
+    content: $icon-bus_off;
+    color: #e8e8e8;
+  }
+}
+
+.icon-metro_off {
+  &:before {
+    content: $icon-metro_off;
+    color: #e8e8e8;
+  }
+}
+
+.icon-traghetto_off {
+  &:before {
+    content: $icon-traghetto_off;
+    color: #e8e8e8;
+  }
+}
+
+.icon-treno_off {
+  &:before {
+    content: $icon-treno_off;
+    color: #e8e8e8;
+  }
+}
+
+.icon-target {
+  &:before {
+    content: $icon-target;
+  }
+}
+
+.icon-Isp_icon_badge_video .path1 {
+  &:before {
+    content: $icon-Isp_icon_badge_video-path1;
+    color: rgb(121, 191, 105);
+  }
+}
+
+.icon-Isp_icon_badge_video .path2 {
+  &:before {
+    content: $icon-Isp_icon_badge_video-path2;
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+}
+
+.icon-isp-icon-timer {
+  &:before {
+    content: $icon-isp-icon-timer;
+    color: #5c5c5c;
+  }
+}
+
+.icon-A3 {
+  &:before {
+    content: $icon-A3;
+    color: #cfcece;
+  }
+}
+
+.icon-A2 {
+  &:before {
+    content: $icon-A2;
+    color: #cfcece;
+  }
+}
+
+.icon-A1 {
+  &:before {
+    content: $icon-A1;
+    color: #cfcece;
+  }
+}
+
+.icon-Contrast_icon {
+  &:before {
+    content: $icon-Contrast_icon;
+    color: #cfcece;
+  }
+}
+
+.icon-Normal_icon {
+  &:before {
+    content: $icon-Normal_icon;
+    color: #cfcece;
+  }
+}
+
+.icon-ISP_consiglio_carelab {
+  &:before {
+    content: $icon-ISP_consiglio_carelab;
+    color: #fe9241;
+  }
+}
+
+.icon-ISP_videocall-ordinary {
+  &:before {
+    content: $icon-ISP_videocall-ordinary;
+  }
+}
+
+.icon-ISP-skill-ordinary {
+  &:before {
+    content: $icon-ISP-skill-ordinary;
+  }
+}
+
+.icon-ISP-calendar-ordinary {
+  &:before {
+    content: $icon-ISP-calendar-ordinary;
+  }
+}
+
+.icon-ISP_biglietto-da-visita-ordinary {
+  &:before {
+    content: $icon-ISP_biglietto-da-visita-ordinary;
+  }
+}
+
+.icon-ISP_feedback-ordinary {
+  &:before {
+    content: $icon-ISP_feedback-ordinary;
+  }
+}
+
+.icon-ISP-hr-ordinary {
+  &:before {
+    content: $icon-ISP-hr-ordinary;
+  }
+}
+
+.icon-ISP-colloquio-ordinary {
+  &:before {
+    content: $icon-ISP-colloquio-ordinary;
+  }
+}
+
+.icon-ISP_colleghi-ordinary {
+  &:before {
+    content: $icon-ISP_colleghi-ordinary;
+  }
+}
+
+.icon-ISP_Icon_Auto-aziendale {
+  &:before {
+    content: $icon-ISP_Icon_Auto-aziendale;
+    color: #5c5c5c;
+  }
+}
+
+.icon-ISP_Icon_Foresteria {
+  &:before {
+    content: $icon-ISP_Icon_Foresteria;
+    color: #5c5c5c;
+  }
+}
+
+.icon-ISP_Icon_Pendolare {
+  &:before {
+    content: $icon-ISP_Icon_Pendolare;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Isp_Icon_Rotate_Device {
+  &:before {
+    content: $icon-Isp_Icon_Rotate_Device;
+  }
+}
+
+.icon-ISP_Icon_razzo {
+  &:before {
+    content: $icon-ISP_Icon_razzo;
+  }
+}
+
+.icon-ISP_Icon_bandiera {
+  &:before {
+    content: $icon-ISP_Icon_bandiera;
+  }
+}
+
+.icon-ISP_Icon_mano-pollice {
+  &:before {
+    content: $icon-ISP_Icon_mano-pollice;
+  }
+}
+
+.icon-ISP_Icon_user_check {
+  &:before {
+    content: $icon-ISP_Icon_user_check;
+  }
+}
+
+.icon-ISP_Icon_follow_job_people {
+  &:before {
+    content: $icon-ISP_Icon_follow_job_people;
+  }
+}
+
+.icon-ISP_action_calcola {
+  &:before {
+    content: $icon-ISP_action_calcola;
+  }
+}
+
+.icon-ISP_Icon_arrow_next {
+  &:before {
+    content: $icon-ISP_Icon_arrow_next;
+  }
+}
+
+.icon-ISP_Icon_Dividendi {
+  &:before {
+    content: $icon-ISP_Icon_Dividendi;
+    color: #505050;
+  }
+}
+
+.icon-ISP_Icon_united_hands {
+  &:before {
+    content: $icon-ISP_Icon_united_hands;
+  }
+}
+
+.icon-ISP_Icon_cloud_messages {
+  &:before {
+    content: $icon-ISP_Icon_cloud_messages;
+  }
+}
+
+.icon-ISP_Icon_-touch_graduation {
+  &:before {
+    content: $icon-ISP_Icon_-touch_graduation;
+  }
+}
+
+.icon-ISP_Icon_job_bags {
+  &:before {
+    content: $icon-ISP_Icon_job_bags;
+  }
+}
+
+.icon-ISP_Icon_guess_survey {
+  &:before {
+    content: $icon-ISP_Icon_guess_survey;
+  }
+}
+
+.icon-ISP_actions-configura {
+  &:before {
+    content: $icon-ISP_actions-configura;
+    color: #258900;
+  }
+}
+
+.icon-ISP_actions-subtract {
+  &:before {
+    content: $icon-ISP_actions-subtract;
+    color: #258900;
+  }
+}
+
+.icon-ISP_actions-verifica {
+  &:before {
+    content: $icon-ISP_actions-verifica;
+    color: #258900;
+  }
+}
+
+.icon-ISP_actions-visualliza-planimetria {
+  &:before {
+    content: $icon-ISP_actions-visualliza-planimetria;
+    color: #258900;
+  }
+}
+
+.icon-ISP_check-in {
+  &:before {
+    content: $icon-ISP_check-in;
+    color: #258900;
+  }
+}
+
+.icon-ISP_check-out {
+  &:before {
+    content: $icon-ISP_check-out;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Aggiungi {
+  &:before {
+    content: $icon-ISP_Icon_Aggiungi;
+    color: #258900;
+  }
+}
+
+.icon-ISP_pin_off {
+  &:before {
+    content: $icon-ISP_pin_off;
+    color: #268900;
+  }
+}
+
+.icon-ISP_pin_on {
+  &:before {
+    content: $icon-ISP_pin_on;
+    color: #268900;
+  }
+}
+
+.icon-icon_actions_onboarding {
+  &:before {
+    content: $icon-icon_actions_onboarding;
+    color: #258900;
+  }
+}
+
+.icon-Action_Arrow_Top {
+  &:before {
+    content: $icon-Action_Arrow_Top;
+    color: #258900;
+  }
+}
+
+.icon-Action_Arrow_Down {
+  &:before {
+    content: $icon-Action_Arrow_Down;
+    color: #258900;
+  }
+}
+
+.icon-Action_Arrow_Left {
+  &:before {
+    content: $icon-Action_Arrow_Left;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Arrow_forward {
+  &:before {
+    content: $icon-ISP_Icon_Arrow_forward;
+    color: #258900;
+  }
+}
+
+.icon-filters {
+  &:before {
+    content: $icon-filters;
+    color: #258900;
+  }
+}
+
+.icon-meno {
+  &:before {
+    content: $icon-meno;
+    color: #258900;
+  }
+}
+
+.icon-plus {
+  &:before {
+    content: $icon-plus;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_attach {
+  &:before {
+    content: $icon-ISP_Icon_attach;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Date_icon {
+  &:before {
+    content: $icon-ISP_Icon_Date_icon;
+    color: #258900;
+  }
+}
+
+.icon-ISP_actions-monitoraggio {
+  &:before {
+    content: $icon-ISP_actions-monitoraggio;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Arrow_Accordion {
+  &:before {
+    content: $icon-ISP_Icon_Arrow_Accordion;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Left {
+  &:before {
+    content: $icon-ISP_Icon_Left;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Right {
+  &:before {
+    content: $icon-ISP_Icon_Right;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Arrow_Accordion_Close {
+  &:before {
+    content: $icon-ISP_Icon_Arrow_Accordion_Close;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Close-lightbox {
+  &:before {
+    content: $icon-ISP_Icon_Close-lightbox;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Deleghe {
+  &:before {
+    content: $icon-ISP_Icon_Deleghe;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_trash {
+  &:before {
+    content: $icon-ISP_Icon_trash;
+    color: #258900;
+  }
+}
+
+.icon-Icon_PDF {
+  &:before {
+    content: $icon-Icon_PDF;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Scarica {
+  &:before {
+    content: $icon-ISP_Icon_Scarica;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Modifica_icon {
+  &:before {
+    content: $icon-ISP_Icon_Modifica_icon;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Espandi {
+  &:before {
+    content: $icon-ISP_Icon_Espandi;
+    color: #258900;
+  }
+}
+
+.icon-icon_export {
+  &:before {
+    content: $icon-icon_export;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Hide {
+  &:before {
+    content: $icon-ISP_Icon_Hide;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Show {
+  &:before {
+    content: $icon-ISP_Icon_Show;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Folder-01 {
+  &:before {
+    content: $icon-ISP_Icon_Folder-01;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Deleghe1 {
+  &:before {
+    content: $icon-ISP_Icon_Deleghe1;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Info {
+  &:before {
+    content: $icon-ISP_Icon_Info;
+    color: #258900;
+  }
+}
+
+.icon-Icon_Link {
+  &:before {
+    content: $icon-Icon_Link;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Link-Linkedin {
+  &:before {
+    content: $icon-ISP_Icon_Link-Linkedin;
+    color: #258900;
+  }
+}
+
+.icon-ISP_actions-sincronizza-con-outlook {
+  &:before {
+    content: $icon-ISP_actions-sincronizza-con-outlook;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Condividi_icon {
+  &:before {
+    content: $icon-ISP_Icon_Condividi_icon;
+    color: #258900;
+  }
+}
+
+.icon-action_menu_list {
+  &:before {
+    content: $icon-action_menu_list;
+  }
+}
+
+.icon-Action_Menu_Burger {
+  &:before {
+    content: $icon-Action_Menu_Burger;
+  }
+}
+
+.icon-Action_Menu_Kebab {
+  &:before {
+    content: $icon-Action_Menu_Kebab;
+    color: #258900;
+  }
+}
+
+.icon-Action_Menu_Meatballs {
+  &:before {
+    content: $icon-Action_Menu_Meatballs;
+    color: #258900;
+  }
+}
+
+.icon-midyearreview {
+  &:before {
+    content: $icon-midyearreview;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Gerarchia {
+  &:before {
+    content: $icon-ISP_Icon_Gerarchia;
+    color: #258900;
+  }
+}
+
+.icon-Action_Play {
+  &:before {
+    content: $icon-Action_Play;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Inserisci_OFF {
+  &:before {
+    content: $icon-ISP_Icon_Inserisci_OFF;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Inserisci_On {
+  &:before {
+    content: $icon-ISP_Icon_Inserisci_On;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon-Actions-preferiti-off {
+  &:before {
+    content: $icon-ISP_Icon-Actions-preferiti-off;
+    color: #258900;
+  }
+}
+
+.icon-Action_Preferiti_On {
+  &:before {
+    content: $icon-Action_Preferiti_On;
+    color: #258900;
+  }
+}
+
+.icon-ISP-tips {
+  &:before {
+    content: $icon-ISP-tips;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Stampa {
+  &:before {
+    content: $icon-ISP_Icon_Stampa;
+    color: #258900;
+  }
+}
+
+.icon-Action_Restartfield {
+  &:before {
+    content: $icon-Action_Restartfield;
+    color: #268900;
+  }
+}
+
+.icon-ISP_Icon_rotate-neg {
+  &:before {
+    content: $icon-ISP_Icon_rotate-neg;
+    color: #258900;
+  }
+}
+
+.icon-ISP_icon_save {
+  &:before {
+    content: $icon-ISP_icon_save;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Search_icon {
+  &:before {
+    content: $icon-ISP_Icon_Search_icon;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Scheda {
+  &:before {
+    content: $icon-ISP_Icon_Scheda;
+    color: #268900;
+  }
+}
+
+.icon-ISP_Icon_action_sort_discendente {
+  &:before {
+    content: $icon-ISP_Icon_action_sort_discendente;
+    color: #268900;
+  }
+}
+
+.icon-Arrow_down_on-01 {
+  &:before {
+    content: $icon-Arrow_down_on-01;
+    color: #258900;
+  }
+}
+
+.icon-Action_Send {
+  &:before {
+    content: $icon-Action_Send;
+    color: #f1f1f1;
+  }
+}
+
+.icon-ISP_Icon_Condividi {
+  &:before {
+    content: $icon-ISP_Icon_Condividi;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Torni_su {
+  &:before {
+    content: $icon-ISP_Icon_Torni_su;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Segnala {
+  &:before {
+    content: $icon-ISP_Icon_Segnala;
+    color: #258900;
+  }
+}
+
+.icon-icon-magic {
+  &:before {
+    content: $icon-icon-magic;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Vedipiu {
+  &:before {
+    content: $icon-ISP_Icon_Vedipiu;
+    color: #258900;
+  }
+}
+
+.icon-Action_Zoom_Out {
+  &:before {
+    content: $icon-Action_Zoom_Out;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Segnalazioni {
+  &:before {
+    content: $icon-ISP_Icon_Segnalazioni;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_action_sort_ascendente {
+  &:before {
+    content: $icon-ISP_Icon_action_sort_ascendente;
+    color: #268900;
+  }
+}
+
+.icon-Arrow_up_on-01 {
+  &:before {
+    content: $icon-Arrow_up_on-01;
+    color: #258900;
+  }
+}
+
+.icon-Checkbox_Off {
+  &:before {
+    content: $icon-Checkbox_Off;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Checkbox_On {
+  &:before {
+    content: $icon-Checkbox_On;
+    color: #258900;
+  }
+}
+
+.icon-Mi_racconto {
+  &:before {
+    content: $icon-Mi_racconto;
+    color: #757575;
+  }
+}
+
+.icon-ISP_Icon_Icona_Come_3 {
+  &:before {
+    content: $icon-ISP_Icon_Icona_Come_3;
+    color: #757575;
+  }
+}
+
+.icon-icon-chart-man {
+  &:before {
+    content: $icon-icon-chart-man;
+    color: #757575;
+  }
+}
+
+.icon-icon-travel-bag {
+  &:before {
+    content: $icon-icon-travel-bag;
+    color: #757575;
+  }
+}
+
+.icon-lingueconosciute {
+  &:before {
+    content: $icon-lingueconosciute;
+    color: #757575;
+  }
+}
+
+.icon-icon-hands {
+  &:before {
+    content: $icon-icon-hands;
+    color: #757575;
+  }
+}
+
+.icon-ISP_Icon_passioni_gray {
+  &:before {
+    content: $icon-ISP_Icon_passioni_gray;
+    color: #757575;
+  }
+}
+
+.icon-icon-laurea {
+  &:before {
+    content: $icon-icon-laurea;
+    color: #757575;
+  }
+}
+
+.icon-icon-awards {
+  &:before {
+    content: $icon-icon-awards;
+    color: #757575;
+  }
+}
+
+.icon-icon_formazioni-e-sviluppo .path1 {
+  &:before {
+    content: $icon-icon_formazioni-e-sviluppo-path1;
+    color: rgb(209, 231, 172);
+  }
+}
+
+.icon-icon_formazioni-e-sviluppo .path2 {
+  &:before {
+    content: $icon-icon_formazioni-e-sviluppo-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-icon_richieste-amministrative .path1 {
+  &:before {
+    content: $icon-icon_richieste-amministrative-path1;
+    color: rgb(209, 231, 172);
+  }
+}
+
+.icon-icon_richieste-amministrative .path2 {
+  &:before {
+    content: $icon-icon_richieste-amministrative-path2;
+    margin-left: -1em;
+    color: rgb(37, 137, 0);
+  }
+}
+
+.icon-icon-dati-anagrafici .path1 {
+  &:before {
+    content: $icon-icon-dati-anagrafici-path1;
+    color: rgb(190, 221, 137);
+    opacity: 0.7;
+  }
+}
+
+.icon-icon-dati-anagrafici .path2 {
+  &:before {
+    content: $icon-icon-dati-anagrafici-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-ISP_icon_profilo_in_breve .path1 {
+  &:before {
+    content: $icon-ISP_icon_profilo_in_breve-path1;
+    color: rgb(209, 231, 172);
+  }
+}
+
+.icon-ISP_icon_profilo_in_breve .path2 {
+  &:before {
+    content: $icon-ISP_icon_profilo_in_breve-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-icon-presenze .path1 {
+  &:before {
+    content: $icon-icon-presenze-path1;
+    color: rgb(190, 221, 137);
+    opacity: 0.7;
+  }
+}
+
+.icon-icon-presenze .path2 {
+  &:before {
+    content: $icon-icon-presenze-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-icon-group-28 .path1 {
+  &:before {
+    content: $icon-icon-group-28-path1;
+    color: rgb(190, 221, 137);
+    opacity: 0.7;
+  }
+}
+
+.icon-icon-group-28 .path2 {
+  &:before {
+    content: $icon-icon-group-28-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-icon-retribuzioni .path1 {
+  &:before {
+    content: $icon-icon-retribuzioni-path1;
+    color: rgb(190, 221, 137);
+    opacity: 0.7;
+  }
+}
+
+.icon-icon-retribuzioni .path2 {
+  &:before {
+    content: $icon-icon-retribuzioni-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-Isp_Icon_Controls_Obiettivi_Numeri {
+  &:before {
+    content: $icon-Isp_Icon_Controls_Obiettivi_Numeri;
+    color: #298b36;
+  }
+}
+
+.icon-Isp_Icon_Controls_Obiettivi_Testo {
+  &:before {
+    content: $icon-Isp_Icon_Controls_Obiettivi_Testo;
+    color: #298b36;
+  }
+}
+
+.icon-Isp_Icon_Controls_Obiettivi_Checkbox {
+  &:before {
+    content: $icon-Isp_Icon_Controls_Obiettivi_Checkbox;
+    color: #288a36;
+  }
+}
+
+.icon-Isp_Icon_Controls_Tabelle_Off {
+  &:before {
+    content: $icon-Isp_Icon_Controls_Tabelle_Off;
+    color: #268900;
+  }
+}
+
+.icon-Isp_Icon_Controls_Tabelle_On {
+  &:before {
+    content: $icon-Isp_Icon_Controls_Tabelle_On;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_VistaGrafico_off {
+  &:before {
+    content: $icon-ISP_Icon_VistaGrafico_off;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_VistaGrafico_ofn {
+  &:before {
+    content: $icon-ISP_Icon_VistaGrafico_ofn;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Calendar2 {
+  &:before {
+    content: $icon-ISP_Icon_Calendar2;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Calendar_neg {
+  &:before {
+    content: $icon-ISP_Icon_Calendar_neg;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Filtri_Off {
+  &:before {
+    content: $icon-ISP_Icon_Filtri_Off;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Filtri_On {
+  &:before {
+    content: $icon-ISP_Icon_Filtri_On;
+    color: #258900;
+  }
+}
+
+.icon-Vsita_Lista_Off {
+  &:before {
+    content: $icon-Vsita_Lista_Off;
+    color: #258900;
+  }
+}
+
+.icon-Vista_Lista_On {
+  &:before {
+    content: $icon-Vista_Lista_On;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Strutture_Off {
+  &:before {
+    content: $icon-ISP_Icon_Strutture_Off;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Strutture_On .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Strutture_On-path1;
+    color: rgb(37, 137, 0);
+  }
+}
+
+.icon-ISP_Icon_Strutture_On .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Strutture_On-path2;
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+}
+
+.icon-ISP_Icon_Riporti_Off {
+  &:before {
+    content: $icon-ISP_Icon_Riporti_Off;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Riporti_On {
+  &:before {
+    content: $icon-ISP_Icon_Riporti_On;
+    color: #258900;
+  }
+}
+
+.icon-Vista_Card_Off {
+  &:before {
+    content: $icon-Vista_Card_Off;
+    color: #258900;
+  }
+}
+
+.icon-Vista_Card_On {
+  &:before {
+    content: $icon-Vista_Card_On;
+    color: #258900;
+  }
+}
+
+.icon-ISP_icon_zoomIn_Off {
+  &:before {
+    content: $icon-ISP_icon_zoomIn_Off;
+    color: #258900;
+  }
+}
+
+.icon-ISP_icon_zoomIn_On {
+  &:before {
+    content: $icon-ISP_icon_zoomIn_On;
+    color: #258900;
+  }
+}
+
+.icon-ISP_icon_zoomOut_Off {
+  &:before {
+    content: $icon-ISP_icon_zoomOut_Off;
+    color: #258900;
+  }
+}
+
+.icon-ISP_icon_zoomOut_On {
+  &:before {
+    content: $icon-ISP_icon_zoomOut_On;
+    color: #258900;
+  }
+}
+
+.icon-ISP_formazione_resp {
+  &:before {
+    content: $icon-ISP_formazione_resp;
+    color: #258900;
+  }
+}
+
+.icon-ISP_formazione_hr {
+  &:before {
+    content: $icon-ISP_formazione_hr;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Dashboard_Trolley {
+  &:before {
+    content: $icon-ISP_Icon_Dashboard_Trolley;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Dashboard_Gender_Equality {
+  &:before {
+    content: $icon-ISP_Icon_Dashboard_Gender_Equality;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Dashboard_Lavoro_Flessibile {
+  &:before {
+    content: $icon-ISP_Icon_Dashboard_Lavoro_Flessibile;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Dashboard_Assenze {
+  &:before {
+    content: $icon-ISP_Icon_Dashboard_Assenze;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Dashboard_Genere_dettaglio {
+  &:before {
+    content: $icon-ISP_Icon_Dashboard_Genere_dettaglio;
+    color: #258900;
+  }
+}
+
+.icon-icon_dashboard_new {
+  &:before {
+    content: $icon-icon_dashboard_new;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Dashboard_Genere {
+  &:before {
+    content: $icon-ISP_Icon_Dashboard_Genere;
+    color: #258900;
+  }
+}
+
+.icon-DashBoardIcon {
+  &:before {
+    content: $icon-DashBoardIcon;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Dashboard_Organico {
+  &:before {
+    content: $icon-ISP_Icon_Dashboard_Organico;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Dashboard_Recruiting {
+  &:before {
+    content: $icon-ISP_Icon_Dashboard_Recruiting;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Dashboard_trasferte {
+  &:before {
+    content: $icon-ISP_Icon_Dashboard_trasferte;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Dashboard_trasferte_TopSpender .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Dashboard_trasferte_TopSpender-path1;
+    color: rgb(37, 137, 0);
+  }
+}
+
+.icon-ISP_Icon_Dashboard_trasferte_TopSpender .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Dashboard_trasferte_TopSpender-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-ISP_Icon_Dashboard_Ferie {
+  &:before {
+    content: $icon-ISP_Icon_Dashboard_Ferie;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_DOC {
+  &:before {
+    content: $icon-ISP_Icon_DOC;
+    color: #5c5c5c;
+  }
+}
+
+.icon-ISP_Icon_JPG {
+  &:before {
+    content: $icon-ISP_Icon_JPG;
+    color: #5c5c5c;
+  }
+}
+
+.icon-ISP_Icon_MP3 {
+  &:before {
+    content: $icon-ISP_Icon_MP3;
+    color: #5c5c5c;
+  }
+}
+
+.icon-ISP_Icon_PDF {
+  &:before {
+    content: $icon-ISP_Icon_PDF;
+    color: #5c5c5c;
+  }
+}
+
+.icon-ISP_Icon_Youtube {
+  &:before {
+    content: $icon-ISP_Icon_Youtube;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Facebook {
+  &:before {
+    content: $icon-ISP_Icon_Facebook;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Linkedin {
+  &:before {
+    content: $icon-ISP_Icon_Linkedin;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Twitter {
+  &:before {
+    content: $icon-ISP_Icon_Twitter;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Open {
+  &:before {
+    content: $icon-ISP_Icon_Open;
+    color: #d9f1b7;
+  }
+}
+
+.icon-close {
+  &:before {
+    content: $icon-close;
+    color: #d9f1b7;
+  }
+}
+
+.icon-icon-generale-autorilevato {
+  &:before {
+    content: $icon-icon-generale-autorilevato;
+    color: #5c5c5c;
+  }
+}
+
+.icon-icon-generale-valutato {
+  &:before {
+    content: $icon-icon-generale-valutato;
+    color: #5c5c5c;
+  }
+}
+
+.icon-ISP_Icon_Location_icon {
+  &:before {
+    content: $icon-ISP_Icon_Location_icon;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Generic_Coccarda {
+  &:before {
+    content: $icon-Generic_Coccarda;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Generic_Email_Address {
+  &:before {
+    content: $icon-Generic_Email_Address;
+    color: #5c5c5c;
+  }
+}
+
+.icon-ISP_Icon_professionale {
+  &:before {
+    content: $icon-ISP_Icon_professionale;
+    color: #5c5c5c;
+  }
+}
+
+.icon-People_Logo {
+  &:before {
+    content: $icon-People_Logo;
+  }
+}
+
+.icon-ISP_Icon_Telefono_icon {
+  &:before {
+    content: $icon-ISP_Icon_Telefono_icon;
+    color: #5c5c5c;
+  }
+}
+
+.icon-ISP_Icon_Fisso_icon {
+  &:before {
+    content: $icon-ISP_Icon_Fisso_icon;
+    color: #5c5c5c;
+  }
+}
+
+.icon-ISP_Icon_formativa {
+  &:before {
+    content: $icon-ISP_Icon_formativa;
+    color: #5c5c5c;
+  }
+}
+
+.icon-ISP_Icon_Orologio_icon {
+  &:before {
+    content: $icon-ISP_Icon_Orologio_icon;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Header_Cassetto {
+  &:before {
+    content: $icon-Header_Cassetto;
+  }
+}
+
+.icon-ISP_Icon_Notifiche_icon {
+  &:before {
+    content: $icon-ISP_Icon_Notifiche_icon;
+  }
+}
+
+.icon-ISP_Personale-in-aspettativa {
+  &:before {
+    content: $icon-ISP_Personale-in-aspettativa;
+    color: #5c5c5c;
+  }
+}
+
+.icon-ISP_Personale-a-disposizione {
+  &:before {
+    content: $icon-ISP_Personale-a-disposizione;
+    color: #5c5c5c;
+  }
+}
+
+.icon-ISP_adesione_accordi_circle {
+  &:before {
+    content: $icon-ISP_adesione_accordi_circle;
+    color: #5c5c5c;
+  }
+}
+
+.icon-ISP_calendar_2020 {
+  &:before {
+    content: $icon-ISP_calendar_2020;
+  }
+}
+
+.icon-Icon_Inbreve_Pendolare {
+  &:before {
+    content: $icon-Icon_Inbreve_Pendolare;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Inbreve_Formazione {
+  &:before {
+    content: $icon-Icon_Inbreve_Formazione;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_InBreve_Foresteria {
+  &:before {
+    content: $icon-Icon_InBreve_Foresteria;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Inbreve_Assegnazione-auto-aziendale {
+  &:before {
+    content: $icon-Icon_Inbreve_Assegnazione-auto-aziendale;
+    color: #5c5c5c;
+  }
+}
+
+.icon-ISP_Icon_Appartenente_Comunita_Talent {
+  &:before {
+    content: $icon-ISP_Icon_Appartenente_Comunita_Talent;
+    color: #5c5c5c;
+  }
+}
+
+.icon-ISP_Icon_Percorso_Reskilling {
+  &:before {
+    content: $icon-ISP_Icon_Percorso_Reskilling;
+    color: #5c5c5c;
+  }
+}
+
+.icon-ISP_Icon_Numero_Figli_Minorenni {
+  &:before {
+    content: $icon-ISP_Icon_Numero_Figli_Minorenni;
+    color: #5c5c5c;
+  }
+}
+
+.icon-ISP_Icon_contratto {
+  &:before {
+    content: $icon-ISP_Icon_contratto;
+    color: #5c5c5c;
+  }
+}
+
+.icon-ISP_Icon_avente-diritto-a-legge-104 {
+  &:before {
+    content: $icon-ISP_Icon_avente-diritto-a-legge-104;
+    color: #5c5c5c;
+  }
+}
+
+.icon-ISP_Icon_grave-patologia {
+  &:before {
+    content: $icon-ISP_Icon_grave-patologia;
+    color: #5c5c5c;
+  }
+}
+
+.icon-ISP_Icon_lavoratore-potenziale-assente-lungo-periodo {
+  &:before {
+    content: $icon-ISP_Icon_lavoratore-potenziale-assente-lungo-periodo;
+    color: #5c5c5c;
+  }
+}
+
+.icon-ISP_Icon_provvedimenti-disciplinari-negli-ultimi-due-anni {
+  &:before {
+    content: $icon-ISP_Icon_provvedimenti-disciplinari-negli-ultimi-due-anni;
+    color: #5c5c5c;
+  }
+}
+
+.icon-ISP_Icon_richiesta-trasferimento-attivo {
+  &:before {
+    content: $icon-ISP_Icon_richiesta-trasferimento-attivo;
+    color: #5c5c5c;
+  }
+}
+
+.icon-ISP_Icon_tempo-determinato-art-46 {
+  &:before {
+    content: $icon-ISP_Icon_tempo-determinato-art-46;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Inbreve_Sindacale {
+  &:before {
+    content: $icon-Icon_Inbreve_Sindacale;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Inbreve_Cariche-Pubbliche {
+  &:before {
+    content: $icon-Icon_Inbreve_Cariche-Pubbliche;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Inbreve_CONSOB1 {
+  &:before {
+    content: $icon-Icon_Inbreve_CONSOB1;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Inbreve_IVASS {
+  &:before {
+    content: $icon-Icon_Inbreve_IVASS;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Inbreve_Richiami-Disciplinari {
+  &:before {
+    content: $icon-Icon_Inbreve_Richiami-Disciplinari;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Inbreve_Figlio {
+  &:before {
+    content: $icon-Icon_Inbreve_Figlio;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Inbreve_Grave-patologia {
+  &:before {
+    content: $icon-Icon_Inbreve_Grave-patologia;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Inbreve_Invalidita {
+  &:before {
+    content: $icon-Icon_Inbreve_Invalidita;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Inbreve_Assente {
+  &:before {
+    content: $icon-Icon_Inbreve_Assente;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Inbreve_Part-Time {
+  &:before {
+    content: $icon-Icon_Inbreve_Part-Time;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Inbreve_Legge104 {
+  &:before {
+    content: $icon-Icon_Inbreve_Legge104;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Inbreve_Multi-incarico {
+  &:before {
+    content: $icon-Icon_Inbreve_Multi-incarico;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Inbreve_Provvediemnti-Disciplinari {
+  &:before {
+    content: $icon-Icon_Inbreve_Provvediemnti-Disciplinari;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Inbreve_Smartworking {
+  &:before {
+    content: $icon-Icon_Inbreve_Smartworking;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Inbreve_Sostituto-Direttore {
+  &:before {
+    content: $icon-Icon_Inbreve_Sostituto-Direttore;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Inbreve_In-distacco {
+  &:before {
+    content: $icon-Icon_Inbreve_In-distacco;
+    color: #5c5c5c;
+  }
+}
+
+.icon-Icon_Inbreve_In-missione {
+  &:before {
+    content: $icon-Icon_Inbreve_In-missione;
+    color: #5c5c5c;
+  }
+}
+
+.icon-ISP_Icon_Down {
+  &:before {
+    content: $icon-ISP_Icon_Down;
+    color: #e55d33;
+  }
+}
+
+.icon-ISP_Icon_AndamentoNeutro {
+  &:before {
+    content: $icon-ISP_Icon_AndamentoNeutro;
+    color: #e8e8e8;
+  }
+}
+
+.icon-ISP_Icon_Up {
+  &:before {
+    content: $icon-ISP_Icon_Up;
+    color: #79bf69;
+  }
+}
+
+.icon-ISP_Icon_Lecoip_2014_2017 {
+  &:before {
+    content: $icon-ISP_Icon_Lecoip_2014_2017;
+  }
+}
+
+.icon-ISP_Icon_PianoPop {
+  &:before {
+    content: $icon-ISP_Icon_PianoPop;
+  }
+}
+
+.icon-Radio_Off {
+  &:before {
+    content: $icon-Radio_Off;
+    color: #5c5c5c;
+  }
+}
+
+.icon-ISP_Icon_Selected {
+  &:before {
+    content: $icon-ISP_Icon_Selected;
+    color: #258900;
+  }
+}
+
+.icon-ISP_Icon_Warning-Bloccante {
+  &:before {
+    content: $icon-ISP_Icon_Warning-Bloccante;
+    color: #e55d33;
+  }
+}
+
+.icon-ISP_Icon_Info-Esito {
+  &:before {
+    content: $icon-ISP_Icon_Info-Esito;
+    color: #79bf69;
+  }
+}
+
+.icon-ISP_Icon_Warning {
+  &:before {
+    content: $icon-ISP_Icon_Warning;
+    color: #f5a623;
+  }
+}
+
+.icon-ISP_videocall .path1 {
+  &:before {
+    content: $icon-ISP_videocall-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_videocall .path2 {
+  &:before {
+    content: $icon-ISP_videocall-path2;
+    margin-left: -1em;
+    color: rgb(37, 137, 0);
+  }
+}
+
+.icon-ISP-skill .path1 {
+  &:before {
+    content: $icon-ISP-skill-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP-skill .path2 {
+  &:before {
+    content: $icon-ISP-skill-path2;
+    margin-left: -1em;
+    color: rgb(37, 137, 0);
+  }
+}
+
+.icon-ISP_Icon_start-bandiera .path1 {
+  &:before {
+    content: $icon-ISP_Icon_start-bandiera-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_start-bandiera .path2 {
+  &:before {
+    content: $icon-ISP_Icon_start-bandiera-path2;
+    margin-left: -1.037109375em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-ISP_Icon_mi-presento .path1 {
+  &:before {
+    content: $icon-ISP_Icon_mi-presento-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_mi-presento .path2 {
+  &:before {
+    content: $icon-ISP_Icon_mi-presento-path2;
+    margin-left: -1.037109375em;
+    color: rgb(37, 137, 0);
+  }
+}
+
+.icon-ISP_sezioni-rocket .path1 {
+  &:before {
+    content: $icon-ISP_sezioni-rocket-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_sezioni-rocket .path2 {
+  &:before {
+    content: $icon-ISP_sezioni-rocket-path2;
+    margin-left: -1em;
+    color: rgb(37, 137, 0);
+  }
+}
+
+.icon-ISP_Icon_pollice-in-su .path1 {
+  &:before {
+    content: $icon-ISP_Icon_pollice-in-su-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_pollice-in-su .path2 {
+  &:before {
+    content: $icon-ISP_Icon_pollice-in-su-path2;
+    margin-left: -1.037109375em;
+    color: rgb(37, 137, 0);
+  }
+}
+
+.icon-icon-ISP_Icon_Colloquio .path1 {
+  &:before {
+    content: $icon-icon-ISP_Icon_Colloquio-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-icon-ISP_Icon_Colloquio .path2 {
+  &:before {
+    content: $icon-icon-ISP_Icon_Colloquio-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-ISP_colloquio .path1 {
+  &:before {
+    content: $icon-ISP_colloquio-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_colloquio .path2 {
+  &:before {
+    content: $icon-ISP_colloquio-path2;
+    margin-left: -1em;
+    color: rgb(37, 137, 0);
+  }
+}
+
+.icon-ISP_sezioni-connessioni .path1 {
+  &:before {
+    content: $icon-ISP_sezioni-connessioni-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_sezioni-connessioni .path2 {
+  &:before {
+    content: $icon-ISP_sezioni-connessioni-path2;
+    margin-left: -1em;
+    color: rgb(37, 137, 0);
+  }
+}
+
+.icon-icon-ISP_Icon_Inserimento .path1 {
+  &:before {
+    content: $icon-icon-ISP_Icon_Inserimento-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-icon-ISP_Icon_Inserimento .path2 {
+  &:before {
+    content: $icon-icon-ISP_Icon_Inserimento-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-ISP-hr .path1 {
+  &:before {
+    content: $icon-ISP-hr-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP-hr .path2 {
+  &:before {
+    content: $icon-ISP-hr-path2;
+    margin-left: -1em;
+    color: rgb(37, 137, 0);
+  }
+}
+
+.icon-icon-ISP_Icon_Survey .path1 {
+  &:before {
+    content: $icon-icon-ISP_Icon_Survey-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-icon-ISP_Icon_Survey .path2 {
+  &:before {
+    content: $icon-icon-ISP_Icon_Survey-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-ISP_Sezioni_Ambizioni_Aspirazioni .path1 {
+  &:before {
+    content: $icon-ISP_Sezioni_Ambizioni_Aspirazioni-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Sezioni_Ambizioni_Aspirazioni .path2 {
+  &:before {
+    content: $icon-ISP_Sezioni_Ambizioni_Aspirazioni-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-ISP_Icon_sezioni_pillole .path1 {
+  &:before {
+    content: $icon-ISP_Icon_sezioni_pillole-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_sezioni_pillole .path2 {
+  &:before {
+    content: $icon-ISP_Icon_sezioni_pillole-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-ISP_Icon_Ambizionispirazioni .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Ambizionispirazioni-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_Ambizionispirazioni .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Ambizionispirazioni-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-ISP_Icon_Appuntamenti .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Appuntamenti-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_Appuntamenti .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Appuntamenti-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-ISP_Icon_Perche .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Perche-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_Perche .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Perche-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-ISP_Icon_Collaboratori .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Collaboratori-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_Collaboratori .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Collaboratori-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-Sezioni_Colleghi .path1 {
+  &:before {
+    content: $icon-Sezioni_Colleghi-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-Sezioni_Colleghi .path2 {
+  &:before {
+    content: $icon-Sezioni_Colleghi-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-Sezioni_Comments .path1 {
+  &:before {
+    content: $icon-Sezioni_Comments-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-Sezioni_Comments .path2 {
+  &:before {
+    content: $icon-Sezioni_Comments-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-ISP_Icon_corsi .path1 {
+  &:before {
+    content: $icon-ISP_Icon_corsi-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_corsi .path2 {
+  &:before {
+    content: $icon-ISP_Icon_corsi-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-ISP_Icon_Dashboard .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Dashboard-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_Dashboard .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Dashboard-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-Sezioni_Datipersonali .path1 {
+  &:before {
+    content: $icon-Sezioni_Datipersonali-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-Sezioni_Datipersonali .path2 {
+  &:before {
+    content: $icon-Sezioni_Datipersonali-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-ISP_Icon_Valori1 .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Valori1-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_Valori1 .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Valori1-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-ISP_Icon_percorso .path1 {
+  &:before {
+    content: $icon-ISP_Icon_percorso-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_percorso .path2 {
+  &:before {
+    content: $icon-ISP_Icon_percorso-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-ISP_Icon_Job_Center .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Job_Center-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_Job_Center .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Job_Center-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-Sezioni_Feedback .path1 {
+  &:before {
+    content: $icon-Sezioni_Feedback-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-Sezioni_Feedback .path2 {
+  &:before {
+    content: $icon-Sezioni_Feedback-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-Sezioni_Firma .path1 {
+  &:before {
+    content: $icon-Sezioni_Firma-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-Sezioni_Firma .path2 {
+  &:before {
+    content: $icon-Sezioni_Firma-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-ISP_Icon_Seniority .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Seniority-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_Seniority .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Seniority-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-Sezioni_History .path1 {
+  &:before {
+    content: $icon-Sezioni_History-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-Sezioni_History .path2 {
+  &:before {
+    content: $icon-Sezioni_History-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-ISP_Icon_Numeri .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Numeri-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_Numeri .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Numeri-path2;
+    margin-left: -1em;
+    color: rgb(0, 138, 0);
+  }
+}
+
+.icon-Sezioni_Identity .path1 {
+  &:before {
+    content: $icon-Sezioni_Identity-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-Sezioni_Identity .path2 {
+  &:before {
+    content: $icon-Sezioni_Identity-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-ISP_Icon_Percorso .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Percorso-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_Percorso .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Percorso-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-ISP_Icon_Perche1 .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Perche1-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_Perche1 .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Perche1-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-ISP_Icon_Portafoglio .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Portafoglio-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_Portafoglio .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Portafoglio-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-ISP_Icon_Suggerimenti .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Suggerimenti-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_Suggerimenti .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Suggerimenti-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-ISP_Icon_Lingue .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Lingue-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_Lingue .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Lingue-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-Sezioni_Lockedinfo .path1 {
+  &:before {
+    content: $icon-Sezioni_Lockedinfo-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-Sezioni_Lockedinfo .path2 {
+  &:before {
+    content: $icon-Sezioni_Lockedinfo-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-ISP_Icon_Follow_Up_People .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Follow_Up_People-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_Follow_Up_People .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Follow_Up_People-path2;
+    margin-left: -1em;
+    color: rgb(37, 137, 0);
+  }
+}
+
+.icon-ISP_Icon_Mi_presento .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Mi_presento-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_Mi_presento .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Mi_presento-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-ISP_Icon_Obiettivi .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Obiettivi-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_Obiettivi .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Obiettivi-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-ISP_Icon_News .path1 {
+  &:before {
+    content: $icon-ISP_Icon_News-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_News .path2 {
+  &:before {
+    content: $icon-ISP_Icon_News-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-ISP_Icon_NotificheSezione .path1 {
+  &:before {
+    content: $icon-ISP_Icon_NotificheSezione-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_NotificheSezione .path2 {
+  &:before {
+    content: $icon-ISP_Icon_NotificheSezione-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-ISP_Icon_GoalSet .path1 {
+  &:before {
+    content: $icon-ISP_Icon_GoalSet-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_GoalSet .path2 {
+  &:before {
+    content: $icon-ISP_Icon_GoalSet-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-pacchetti .path1 {
+  &:before {
+    content: $icon-pacchetti-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-pacchetti .path2 {
+  &:before {
+    content: $icon-pacchetti-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-ISP_Icon_Passioni .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Passioni-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_Passioni .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Passioni-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-ISP_Icon_Videos .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Videos-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_Videos .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Videos-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-ISP_Icon_PerformanceRetrib .path1 {
+  &:before {
+    content: $icon-ISP_Icon_PerformanceRetrib-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_PerformanceRetrib .path2 {
+  &:before {
+    content: $icon-ISP_Icon_PerformanceRetrib-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-ISP_Icon_Persone .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Persone-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_Persone .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Persone-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-ISP_Icon_Competenze .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Competenze-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_Competenze .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Competenze-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-Sezioni_Question .path1 {
+  &:before {
+    content: $icon-Sezioni_Question-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-Sezioni_Question .path2 {
+  &:before {
+    content: $icon-Sezioni_Question-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-ISP_Icon_Richieste_title .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Richieste_title-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_Richieste_title .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Richieste_title-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-ISP_Icon_Riconoscimenti-2 .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Riconoscimenti-2-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_Riconoscimenti-2 .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Riconoscimenti-2-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-ISP_Icon_Servizi-Pers .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Servizi-Pers-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_Servizi-Pers .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Servizi-Pers-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-Sezioni_Skill_Tecniche .path1 {
+  &:before {
+    content: $icon-Sezioni_Skill_Tecniche-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-Sezioni_Skill_Tecniche .path2 {
+  &:before {
+    content: $icon-Sezioni_Skill_Tecniche-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-Sezioni_Suggerimenti .path1 {
+  &:before {
+    content: $icon-Sezioni_Suggerimenti-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-Sezioni_Suggerimenti .path2 {
+  &:before {
+    content: $icon-Sezioni_Suggerimenti-path2;
+    margin-left: -1em;
+    color: rgb(38, 137, 0);
+  }
+}
+
+.icon-ISP_alert-error {
+  &:before {
+    content: $icon-ISP_alert-error;
+    color: #e55d33;
+  }
+}
+
+.icon-ISP_alert-warning {
+  &:before {
+    content: $icon-ISP_alert-warning;
+    color: #f5a623;
+  }
+}
+
+.icon-ISP_actions-verifica1 .path1 {
+  &:before {
+    content: $icon-ISP_actions-verifica1-path1;
+    color: rgb(102, 202, 231);
+  }
+}
+
+.icon-ISP_actions-verifica1 .path2 {
+  &:before {
+    content: $icon-ISP_actions-verifica1-path2;
+    margin-left: -1em;
+    color: rgb(102, 202, 231);
+    opacity: 0.3;
+  }
+}
+
+.icon-ISP_Icon_Stato_away {
+  &:before {
+    content: $icon-ISP_Icon_Stato_away;
+    color: #f5a623;
+  }
+}
+
+.icon-ISP_Icon_Stato_Busy {
+  &:before {
+    content: $icon-ISP_Icon_Stato_Busy;
+    color: #e55d33;
+  }
+}
+
+.icon-ISP_Icon_Stato_donotdisturb {
+  &:before {
+    content: $icon-ISP_Icon_Stato_donotdisturb;
+    color: #e55d33;
+  }
+}
+
+.icon-ISP_pianificazione-lavoro-flessibile .path1 {
+  &:before {
+    content: $icon-ISP_pianificazione-lavoro-flessibile-path1;
+    color: rgb(255, 255, 255);
+  }
+}
+
+.icon-ISP_pianificazione-lavoro-flessibile .path2 {
+  &:before {
+    content: $icon-ISP_pianificazione-lavoro-flessibile-path2;
+    margin-left: -1em;
+    color: rgb(1, 146, 223);
+  }
+}
+
+.icon-ISP_pianificazione-lavoro-flessibile-rifiutato .path1 {
+  &:before {
+    content: $icon-ISP_pianificazione-lavoro-flessibile-rifiutato-path1;
+    color: rgb(255, 255, 255);
+  }
+}
+
+.icon-ISP_pianificazione-lavoro-flessibile-rifiutato .path2 {
+  &:before {
+    content: $icon-ISP_pianificazione-lavoro-flessibile-rifiutato-path2;
+    margin-left: -1em;
+    color: rgb(229, 93, 51);
+  }
+}
+
+.icon-ISP_Icon_Stato_online {
+  &:before {
+    content: $icon-ISP_Icon_Stato_online;
+    color: #79bf69;
+  }
+}
+
+.icon-ISP_pianificazione-2-eventi .path1 {
+  &:before {
+    content: $icon-ISP_pianificazione-2-eventi-path1;
+    color: rgb(255, 255, 255);
+  }
+}
+
+.icon-ISP_pianificazione-2-eventi .path2 {
+  &:before {
+    content: $icon-ISP_pianificazione-2-eventi-path2;
+    margin-left: -1em;
+    color: rgb(203, 180, 253);
+  }
+}
+
+.icon-ISP_pianificazione-2-eventi .path3 {
+  &:before {
+    content: $icon-ISP_pianificazione-2-eventi-path3;
+    margin-left: -1em;
+    color: rgb(111, 0, 135);
+  }
+}
+
+.icon-ISP_pianificazione-assenza .path1 {
+  &:before {
+    content: $icon-ISP_pianificazione-assenza-path1;
+    color: rgb(255, 255, 255);
+  }
+}
+
+.icon-ISP_pianificazione-assenza .path2 {
+  &:before {
+    content: $icon-ISP_pianificazione-assenza-path2;
+    margin-left: -1em;
+    color: rgb(232, 232, 232);
+  }
+}
+
+.icon-ISP_pianificazione-ferie .path1 {
+  &:before {
+    content: $icon-ISP_pianificazione-ferie-path1;
+    color: rgb(255, 255, 255);
+  }
+}
+
+.icon-ISP_pianificazione-ferie .path2 {
+  &:before {
+    content: $icon-ISP_pianificazione-ferie-path2;
+    margin-left: -1em;
+    color: rgb(255, 240, 186);
+  }
+}
+
+.icon-ISP_Icon_Skype_icon {
+  &:before {
+    content: $icon-ISP_Icon_Skype_icon;
+    color: #5c5c5c;
+  }
+}
+
+.icon-ISP_Icon_Stato_offline {
+  &:before {
+    content: $icon-ISP_Icon_Stato_offline;
+    color: #707070;
+  }
+}
+
+.icon-Star_Off {
+  &:before {
+    content: $icon-Star_Off;
+    color: #f5a623;
+  }
+}
+
+.icon-Star_On .path1 {
+  &:before {
+    content: $icon-Star_On-path1;
+    color: rgb(255, 203, 108);
+  }
+}
+
+.icon-Star_On .path2 {
+  &:before {
+    content: $icon-Star_On-path2;
+    margin-left: -1em;
+    color: rgb(245, 166, 35);
+  }
+}
+
+.icon-ISP_subsections-esplora .path1 {
+  &:before {
+    content: $icon-ISP_subsections-esplora-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_subsections-esplora .path2 {
+  &:before {
+    content: $icon-ISP_subsections-esplora-path2;
+    margin-left: -1em;
+    color: rgb(92, 92, 92);
+  }
+}
+
+.icon-ISP-nuovo-ruolo .path1 {
+  &:before {
+    content: $icon-ISP-nuovo-ruolo-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP-nuovo-ruolo .path2 {
+  &:before {
+    content: $icon-ISP-nuovo-ruolo-path2;
+    margin-left: -1em;
+    color: rgb(92, 92, 92);
+  }
+}
+
+.icon-ISP-nuovo-ruolo .path3 {
+  &:before {
+    content: $icon-ISP-nuovo-ruolo-path3;
+    margin-left: -1em;
+    color: rgb(92, 92, 92);
+  }
+}
+
+.icon-subsections_domanda .path1 {
+  &:before {
+    content: $icon-subsections_domanda-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-subsections_domanda .path2 {
+  &:before {
+    content: $icon-subsections_domanda-path2;
+    margin-left: -1em;
+    color: rgb(92, 92, 92);
+  }
+}
+
+.icon-ISP_Subsections_Valutare .path1 {
+  &:before {
+    content: $icon-ISP_Subsections_Valutare-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Subsections_Valutare .path2 {
+  &:before {
+    content: $icon-ISP_Subsections_Valutare-path2;
+    margin-left: -1em;
+    color: rgb(92, 92, 92);
+  }
+}
+
+.icon-ISP_Subsections_Formazione .path1 {
+  &:before {
+    content: $icon-ISP_Subsections_Formazione-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Subsections_Formazione .path2 {
+  &:before {
+    content: $icon-ISP_Subsections_Formazione-path2;
+    margin-left: -1em;
+    color: rgb(92, 92, 92);
+  }
+}
+
+.icon-ISP_Icon_Valore .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Valore-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_Valore .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Valore-path2;
+    margin-left: -1em;
+    color: rgb(92, 92, 92);
+  }
+}
+
+.icon-ISP_Icon_Aspirazioni .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Aspirazioni-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_Aspirazioni .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Aspirazioni-path2;
+    margin-left: -1em;
+    color: rgb(92, 92, 92);
+  }
+}
+
+.icon-ISP_Icon_Brevetti .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Brevetti-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_Brevetti .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Brevetti-path2;
+    margin-left: -1em;
+    color: rgb(92, 92, 92);
+  }
+}
+
+.icon-isp-icon-linkedin-commenti .path1 {
+  &:before {
+    content: $icon-isp-icon-linkedin-commenti-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-isp-icon-linkedin-commenti .path2 {
+  &:before {
+    content: $icon-isp-icon-linkedin-commenti-path2;
+    margin-left: -1em;
+    color: rgb(92, 92, 92);
+  }
+}
+
+.icon-isp-icon-linkedin-conessioni .path1 {
+  &:before {
+    content: $icon-isp-icon-linkedin-conessioni-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-isp-icon-linkedin-conessioni .path2 {
+  &:before {
+    content: $icon-isp-icon-linkedin-conessioni-path2;
+    margin-left: -1em;
+    color: rgb(92, 92, 92);
+  }
+}
+
+.icon-Subsections_Curriculum .path1 {
+  &:before {
+    content: $icon-Subsections_Curriculum-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-Subsections_Curriculum .path2 {
+  &:before {
+    content: $icon-Subsections_Curriculum-path2;
+    margin-left: -1em;
+    color: rgb(92, 92, 92);
+  }
+}
+
+.icon-ISP_Icon_ExtraLavorativa .path1 {
+  &:before {
+    content: $icon-ISP_Icon_ExtraLavorativa-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_ExtraLavorativa .path2 {
+  &:before {
+    content: $icon-ISP_Icon_ExtraLavorativa-path2;
+    margin-left: -1em;
+    color: rgb(92, 92, 92);
+  }
+}
+
+.icon-ISP_Icon_Icona_Come_4 .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Icona_Come_4-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_Icona_Come_4 .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Icona_Come_4-path2;
+    margin-left: -1em;
+    color: rgb(92, 92, 92);
+  }
+}
+
+.icon-ISP_Icon_Icona_Come_5 .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Icona_Come_5-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_Icona_Come_5 .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Icona_Come_5-path2;
+    margin-left: -1em;
+    color: rgb(92, 92, 92);
+  }
+}
+
+.icon-ISP_Icon_Mobilita .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Mobilita-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_Mobilita .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Mobilita-path2;
+    margin-left: -1em;
+    color: rgb(92, 92, 92);
+  }
+}
+
+.icon-ISP_Icon_Icona_Come_1 .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Icona_Come_1-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_Icona_Come_1 .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Icona_Come_1-path2;
+    margin-left: -1em;
+    color: rgb(92, 92, 92);
+  }
+}
+
+.icon-pachetti .path1 {
+  &:before {
+    content: $icon-pachetti-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-pachetti .path2 {
+  &:before {
+    content: $icon-pachetti-path2;
+    margin-left: -1em;
+    color: rgb(92, 92, 92);
+  }
+}
+
+.icon-ISP_Icon_Passioni1 .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Passioni1-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_Passioni1 .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Passioni1-path2;
+    margin-left: -1em;
+    color: rgb(92, 92, 92);
+  }
+}
+
+.icon-isp-icon-linkedin-posts .path1 {
+  &:before {
+    content: $icon-isp-icon-linkedin-posts-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-isp-icon-linkedin-posts .path2 {
+  &:before {
+    content: $icon-isp-icon-linkedin-posts-path2;
+    margin-left: -1em;
+    color: rgb(92, 92, 92);
+  }
+}
+
+.icon-ISP_Icon_Premi .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Premi-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_Premi .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Premi-path2;
+    margin-left: -1em;
+    color: rgb(92, 92, 92);
+  }
+}
+
+.icon-ISP_Icon_Futuro .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Futuro-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_Futuro .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Futuro-path2;
+    margin-left: -1em;
+    color: rgb(92, 92, 92);
+  }
+}
+
+.icon-ISP_Icon_Conoscenza .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Conoscenza-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_Conoscenza .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Conoscenza-path2;
+    margin-left: -1em;
+    color: rgb(92, 92, 92);
+  }
+}
+
+.icon-Subsections_User .path1 {
+  &:before {
+    content: $icon-Subsections_User-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-Subsections_User .path2 {
+  &:before {
+    content: $icon-Subsections_User-path2;
+    margin-left: -1em;
+    color: rgb(92, 92, 92);
+  }
+}
+
+.icon-ISP_Icon_Feedback .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Feedback-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_Feedback .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Feedback-path2;
+    margin-left: -1em;
+    color: rgb(92, 92, 92);
+  }
+}
+
+.icon-ISP_Icon_Processing .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Processing-path1;
+    color: rgb(255, 232, 145);
+  }
+}
+
+.icon-ISP_Icon_Processing .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Processing-path2;
+    margin-left: -1.0439453125em;
+    color: rgb(92, 92, 92);
+  }
+}
+
+.icon-Timeline_Activity_Overdue .path1 {
+  &:before {
+    content: $icon-Timeline_Activity_Overdue-path1;
+    color: rgb(229, 93, 51);
+  }
+}
+
+.icon-Timeline_Activity_Overdue .path2 {
+  &:before {
+    content: $icon-Timeline_Activity_Overdue-path2;
+    margin-left: -1em;
+    color: rgb(248, 203, 188);
+  }
+}
+
+.icon-Timeline_Activity_Overdue .path3 {
+  &:before {
+    content: $icon-Timeline_Activity_Overdue-path3;
+    margin-left: -1em;
+    color: rgb(229, 93, 51);
+  }
+}
+
+.icon-Timeline_Activity_To_Do .path1 {
+  &:before {
+    content: $icon-Timeline_Activity_To_Do-path1;
+    color: rgb(245, 166, 35);
+  }
+}
+
+.icon-Timeline_Activity_To_Do .path2 {
+  &:before {
+    content: $icon-Timeline_Activity_To_Do-path2;
+    margin-left: -1em;
+    color: rgb(255, 230, 184);
+  }
+}
+
+.icon-Timeline_Done {
+  &:before {
+    content: $icon-Timeline_Done;
+    color: #cecece;
+  }
+}
+
+.icon-ISP_Icon_noncompletato {
+  &:before {
+    content: $icon-ISP_Icon_noncompletato;
+    color: #258900;
+  }
+}
+
+.icon-Timeline_To_Do {
+  &:before {
+    content: $icon-Timeline_To_Do;
+    color: #cecece;
+  }
+}
+
+.icon-Toggle_Off .path1 {
+  &:before {
+    content: $icon-Toggle_Off-path1;
+    color: rgb(232, 232, 232);
+  }
+}
+
+.icon-Toggle_Off .path2 {
+  &:before {
+    content: $icon-Toggle_Off-path2;
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+  }
+}
+
+.icon-Toggle_Off .path3 {
+  &:before {
+    content: $icon-Toggle_Off-path3;
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+}
+
+.icon-ISP_Icon_Toggle .path1 {
+  &:before {
+    content: $icon-ISP_Icon_Toggle-path1;
+    color: rgb(121, 191, 105);
+  }
+}
+
+.icon-ISP_Icon_Toggle .path2 {
+  &:before {
+    content: $icon-ISP_Icon_Toggle-path2;
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+  }
+}
+
+.icon-ISP_Icon_Toggle .path3 {
+  &:before {
+    content: $icon-ISP_Icon_Toggle-path3;
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+}
+
+.icon-ISP_music {
+  &:before {
+    content: $icon-ISP_music;
+  }
+}
+
+.star-full {
+  &:before {
+    content: $star-full;
+    color: #f5a623;
+  }
+}

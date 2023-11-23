@@ -1,86 +1,73 @@
 <div class="person-services-container" id="person-services">
-    <div class="container">
-        <div class="row row-container">
-            <div class="col-12">
-                <div class="row">
-                    <div class="col-12 header-person-services">
-                        <h3>Servizi alla persona</h3>
-                    </div>
-                    <div class="col-12">
-                        <div class="row-container-card">
-                            <div class="row edit-row">
-                                <div class="col-md-3 col-12 box-card-container">
-                                    <div class="box-img">
-                                        <img class="img"
-                                            src="https://www.ilgiomba.it/wp-content/uploads/2018/12/L-equilibrio-interiore-e-la-fonte-primaria-della-serenità.jpg"
-                                            alt="img">
-                                    </div>
-                                    <div class="box-text">
-                                        <p class="body-box-title">Equilibrio dei tempi di vita</p>
-                                        <p class="body-box-sub-title">Iniziative e servizi per supportarti nella
-                                            gestione delle tue esigenze quotidiane, come ad esempio la necessità di
-                                            tempo per stare vicino ai tuoi cari, e per aiutarti a conciliare al
-                                            meglio
-                                            il tempo di vita personale e quello professionale.</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-12 box-card-container">
-                                    <div class="box-img">
-                                        <img class="img"
-                                            src="	https://www.focus.it/images/2022/05/24/5240-7515104-orig.jpeg"
-                                            alt="img">
-                                    </div>
-                                    <div class="box-text">
-                                        <p class="body-box-title">Gestione della propria economia</p>
-                                        <p class="body-box-sub-title">Servizi agevolati o scontati per te e la tua
-                                            famiglia, per gestire al meglio le attività che impattano sul tuo
-                                            bilancio
-                                            familiare durante le varie fasi della vita, come la gestione del conto
-                                            corrente, le esigenze di finanziamento, la consulenza e la previdenza
-                                            complementare.</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-12 box-card-container">
-                                    <div class="box-img">
-                                        <img class="img"
-                                            src="	https://www.socialfarma.it/wp-content/uploads/2019/03/tour-della-salute.jpg"
-                                            alt="img">
-                                    </div>
-                                    <div class="box-text">
-                                        <p class="body-box-title">Salute e benessere</p>
-                                        <p class="body-box-sub-title">Qui trovi i servizi per sostenere la salute e
-                                            il benessere tuo e quello dei tuoi cari, attraverso programmi di
-                                            assistenza
-                                            sanitaria, tutela e prevenzione per la cura della persona, iniziative di
-                                            educazione per uno stile di vita sano e attività che promuovono la
-                                            solidarietà.</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-12 box-card-container">
-                                    <div class="box-img">
-                                        <img class="img"
-                                            src="https://www.assidai.it/wp-content/uploads/2019/01/welfare-tempo-libero.jpg"
-                                            alt=" img">
-                                    </div>
-                                    <div class="box-text">
-                                        <p class="body-box-title">Tempo libero</p>
-                                        <p class="body-box-sub-title">In questa sezione trovi gli incentivi per te e
-                                            per
-                                            i tuoi familiari per valorizzare il tempo libero attraverso iniziative,
-                                            attività e altri servizi in ambito sport, cultura, turismo e shopping.
-                                        </p>
-                                    </div>
-                                </div>
+
+    <div class="row row-container">
+        <div class="col-12 ">
+            <div class="row">
+                <div class="col-12 header-person-services">
+                    <h3>Servizi alla persona</h3>
+                </div>
+                <div class="col-12">
+                    <div class="row-container-card">
+                        <div class="row edit-row">
+                            <div class="col-md-3 col-12 ">
+                                {{>card-person-services/card-person-services
+                                first-image="https://www.ilgiomba.it/wp-content/uploads/2018/12/L-equilibrio-interiore-e-la-fonte-primaria-della-serenità.jpg"
+                                Title="Equilibrio dei tempi di vita"
+                                Subtitle="Iniziative e servizi per supportarti nella
+                                gestione delle tue esigenze quotidiane, come ad esempio la necessità di
+                                tempo per stare vicino ai tuoi cari, e per aiutarti a conciliare al
+                                meglio
+                                il tempo di vita personale e quello professionale."
+                                }}
                             </div>
 
+                            <div class="col-md-3 col-12">
+                                {{>card-person-services/card-person-services
+                                second-image=" https://www.focus.it/images/2022/05/24/5240-7515104-orig.jpeg"
+
+                                Title="Gestione della propria economia"
+                                Subtitle="Servizi agevolati o scontati per te e la tua
+                                famiglia, per gestire al meglio le attività che impattano sul tuo
+                                bilancio
+                                familiare durante le varie fasi della vita, come la gestione del conto
+                                corrente, le esigenze di finanziamento, la consulenza e la previdenza
+                                complementare."
+                                }}
+                            </div>
+                            <div class="col-md-3 col-12 ">
+                                {{>card-person-services/card-person-services                                                 
+                                        third-image= "https://www.socialfarma.it/wp-content/uploads/2019/03/tour-della-salute.jpg"                         
+                                
+                                    Title="Salute e benessere"
+                                   Subtitle="Qui trovi i servizi per sostenere la salute e
+                                        il benessere tuo e quello dei tuoi cari, attraverso programmi di
+                                        assistenza
+                                        sanitaria, tutela e prevenzione per la cura della persona, iniziative di
+                                        educazione per uno stile di vita sano e attività che promuovono la
+                                        solidarietà."        
+                                }}
+                            </div>
+                            <div class="col-md-3 col-12 box-card-container">
+                                 {{>card-person-services/card-person-services
+                                fourth-image= "https://www.assidai.it/wp-content/uploads/2019/01/welfare-tempo-libero.jpg"                            
+                                        Title="Tempo libero"
+                                     Subtitle=" In questa sezione trovi gli incentivi per te e
+                                            per
+                                            i tuoi familiari per valorizzare il tempo libero attraverso iniziative,
+                                            attività e altri servizi in ambito sport, cultura, turismo e shopping."
+
+                                 }}
+                            </div>
                         </div>
 
                     </div>
-                </div>
 
+                </div>
             </div>
 
         </div>
 
     </div>
+
+
 </div>
