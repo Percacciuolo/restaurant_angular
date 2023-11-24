@@ -29,13 +29,10 @@ import { ReactiveFormsModule } from '@angular/forms';
 //Pages
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
-import { MenuComponent } from './pages/menu/menu.component';
-import { CucinaComponent } from './pages/cucina/cucina.component';
-import { DialogOrderComponent } from './components/dialog-order/dialog-order.component';
-import { OrderConfirmedComponent } from './pages/order-confirmed/order-confirmed.component';
+
 
 //Service
-import { OrderService } from './service/orderService.service';
+
 
 
 
@@ -45,11 +42,8 @@ import { OrderService } from './service/orderService.service';
   declarations: [
     AppComponent,
     NavbarComponent,
-    HomeComponent,
-    MenuComponent,
-    CucinaComponent,
-    DialogOrderComponent,
-    OrderConfirmedComponent,
+    HomeComponent
+    
   
     
     
@@ -78,7 +72,7 @@ import { OrderService } from './service/orderService.service';
   ],
 
   providers: [
-    OrderService
+   
   ],
 
   bootstrap: [AppComponent]
