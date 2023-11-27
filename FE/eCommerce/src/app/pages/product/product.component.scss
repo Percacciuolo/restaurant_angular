@@ -1,0 +1,26 @@
+.container-side-bar-product {
+
+    .container-item-nav {
+        padding-left: 10%;
+        
+    }
+
+    .nav-item{
+        padding-top: 10%;
+
+
+        &.filter-text{
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin-bottom: 16%;
+        }
+
+        &.text-bold{
+            font-size: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    }
+
+
+
+}
