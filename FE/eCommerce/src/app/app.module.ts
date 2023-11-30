@@ -8,6 +8,16 @@ import { DetailsProjComponent } from './pages/details-proj/details-proj.componen
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CartComponent } from './pages/cart/cart.component';
 import { CardProductComponent } from './components/card-product/card-product.component';
+import { ContactsComponent } from './pages/contacts/contacts.component';
+
+/* COMPONENTS ANGULAR MATERIALS */
+
+import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import {MatTabsModule} from '@angular/material/tabs';
+
+
 
 @NgModule({
   declarations: [
@@ -15,12 +25,18 @@ import { CardProductComponent } from './components/card-product/card-product.com
     HomePageComponent,
     DetailsProjComponent,
     CartComponent,
-    CardProductComponent
+    CardProductComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ContactsComponent,
+    MatInputModule,
+    MatIconModule, 
+    MatButtonModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
