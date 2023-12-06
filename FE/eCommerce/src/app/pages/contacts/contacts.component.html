@@ -1,0 +1,98 @@
+<div class="container mt-5">
+    <div class="row mb-4">
+        <div class="col-12">
+            <h1 class="welcome-title">Ciao, come possiamo aiutarti?</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <a href="#" class="orders-box d-flex flex-column">
+                <img src="./assets/img/ordini.png">
+                <h2 class="box-title">I miei ordini</h2>
+                <ul>
+                    <li>Traccia, modifica o cancella un ordine</li>
+                    <li>Stampa la tua ricevuta o fattura</li>
+                </ul>
+            </a>
+        </div>
+        <div class="col-4">
+            <a href="#" class="orders-box d-flex flex-column">
+                <img src="./assets/img/resi.png">
+                <h2 class="box-title">Resi e rimborsi</h2>
+                <ul>
+                    <li>Restituisci o sostituisci gli articoli</li>
+                    <li>Stampa un'etichetta di reso</li>
+                </ul>
+            </a>
+        </div>
+        <div class="col-4">
+            <a href="javascript: void(0)" class="orders-box d-flex flex-column" (click)="contactMe()">
+                <img src="./assets/img/comunicazioni.png">
+                <h2 class="box-title">Centro Comunicazioni</h2>
+                <ul>
+                    <li>Cerca aiuto e supporto</li>
+                </ul>
+            </a>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-4">
+            <a href="#" class="orders-box d-flex flex-column">
+                <img src="./assets/img/account.png">
+                <h2 class="box-title">Impostazioni account</h2>
+                <ul>
+                    <li>Modifica email o password</li>
+                    <li>Modifica le impostazioni di accesso</li>
+                </ul>
+            </a>
+        </div>
+    </div>
+    <div *ngIf="isContactVisible">
+        <div class="row mt-5 contacts-row">
+            <div class="col-12">
+                <h2 class="contatcs-mode">Come vorresti contattarci?</h2>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-6">
+                <h2>Raccomandato</h2>
+                <p>Ti risponderemo entro: <b>meno di un minuto</b></p>
+                <button mat-button class="phone-btn" (click)="phoneClick()">Telefono</button>
+                <p *ngIf="phoneVisible">Chiama al: <b>0123456789</b></p>
+            </div>
+            <div class="col-6">
+                <h2>Altre opzioni di contatto disponibili</h2>
+                <p>Risponderemo alla tua chat entro: <b>meno di un minuto</b></p>
+                <button mat-button class="email-btn" (click)="onClick()">Email</button>
+                <button mat-button class="chat-btn ml-2">Chat</button>
+
+            </div>
+        </div>
+        <div class="row contacts-row pt-4" *ngIf="isVisible">
+            <div class="col-12">
+                <h2>Invia mail</h2>
+            </div>
+            <div class="col-12">
+                <form class="example-form">
+                    <mat-form-field class="email-andress">
+                        <mat-label>Email</mat-label>
+                        <input type="email" matInput [formControl]="emailFormControl"
+                            placeholder="Inserisci un indirizzo email valido">
+                    </mat-form-field>
+                </form>
+                <form class="example-form">
+                    <mat-form-field class="name-box d-flex">
+                        <mat-label>Nome</mat-label>
+                        <input matInput placeholder="Inserisci il tuo nome">
+                    </mat-form-field>
+
+                    <mat-form-field class="text-box">
+                        <mat-label>Messaggio</mat-label>
+                        <textarea matInput placeholder="Lascia un messaggio..."></textarea>
+                    </mat-form-field>
+                </form>
+                <button mat-button class="send-btn mb-2">Invia</button>
+            </div>
+        </div>
+    </div>
+</div>
